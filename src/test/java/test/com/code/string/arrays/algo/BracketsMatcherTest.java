@@ -1,8 +1,10 @@
-package com.test.algo;
+package test.com.code.string.arrays.algo;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import com.code.string.arrays.algo.BracketsMatcher;
 
 public class BracketsMatcherTest {
 	@Test

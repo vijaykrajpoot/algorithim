@@ -1,4 +1,4 @@
-package com.test.algo;
+package com.code.string.arrays.algo;
 
 public class ReverseAnArray {
 

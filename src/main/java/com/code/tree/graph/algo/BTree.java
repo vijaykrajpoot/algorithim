@@ -1,4 +1,5 @@
-package com.test.algo;
+package com.code.tree.graph.algo;
+
 public class BTree {
 
 	private int value;

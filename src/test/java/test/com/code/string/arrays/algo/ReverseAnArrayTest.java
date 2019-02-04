@@ -1,7 +1,9 @@
-package com.test.algo;
+package test.com.code.string.arrays.algo;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.code.string.arrays.algo.ReverseAnArray;
 
 public class ReverseAnArrayTest {
 

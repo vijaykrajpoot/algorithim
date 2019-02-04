@@ -1,4 +1,4 @@
-package com.test.algo;
+package com.code.sorting.search.algo;
 
 import java.util.Arrays;
 
