@@ -8,7 +8,7 @@ public class MergeSort {
 
 		MergeSort mergeSort = new MergeSort();
 
-		int arr[] = { 3, 8, 1, 44, -232, 6, 7, 9, 67, -89, 32, -1, 2 };
+		int arr[] = { 10, 11, 24, -1 , 9, 9, 10, -35, 28 };
 		System.out.println(Arrays.toString(mergeSort.mergesort(arr)));
 	}
 
@@ -25,7 +25,7 @@ public class MergeSort {
 		int arr1[] = new int[mid];
 		int arr2[] = new int[remLenth];
 		System.arraycopy(arr, 0, arr1, 0, mid);
-//		System.arraycopy(arr, mid, arr2, 0, remLenth);
+		System.arraycopy(arr, mid, arr2, 0, remLenth);
 //		System.out.println("Arr1:" + Arrays.toString(arr1));
 //		System.out.println("Arr2:" + Arrays.toString(arr2));
 		arr1 = mergesort(arr1);
