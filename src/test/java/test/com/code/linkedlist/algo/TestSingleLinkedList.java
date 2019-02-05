@@ -67,7 +67,45 @@ public class TestSingleLinkedList {
 		IntStream.range(1, 11).forEach(i -> ll.add(i));
 	//	ll.printList();
 		Assert.assertTrue(ll.findMiddleNodeLogic1().data==6);
-		
 	}
-
+	
+	@Test
+	public void deleteANodeFromLinkedList() {
+		IntStream.range(0, 10).forEach(i -> ll.add(++i));
+		Assert.assertTrue(ll.size()==10);
+		ll.printList("deleteANodeFromLinkedList:");
+		ll.deleteNode(7);
+		ll.printList("deleteANodeFromLinkedList:");
+		Assert.assertTrue(ll.size()==9);
+	}
+	
+	@Test
+	public void deleteLastNodeFromLinkedList() {
+		IntStream.range(0, 10).forEach(i -> ll.add(++i));
+		Assert.assertTrue(ll.size()==10);
+		ll.printList("deleteLastNodeFromLinkedList:");
+		ll.deleteNode(10);
+		ll.printList("deleteLastNodeFromLinkedList:");
+		Assert.assertTrue(ll.size()==9);
+	}
+	
+	@Test
+	public void deleteNodeWhen2NodeInList() {
+		IntStream.range(0, 2).forEach(i -> ll.add(++i));
+		Assert.assertTrue(ll.size()==2);
+		ll.printList("deleteNodeWhen2NodeInList:");
+		ll.deleteNode(2);
+		ll.printList("deleteNodeWhen2NodeInList:");
+		Assert.assertTrue(ll.size()==1);
+	}
+	
+	@Test(expected=IllegalStateException.class)
+	public void deleteNodeFromEmptyNodeInList() {
+		IntStream.range(0, 0).forEach(i -> ll.add(++i));
+		Assert.assertTrue(ll.size()==0);
+		ll.printList("deleteNodeFromEmptyNodeInList:");
+		ll.deleteNode(2);
+		ll.printList("deleteNodeFromEmptyNodeInList:");
+		Assert.assertTrue(ll.size()==0);
+	}
 }

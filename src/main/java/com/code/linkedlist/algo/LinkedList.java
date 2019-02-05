@@ -40,8 +40,8 @@ public class LinkedList {
 	 */
 	public void printList(String listHeading) {
 		Node curret = start;
-		if(listHeading==null)
-			listHeading="List:";
+		if (listHeading == null)
+			listHeading = "List:";
 		System.out.print(listHeading);
 		while (curret != null) {
 			System.out.print("->" + curret.data);
@@ -63,10 +63,11 @@ public class LinkedList {
 		}
 		Node node1 = start;
 		Node node2 = start;
-		int i = 0;  
-		// Here i=0 is very important because in case of even size of list 
-		// if we need to return Mid+1 i.e. 1-10 list return 6 then i must be 0 so that node2.next will execute 
-		
+		int i = 0;
+		// Here i=0 is very important because in case of even size of list
+		// if we need to return Mid+1 i.e. 1-10 list return 6 then i must be 0 so that
+		// node2.next will execute
+
 		while (node1.next != null) {
 			node1 = node1.next;
 			if (((i++) % 2) == 0)
@@ -91,9 +92,11 @@ public class LinkedList {
 		}
 		Node p1 = start, p2 = start;
 		boolean skip = true;
-		// if block is moving p1/p2 both pointers to return Mid+1 i.e. 1-10 list return 6. 
+		// if block is moving p1/p2 both pointers to return Mid+1 i.e. 1-10 list return
+		// 6.
 		// in case of even size of list
-		// if we need number 5 in case of 1-10 list then make skip=false or move p1 & p2 in else block. 
+		// if we need number 5 in case of 1-10 list then make skip=false or move p1 & p2
+		// in else block.
 		while (p1.next != null) {
 			if (skip) {
 				p1 = p1.next;
@@ -106,4 +109,25 @@ public class LinkedList {
 		return p2;
 
 	}
+
+	public boolean deleteNode(int data) {
+		if (start == null) {
+			throw new IllegalStateException("Empty List");
+		}
+		Node current = start;
+		Node previous = start;
+		while (current != null) {
+			if (current.data == data) {
+				previous.next = current.next;
+				size--;
+				return true;
+				
+			}
+			previous = current;
+			current = current.next;
+		}
+		return false;
+
+	}
+
 }
