@@ -80,6 +80,16 @@ public class TestSingleLinkedList {
 	}
 	
 	@Test
+	public void deleteFirstNodeFromLinkedList() {
+		IntStream.range(0, 10).forEach(i -> ll.add(++i));
+		Assert.assertTrue(ll.size()==10);
+		ll.printList("deleteANodeFromLinkedList:");
+		ll.deleteNode(1);
+		ll.printList("deleteANodeFromLinkedList:");
+		Assert.assertTrue(ll.size()==9);
+	}
+	
+	@Test
 	public void deleteLastNodeFromLinkedList() {
 		IntStream.range(0, 10).forEach(i -> ll.add(++i));
 		Assert.assertTrue(ll.size()==10);

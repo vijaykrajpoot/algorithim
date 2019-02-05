@@ -116,9 +116,16 @@ public class LinkedList {
 		}
 		Node current = start;
 		Node previous = start;
+		
+		if(start.data==data) {
+			start=start.next;
+			size--;
+			return true;
+		}
 		while (current != null) {
 			if (current.data == data) {
 				previous.next = current.next;
+				previous = current;
 				size--;
 				return true;
 				
