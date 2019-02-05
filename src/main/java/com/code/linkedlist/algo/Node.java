@@ -2,7 +2,7 @@ package com.code.linkedlist.algo;
 
 public class Node {
 
-	int data;
+	public int data;
 	Node next;
 	
 	
