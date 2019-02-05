@@ -44,7 +44,7 @@ public class LinkedList {
 			listHeading = "List:";
 		System.out.print(listHeading);
 		while (curret != null) {
-			System.out.print("->" + curret.data);
+			System.out.print("-> " + curret.data);
 			curret = curret.next;
 		}
 		System.out.println();
@@ -116,9 +116,9 @@ public class LinkedList {
 		}
 		Node current = start;
 		Node previous = start;
-		
-		if(start.data==data) {
-			start=start.next;
+
+		if (start.data == data) {
+			start = start.next;
 			size--;
 			return true;
 		}
@@ -128,7 +128,7 @@ public class LinkedList {
 				previous = current;
 				size--;
 				return true;
-				
+
 			}
 			previous = current;
 			current = current.next;
@@ -137,4 +137,23 @@ public class LinkedList {
 
 	}
 
+	public int findSecondLargest() {
+
+		int first = Integer.MIN_VALUE;
+		int second = Integer.MIN_VALUE;
+		Node current = start;
+
+		while (current != null) {
+			if (current.data > first) {
+				second = first;
+				first = current.data;
+			} else {
+				if (current.data > second) {
+					second = current.data;
+				}
+			}
+			current = current.next;
+		}
+		return second;
+	}
 }
