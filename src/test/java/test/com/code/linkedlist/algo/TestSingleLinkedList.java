@@ -1,6 +1,5 @@
 package test.com.code.linkedlist.algo;
 
-import java.util.Random;
 import java.util.stream.IntStream;
 
 import org.junit.Assert;
@@ -145,7 +144,7 @@ public class TestSingleLinkedList {
 			ll.add(i);
 		}
 		ll.printList("findSecondLargest:");
-		Assert.assertTrue(ll.findSecondLargest() == 99);
+		Assert.assertTrue(ll.findSecondLargest() == 99);       
 	}
 
 	@Test

@@ -147,7 +147,10 @@ public class LinkedList {
 			if (current.data > first) {
 				second = first;
 				first = current.data;
-			} else {
+			} else { 
+				// 104, 887, 524, 132, 75, 542, 311, 318, 459, 143
+				// In this case since 887 is higer then second largest will always remain 104
+				// So this else condition is required
 				if (current.data > second) {
 					second = current.data;
 				}
