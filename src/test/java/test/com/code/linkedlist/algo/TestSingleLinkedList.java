@@ -20,8 +20,9 @@ public class TestSingleLinkedList {
 	@Test
 	public void findMidLinkedListLogic1() {
 		IntStream.range(1, 10).forEach(i -> ll.add(i));
+		ll.printList("findMidLinkedListLogic1:");
 		Assert.assertTrue(ll.findMiddleNodeLogic1().data == 5);
-		// ll.printList();
+		
 	}
 
 	@Test
@@ -144,7 +145,7 @@ public class TestSingleLinkedList {
 			ll.add(i);
 		}
 		ll.printList("findSecondLargest:");
-		Assert.assertTrue(ll.findSecondLargest() == 99);       
+		Assert.assertTrue(ll.findSecondLargest() == 99);
 	}
 
 	@Test
@@ -160,9 +161,7 @@ public class TestSingleLinkedList {
 		System.out.println("ll.findSecondLargest():" + ll.findSecondLargest());
 		Assert.assertTrue(ll.findSecondLargest() == 25113);
 	}
-	
-	
-	
+
 	@Test
 	public void findSecondLargestWhenListHasOnlyRandomNegativeInt() {
 //		Random random=new Random();
