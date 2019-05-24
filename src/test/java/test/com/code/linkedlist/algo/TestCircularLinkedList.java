@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.code.linkedlist.algo.CircularLinkedList;
+import com.algo.linkedlist.CircularLinkedList;
 
 public class TestCircularLinkedList {
 

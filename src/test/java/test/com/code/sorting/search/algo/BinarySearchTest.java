@@ -2,7 +2,7 @@ package test.com.code.sorting.search.algo;
 
 import org.junit.Test;
 
-import com.code.string.arrays.algo.BinarySearch;
+import com.algo.string.arrays.BinarySearch;
 
 import static org.junit.Assert.*;
 

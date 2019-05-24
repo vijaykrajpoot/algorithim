@@ -1,4 +1,4 @@
-package com.code.tree.graph.algo;
+package com.algo.tree.graph;
 
 public class BTree {
 

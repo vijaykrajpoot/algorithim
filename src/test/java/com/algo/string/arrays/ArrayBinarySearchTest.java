@@ -1,4 +1,4 @@
-package com.code.string.arrays.algo;
+package com.algo.string.arrays;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 
 import org.junit.Test;
 
-import com.code.string.arrays.algo.ArrayBinarySearch;
+import com.algo.string.arrays.ArrayBinarySearch;
 
 public class ArrayBinarySearchTest {
 

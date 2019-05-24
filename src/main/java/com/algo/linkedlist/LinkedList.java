@@ -1,4 +1,4 @@
-package com.code.linkedlist.algo;
+package com.algo.linkedlist;
 
 /**
  * Represent Single List List and it's operation

@@ -3,7 +3,7 @@ package test.com.code.sorting.search.algo;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.code.sorting.search.algo.MergeSort;
+import com.algo.sorting.search.MergeSort;
 
 public class MergeSortTest {
 

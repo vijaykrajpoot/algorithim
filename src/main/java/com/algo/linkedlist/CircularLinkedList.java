@@ -1,4 +1,4 @@
-package com.code.linkedlist.algo;
+package com.algo.linkedlist;
 
 public class CircularLinkedList {
 

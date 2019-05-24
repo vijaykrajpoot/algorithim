@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.code.linkedlist.algo.LinkedList;
+import com.algo.linkedlist.LinkedList;
 
 public class TestSingleLinkedList {
 
