@@ -30,13 +30,11 @@ public class CircularLinkedList {
 	/**
 	 * Show the list
 	 */
-	public void printList(String listHeading) {
+	public void printList() {
 		Node curret = start;
-		if (listHeading == null)
-			listHeading = "List:";
-		System.out.print(listHeading);
+		System.out.print("List: ");
 		while (curret.next != start) {
-			System.out.print("-> " + curret.data);
+			System.out.print("=>" + curret.data);
 			curret = curret.next;
 		}
 		System.out.println();

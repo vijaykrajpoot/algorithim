@@ -14,7 +14,7 @@ public class TestCircularLinkedList {
 	@Test
 	public void testCircularLinkedList() {
 		IntStream.range(0, 10).forEach(i -> cll.add(++i));
-		cll.printList("List");
+		cll.printList();
 		Assert.assertTrue(cll.isCicrularLinkedList());
 	}
 
