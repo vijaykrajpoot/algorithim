@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.code.string.arrays.algo.BracketsMatcher;
+import com.algo.string.arrays.BracketsMatcher;
 
 public class BracketsMatcherTest {
 	@Test

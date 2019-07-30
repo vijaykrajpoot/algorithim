@@ -3,7 +3,7 @@ package test.com.code.string.arrays.algo;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.code.string.arrays.algo.ReverseAnArray;
+import com.algo.string.arrays.ReverseAnArray;
 
 public class ReverseAnArrayTest {
 
