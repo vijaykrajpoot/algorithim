@@ -8,15 +8,16 @@ public class FindAFirstRecurringChracater {
 
   public static void main(String[] args) {
 
-    System.out.println("First Recurring Chracter: " + FindAFirstRecurringChracater.solutuon1("VIJAYKRAJPOOT"));
-    System.out.println("First Recurring Chracter: " + FindAFirstRecurringChracater.solutuon2("VIJAYKRAJPOOT"));
+    System.out.println("First Recurring Chracter (solutuon1) - VIJAYKRAJPOOT: " + FindAFirstRecurringChracater.solutuon1("VIJAYKRAJPOOT"));
+    System.out.println("First Recurring Chracter (solutuon2) - VIJAYKRAJPOOT: " + FindAFirstRecurringChracater.solutuon2("VIJAYKRAJPOOT"));
 
 
-    System.out.println("First Recurring Chracter: " + FindAFirstRecurringChracater.solutuon1("QWERTYUIOP"));
-    System.out.println("First Recurring Chracter: " + FindAFirstRecurringChracater.solutuon2("QWERTYUIOP"));
+    System.out.println("First Recurring Chracter(solutuon1) - QWERTYUIOP : " + FindAFirstRecurringChracater.solutuon1("QWERTYUIOP"));
+    System.out.println("First Recurring Chracter(solutuon2) - QWERTYUIOP : " + FindAFirstRecurringChracater.solutuon2("QWERTYUIOP"));
 
   }
 
+  
   /**
    * Count using HashMap
    * 
@@ -37,7 +38,14 @@ public class FindAFirstRecurringChracater {
 
     return '\u0000';
   }
-
+  
+  
+  /**
+   * Using SET
+   * 
+   * @param str
+   * @return
+   */
   public static char solutuon2(String str) {
     HashSet<Character> charactersSet = new HashSet<>();
     char[] chArr = str.toCharArray();
