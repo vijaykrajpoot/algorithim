@@ -15,15 +15,15 @@ public class FindAMaxElementInArray {
 
     long startTime = System.nanoTime();
     int[] arr = getIntegerArray();
-    System.out.println("Array :" + Arrays.toString(arr) + "   Length:"+ arr.length);
+    System.out.println("Array :" + Arrays.toString(arr) + "   Length:" + arr.length);
     System.out.flush();
     int maxNumber = FindAMaxElementInArray.findMaxelementSolutuon1(arr);
     long endTime = System.nanoTime();
     long duration = (endTime - startTime) / 1000000;
     System.out.println("findMaxElementSolutuon1: TimeSpend:" + duration + " maxNumber: " + maxNumber);
     System.out.flush();
-    System.out.println("#######################");
-    System.out.flush();
+    // System.out.println("#######################");
+    // System.out.flush();
     startTime = System.nanoTime();
     FindAMaxElementInArray.findMaxelementSolutuon2(arr);
     endTime = System.nanoTime();
@@ -86,9 +86,8 @@ public class FindAMaxElementInArray {
     boolean isMax = true;
     for (i = len; i > 0; i--) {
       for (j = 0; j < len; j++) {
+        System.out.println("arr [j=" + j + "] :" + arr[j] + "   " + " arr[i=" + i + "]:" + arr[i]);
         if (arr[j] > arr[i]) {
-          System.err.println("arr[" + j + "] :" + arr[j] + ":" + "arr[" + i + "]:" + arr[i]);
-          System.err.flush();
           isMax = false;
           countJ++;
           break;
@@ -99,7 +98,7 @@ public class FindAMaxElementInArray {
         break;
     }
 
-    System.out.flush();
+    // System.out.flush();
     return arr[i];
 
   }
