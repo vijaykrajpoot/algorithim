@@ -5,8 +5,24 @@ import java.util.stream.IntStream;
 /**
  * 
  * 
- * Generic Single Linked List
+ * Generic Single Linked List. Where current node is always point to current node :-) after operation.
  * 
+
+First List ==> A B C D E F G 
+
+      DELETED 'D' ==> A B C E F G 
+      DELETED 'A' ==> B C E F G 
+      DELETED 'G' ==> B C E F 
+      DELETED 'F' ==> B C E 
+      DELETED 'C' ==> B E 
+        ADDED 'X' ==> B E X 
+        ADDED 'Y' ==> B E X Y 
+        ADDED 'Z' ==> B E X Y Z 
+After +/- List ==> B E X Y Z 
+     DELETED 'B' ==> E X Y Z 
+     DELETED 'Y' ==> E X Z 
+        ADDED 'R' ==> E X Z R 
+
  * 
  * @author Vijay K Rajput
  *
@@ -125,6 +141,16 @@ public class LinkedList<T> {
     strlinkedList.deleteElement("B");
     System.out.print("DELETED 'B' ==> ");
     strlinkedList.displayList();
+    
+
+    strlinkedList.deleteElement("Y");
+    System.out.print("DELETED 'Y' ==> ");
+    strlinkedList.displayList();
+    
+    System.out.print("ADDED 'R' ==> ");
+    strlinkedList.add("R");
+    strlinkedList.displayList();
+
   }
 
 }
