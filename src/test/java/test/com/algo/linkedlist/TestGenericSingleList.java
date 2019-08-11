@@ -11,7 +11,6 @@ public class TestGenericSingleList {
 
     LinkedList<Integer> linkedList = new LinkedList<>();
     IntStream.range(1, 11).forEach(i -> linkedList.add(i));
-    
     linkedList.displayList();
     
     System.out.println("Middle Node Logic1:" + linkedList.findMiddleNodeLogic1().getData());
