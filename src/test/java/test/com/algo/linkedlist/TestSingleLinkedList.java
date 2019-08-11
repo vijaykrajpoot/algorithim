@@ -1,4 +1,4 @@
-package test.com.code.linkedlist.algo;
+package test.com.algo.linkedlist;
 
 import java.util.stream.IntStream;
 

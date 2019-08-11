@@ -1,4 +1,5 @@
 package com.algo.linkedlist.single;
+
 /**
  * 
  * Generic Node
@@ -13,6 +14,11 @@ public class Node<T> {
   T data;
 
   Node<T> next;
+
+  public T getData() {
+    return data;
+  }
+
 
 
 }

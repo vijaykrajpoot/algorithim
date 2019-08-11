@@ -1,4 +1,4 @@
-package com.algo.string.arrays;
+package test.com.algo.string.arrays;
 
 import static org.junit.Assert.*;
 

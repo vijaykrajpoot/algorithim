@@ -2,27 +2,32 @@ package com.algo.linkedlist.single;
 
 import java.util.stream.IntStream;
 
+
 /**
  * 
  * 
- * Generic Single Linked List. Where current node is always point to current node :-) after operation.
+ * Generic Single Linked List. Where current node is always point to current node :-) after
+ * operation.
  * 
-
-First List ==> A B C D E F G 
-
-      DELETED 'D' ==> A B C E F G 
-      DELETED 'A' ==> B C E F G 
-      DELETED 'G' ==> B C E F 
-      DELETED 'F' ==> B C E 
-      DELETED 'C' ==> B E 
-        ADDED 'X' ==> B E X 
-        ADDED 'Y' ==> B E X Y 
-        ADDED 'Z' ==> B E X Y Z 
-After +/- List ==> B E X Y Z 
-     DELETED 'B' ==> E X Y Z 
-     DELETED 'Y' ==> E X Z 
-        ADDED 'R' ==> E X Z R 
-
+ * 
+ *  // @formatter:off
+ *   First List ==> A B C D E F G 
+ *   
+ *         DELETED 'D' ==> A B C E F G 
+ *         DELETED 'A' ==> B C E F G 
+ *         DELETED 'G' ==> B C E F 
+ *         DELETED 'F' ==> B C E 
+ *         DELETED 'C' ==> B E 
+ *           ADDED 'X' ==> B E X 
+ *           ADDED 'Y' ==> B E X Y 
+ *           ADDED 'Z' ==> B E X Y Z 
+ *   After +/- List ==> B E X Y Z 
+ *       DELETED 'B' ==> E X Y Z 
+ *       DELETED 'Y' ==> E X Z 
+ *         ADDED 'R' ==> E X Z R 
+ *   // @formatter:on
+ *s
+ * 
  * 
  * @author Vijay K Rajput
  *
@@ -39,7 +44,7 @@ public class LinkedList<T> {
    * 
    * @param data
    */
-  void add(T data) {
+  public void add(T data) {
     if (firstNode == null) {
       Node<T> node = new Node<T>();
       node.data = data;
@@ -58,7 +63,7 @@ public class LinkedList<T> {
   void deleteElement(T data) {
     currentNode = firstNode;
     preNode = firstNode;
-    
+
     if (firstNode.data.equals(data)) {
       firstNode = currentNode.next;
     } else {
@@ -78,7 +83,58 @@ public class LinkedList<T> {
 
 
 
-  void displayList() {
+  public Node<T> findMiddleNodeLogic1() {
+    int i = 0;
+    Node<T> p1 = firstNode;
+    Node<T> p2 = firstNode;
+
+    while (p1 != null) {
+      // System.out.println((i++) + " %2 = " + i++ % 2);
+      if (i++ % 2 == 1) {
+        p1 = p1.next;
+        p2 = p2.next;
+      } else {
+        p1 = p1.next;
+      }
+    }
+
+    return p2;
+  }
+
+  public Node<T> findMiddleNodeLogic2() {
+
+    Node<T> node1 = firstNode;
+    Node<T> node2 = firstNode;
+    int i = 0;
+    while (node1 != null) {
+      if ((++i) % 2 == 0) {
+        node2 = node2.next;
+      }
+      node1 = node1.next;
+    }
+
+    return node2;
+  }
+
+
+  public Node<T> findMiddleNodeLogic3() {
+    Node<T> node1 = firstNode;
+    Node<T> node2 = firstNode;
+    boolean skip = false;
+
+    while (node1 != null) {
+      if (skip) {
+        node1 = node1.next;
+        node2 = node2.next;
+      } else {
+        node1 = node1.next;
+      }
+      skip = !skip;
+    }
+    return node2;
+  }
+
+  public void displayList() {
     Node<T> currentNode = firstNode;
     while (currentNode != null) {
       System.out.print(currentNode.data + " ");
@@ -141,12 +197,12 @@ public class LinkedList<T> {
     strlinkedList.deleteElement("B");
     System.out.print("DELETED 'B' ==> ");
     strlinkedList.displayList();
-    
+
 
     strlinkedList.deleteElement("Y");
     System.out.print("DELETED 'Y' ==> ");
     strlinkedList.displayList();
-    
+
     System.out.print("ADDED 'R' ==> ");
     strlinkedList.add("R");
     strlinkedList.displayList();
