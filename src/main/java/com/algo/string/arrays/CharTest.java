@@ -1,4 +1,4 @@
-package com.algo;
+package com.algo.string.arrays;
 
 import java.util.Random;
 
