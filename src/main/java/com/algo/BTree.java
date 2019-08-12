@@ -1,4 +1,4 @@
-package com.test.algo;
+package com.algo;
 public class BTree {
 
 	private int value;
@@ -76,6 +76,18 @@ public class BTree {
 			return 0;
 		}
 		return Math.max(getHight(bt.getLeft()), getHight(bt.getRight())) + 1;
+	}
+	
+	public static void main(String[] args) {
+		BTree bTree=new BTree(50);
+		bTree.insert(bTree, 40);
+		bTree.insert(bTree, 10);
+		bTree.insert(bTree, 20);
+		bTree.insert(bTree, 9);
+		bTree.insert(bTree, 15);
+		bTree.insert(bTree, 60);
+		System.out.println(bTree.getHight(bTree));
+		
 	}
 	
 }

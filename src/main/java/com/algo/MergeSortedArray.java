@@ -1,4 +1,4 @@
-package com.test.algo;
+package com.algo;
 
 public class MergeSortedArray {
 
