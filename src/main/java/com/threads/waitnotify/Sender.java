@@ -1,4 +1,4 @@
-package com.test.threads.waitnotify;
+package com.threads.waitnotify;
 
 import java.util.concurrent.ThreadLocalRandom;
 

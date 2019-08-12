@@ -1,4 +1,4 @@
-package com.test.threads.runnable.executor.callable;
+package com.threads.runnable.executor.callable;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -1,4 +1,4 @@
-package com.test.threads.runnable.executor.callable;
+package com.threads.runnable.executor.callable;
 
 public class EvenOddNumberRunnable implements Runnable {
 	private int[] arr;
