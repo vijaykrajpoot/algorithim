@@ -46,14 +46,13 @@ public class LinkedList<T> {
    */
   public void add(T data) {
     if (firstNode == null) {
-      Node<T> node = new Node<T>();
-      node.data = data;
+      Node<T> node = new Node<T>(data);
       currentNode = node;
       firstNode = node;
     } else {
 
-      Node<T> node = new Node<T>();
-      node.data = data;
+      Node<T> node = new Node<T>(data);
+    
       currentNode.next = node;
       currentNode = node;
     }

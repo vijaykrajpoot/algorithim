@@ -1,10 +1,11 @@
 package test.com.code.sorting.search.algo;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
 
 import com.algo.string.arrays.BinarySearch;
-
-import static org.junit.Assert.*;
 
 public class BinarySearchTest {
 	@Test(expected=IllegalArgumentException.class)

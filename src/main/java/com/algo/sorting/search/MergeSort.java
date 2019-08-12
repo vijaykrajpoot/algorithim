@@ -23,7 +23,7 @@ public class MergeSort {
 
 	}
 
-	int[] mergeS(int arr[]) {
+	public int[] mergeS(int arr[]) {
 		int len = arr.length;
 		if (len <= 1)
 			return arr;
@@ -41,7 +41,7 @@ public class MergeSort {
 
 	}
 
-	int[] merge(int arr1[], int arr2[]) {
+	private int[] merge(int arr1[], int arr2[]) {
 		int l1 = arr1.length;
 		int l2 = arr2.length;
 		int idx = 0, idx1 = 0, idx2 = 0;

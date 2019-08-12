@@ -10,19 +10,17 @@ package com.algo.linkedlist.single;
  */
 
 public class Node<T> {
-	
-   T data;
 
-  Node<T> next;
-  
-  
-  public Node<T>(T data){
-		this.data=data;
+	T data;
+
+	Node<T> next;
+
+	public Node(T data) {
+		this.data = data;
 	}
 
-  public T getData() {
-    return data;
-  }
-
+	public T getData() {
+		return data;
+	}
 
 }

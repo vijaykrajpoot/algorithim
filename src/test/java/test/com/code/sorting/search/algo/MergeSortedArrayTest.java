@@ -1,6 +1,6 @@
 package test.com.code.sorting.search.algo;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Test;
 

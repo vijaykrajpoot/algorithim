@@ -1,10 +1,11 @@
-package com.algo;
+package test.com.code.string.arrays.algo;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Test;
 
-import com.algo.MergeSortedArray;
+import com.algo.sorting.search.MergeSortedArray;
+
 
 public class MergeSortedArrayTest {
 
@@ -13,7 +14,7 @@ public class MergeSortedArrayTest {
 		int testArray1[] = { 10, 30, 50, 70 };
 		int testArray2[] = { 20, 40, 60, 80, 100, 110, 120 };
 		int expectedArrray[] = { 10, 20, 30, 40, 50, 60, 70, 80, 100, 110, 120 };
-		int mergedArray[] = MergeSortedArray.mergeArrays(testArray1, testArray2);
+		int mergedArray[] = MergeSortedArray.mergeArrays (testArray1, testArray2);
 		assertArrayEquals(expectedArrray, mergedArray);
 	}
 

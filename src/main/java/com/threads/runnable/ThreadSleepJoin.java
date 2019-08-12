@@ -1,4 +1,4 @@
-package com.test.threads.runnable;
+package com.threads.runnable;
 
 import java.time.LocalTime;
 import java.util.stream.IntStream;
