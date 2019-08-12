@@ -6,6 +6,10 @@ public class BTree {
 	private BTree left;
 	private BTree right;
 
+	public BTree(int value) {
+		this.value = value;
+	}
+
 	public int getValue() {
 		return value;
 	}
@@ -30,32 +34,28 @@ public class BTree {
 		this.right = right;
 	}
 
-	public BTree(int value) {
-		this.value = value;
-	}
-	
-	public int get(BTree bTree, int value){
-		
-		if(bTree==null){
+	public int get(BTree bTree, int value) {
+
+		if (bTree == null) {
 			return 0;
 		}
-		while(bTree.value!=value){			
-			if(value>bTree.value){
-				if(bTree.right!=null)
-					bTree=bTree.right;
+		while (bTree.value != value) {
+			if (value > bTree.value) {
+				if (bTree.right != null)
+					bTree = bTree.right;
 				else
 					return -1;
-			}else{
-				if(bTree.left!=null)
-					bTree=bTree.left;
+			} else {
+				if (bTree.left != null)
+					bTree = bTree.left;
 				else
 					return -1;
 			}
-			
+
 		}
 		return bTree.value;
 	}
-	
+
 	public void insert(BTree bTree, int value) {
 		if (value < bTree.value) {
 			if (bTree.getLeft() != null) {
@@ -78,5 +78,5 @@ public class BTree {
 		}
 		return Math.max(getHight(bt.getLeft()), getHight(bt.getRight())) + 1;
 	}
-	
+
 }

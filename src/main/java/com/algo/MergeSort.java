@@ -7,6 +7,8 @@ public class MergeSort {
 	}
 
 	public static void p(int result[]) {
+		
+		
 		System.out.println();
 		for (int j = 0; j < result.length; j++) {
 			System.out.print(result[j] + ",");
