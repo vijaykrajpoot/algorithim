@@ -1,34 +1,33 @@
 package com.algo.string.arrays;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Stack;
 
 public class BracketsMatcher {
 
 	public static boolean isBracketsBalanced(String str) {
-		if(str==null || str.length()==0)
-			throw new IllegalArgumentException("Invalid Input");	
+		if (str == null || str.length() == 0)
+			throw new IllegalArgumentException("Invalid Input");
 		Stack<Character> stack = new Stack<Character>();
-		HashMap<Character, Character> bracketsMap = new HashMap<Character, Character>();
-		bracketsMap.put('(', ')');
-		bracketsMap.put('[', ']');
-		bracketsMap.put('{', '}');
-		List<Character> openingBraces = Arrays.asList('{', '(', '[');
-		List<Character> closingBraces = Arrays.asList('}', ')', ']');
-		for (char charS : str.toCharArray()) {
-			// Push opening brackets to stack
-			if (openingBraces.contains(charS)) {
-				stack.push(charS);
-			} else if (closingBraces.contains(charS)) {
-				char poppedChar = stack.pop(); // Since it is closing bracket then pop the opening
-				if (!bracketsMap.get(poppedChar).equals(charS)) {
-					return false;
-				}
+
+		for (int i = 0; i < str.length(); i++) {
+			char ch = str.charAt(i);
+			if (ch == '(' || ch == '{' || ch == '[') {
+				stack.push(ch);
+			} else if (stack.isEmpty()) {
+				return false;
+			} else if (ch == ')' && stack.pop() != '(') {
+				return false;
+			} else if (ch == '}' && stack.pop() != '{') {
+				return false;
+			} else if (ch == ']' && stack.pop() != '[') {
+				return false;
 			}
 		}
+
 		return stack.isEmpty();
 	}
 
+	public static void main(String[] args) {
+		System.out.println(BracketsMatcher.isBracketsBalanced("([])"));
+	}
 }
