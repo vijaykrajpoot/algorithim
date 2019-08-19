@@ -21,7 +21,7 @@ public class Stack<T> {
 	}
 
 	public void push(T element) {
-		if (top == maxSize) {
+		if (top == maxSize-1) {
 			throw new StackOverflowError("Stack is Over Flowed");
 		}
 		array[++top] = element;
@@ -39,7 +39,7 @@ public class Stack<T> {
 	}
 
 	public static void main(String[] args) {
-		Stack<Integer> stack = new Stack<>(50);
+		Stack<Integer> stack = new Stack<>(3);
 		stack.push(10);
 		stack.push(20);
 		stack.push(30);
