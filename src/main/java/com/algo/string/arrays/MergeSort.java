@@ -1,4 +1,4 @@
-package com.algo;
+package com.algo.string.arrays;
 
 public class MergeSort {
 

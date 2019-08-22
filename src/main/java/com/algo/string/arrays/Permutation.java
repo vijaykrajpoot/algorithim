@@ -2,9 +2,9 @@ package com.algo.string.arrays;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
-import java.util.TreeMap;
 
 public class Permutation {
 
@@ -43,9 +43,9 @@ public class Permutation {
 
   // Driver code
   public static void main(String[] args) {
-    String s = "ABB";
+    String s = "ABC";
 
-    Map<Character, Integer> hashMap = new TreeMap<>();
+    Map<Character, Integer> hashMap = new LinkedHashMap<>();
 
     for (char ch : s.toCharArray()) {
       if (hashMap.containsKey(ch)) {
