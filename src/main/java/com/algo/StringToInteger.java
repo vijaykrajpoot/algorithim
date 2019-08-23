@@ -1,8 +1,16 @@
 package com.algo;
 
 public class StringToInteger {
-
-  static long convertToInt(String str) {
+  
+  /**
+   * 
+   * 
+   * Lower index to higher index using pow function 
+   * 
+   * @param str
+   * @return long
+   */
+  public static long convertToIntSol1(String str) {
     long finalNumber = 0;
     int len = str.length();
     for (int i = 0; i < len; i++) {
@@ -11,8 +19,16 @@ public class StringToInteger {
     }
     return finalNumber;
   }
-
-  static long convertToIntSol2(String str) {
+  
+  /**
+   * 
+   * From higer index to lower index
+   * 
+   * @param str
+   * @return long
+   */
+  
+  public static long convertToIntSol2(String str) {
     long finalNumber = 0;
     int len = str.length();
     int multiplyer = 1;
@@ -25,7 +41,42 @@ public class StringToInteger {
     return finalNumber;
   }
 
+
+/**
+ * 
+ * From lower index ----> higher index
+ * 
+ * 
+ * @param str
+ * @return long
+ */
+  public static long convertToIntSol3(String str) {
+
+    boolean isNegative = false;
+    long finalNumber = 0;
+
+    int index = 0;
+    if (str.charAt(0) == '-') {
+      isNegative = true;
+      index++;
+    }
+
+    for (int i = index; i < str.length(); i++) {
+      finalNumber = finalNumber * 10;
+      finalNumber = finalNumber + (str.charAt(i) - '0');
+    }
+
+    if (isNegative) {
+      finalNumber = -finalNumber;
+    }
+    return finalNumber;
+  }
+
   public static void main(String[] args) {
-    System.out.println(convertToIntSol2("76876"));
+    System.out.println(convertToIntSol1("10000"));
+
+    System.out.println(convertToIntSol2("9009009"));
+
+    System.out.println(convertToIntSol3("-76876"));
   }
 }
