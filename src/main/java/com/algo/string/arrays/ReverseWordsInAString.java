@@ -1,7 +1,5 @@
 package com.algo.string.arrays;
 
-import java.util.Arrays;
-
 /**
  * 
  * Write a function that reverses the order of the words in a string. For example, your function
@@ -15,9 +13,7 @@ public class ReverseWordsInAString {
 
   public static void main(String[] args) {
     String st = "Do or do not, there is no try.";
-    System.out.println("oString.length():" + st.length());
     String rString = reverseAString(st);
-    System.out.println("rString.length():" + rString.length());;
     System.out.println("oString:" + st);
     System.out.println("rString:" + rString);
   }
@@ -52,7 +48,7 @@ public class ReverseWordsInAString {
       ch[i] = ch[str.length() - 1 - i];
       ch[str.length() - 1 - i] = temp;
     }
-    System.out.println("str:" + str + ":ch.len:" + ch.length + "  :String(ch):" + new String(ch));
+ //   System.out.println("str:" + str + ":ch.len:" + ch.length + "  :String(ch):" + new String(ch));
     return new String(ch);
   }
 
