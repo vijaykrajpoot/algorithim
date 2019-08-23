@@ -2,11 +2,11 @@ package com.algo.string.arrays;
 
 import java.util.HashMap;
 
-public class FirstUniqueCharacter {
+public class FirstUniqueCharacterIndex {
 
 	public static void main(String[] args) {
 
-		System.out.println("FirstUniqueCharacter:" + FirstUniqueCharacter.findFirstUniqueChracterIndex("VIJAYKUVIMAR"));
+		System.out.println("FirstUniqueCharacter:" + FirstUniqueCharacterIndex.findFirstUniqueChracterIndex("LALALAND"));
 
 	}
 

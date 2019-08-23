@@ -8,7 +8,7 @@ public class FindAFirstRecurringChracater {
 
   public static void main(String[] args) {
 
-    System.out.println("First Recurring Chracter (solutuon1) - VIJAYKRAJPOOT: " + FindAFirstRecurringChracater.solutuon1("VIJAYKRAJPOOT"));
+    System.out.println("First Recurring Chracter (solutuon1) - LALALAND: " + FindAFirstRecurringChracater.solutuon1("LALALAND"));
     System.out.println("First Recurring Chracter (solutuon2) - VIJAYKRAJPOOT: " + FindAFirstRecurringChracater.solutuon2("VIJAYKRAJPOOT"));
 
 

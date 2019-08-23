@@ -18,7 +18,7 @@ public class FirstNonrepeatedCharacter {
   public static void main(String str[]) {
 
     FirstNonrepeatedCharacter fu = new FirstNonrepeatedCharacter();
-    System.out.println(fu.findFirstNonRepeatedChracter("LALA"));
+    System.out.println(fu.findFirstNonRepeatedChracter("LALALAND"));
 
   }
 
