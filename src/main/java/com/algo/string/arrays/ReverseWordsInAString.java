@@ -14,28 +14,33 @@ public class ReverseWordsInAString {
   public static void main(String[] args) {
     String st = "Do or do not, there is no try.";
     String rString = reverseAString(st);
-    System.out.println("st.length():" + st.length());
-    System.out.println("rString.length()):" + rString.length());;
-    System.out.println("rString:"+rString);
+    System.out.println("oString.length():" + st.length());
+    System.out.println("rString.length():" + rString.length());;
+    System.out.println("oString:" + st);
+    System.out.println("rString:" + rString);
   }
 
   public static String reverseAString(String str) {
     String resversedString = reverseMe(str);
 
     int stIndex = 0;
-    int endIndex = 0;
     String rrString = "";
-    for (char ch : resversedString.toCharArray()) {
-
-      endIndex++;
-      if (ch== ' ' ) {
-        rrString = rrString + reverseMe(resversedString.substring(stIndex, endIndex - 1)) + ch;
-        stIndex = endIndex;
-      }
-      if (endIndex >= resversedString.length()) {
-        rrString = rrString + reverseMe(resversedString.substring(stIndex, str.length()));;
+    int i = 0;
+    for (i = 0; i < resversedString.length(); i++) {
+      char ch = resversedString.charAt(i);
+      System.out.println("ch:" + ch);
+      if (ch == ' ') {
+        rrString = rrString + reverseMe(resversedString.substring(stIndex, i)) + ch;
+        stIndex = i;
       }
     }
+    // Exit from loop after i == string length and reverse last string
+    if (i == resversedString.length()) {
+      rrString = rrString + reverseMe(resversedString.substring(stIndex, str.length()));;
+    }
+
+
+
     return rrString;
 
   }
