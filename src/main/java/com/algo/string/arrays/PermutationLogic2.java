@@ -73,7 +73,7 @@ public class PermutationLogic2 {
 
   // Driver code
   public static void main(String[] args) {
-    PermutationLogic2 permutation2 = new PermutationLogic2("ABC");
+    PermutationLogic2 permutation2 = new PermutationLogic2("abb");
     permutation2.printPermute();
 
   }

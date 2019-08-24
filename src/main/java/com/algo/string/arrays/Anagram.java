@@ -12,20 +12,12 @@ import java.util.Arrays;
 public class Anagram {
 
   public static void main(String[] args) {
-    System.out.flush();
-    // System.out.println(Anagram.isAnagram("Dormito ry", "Dirty room"));
 
 
-    Anagram.isAnagram1("Dormito ry", "Dirty room");
-
-    Anagram.isAnagram1("ac", "bb");
-
-    // for (int i = 0; i < str.length(); i++) {
-    // System.err.println(((int)str.charAt(i)));
-    // System.out.flush();
-    // }
-
-
+    System.out.println("Anagram.isAnagram1(Dormito ry, Dirty room):" + Anagram.isAnagram("parliament", "partialmen"));
+    System.out.println("Anagram.isAnagramSol2(ac, bb):" + Anagram.isAnagramSol2("ac", "bb"));
+    System.out.println("Anagram.isAnagramSol2(\"Dormito ry\", \"Dirty room\"):" + Anagram.isAnagramSol2("Dormito ry", "Dirty room"));
+    System.out.println("Anagram.isAnagramSol2(ac, bb):" + Anagram.isAnagram("parliament", "partialmen"));
   }
 
   /**
@@ -41,10 +33,6 @@ public class Anagram {
     char[] charArray2 = str2.toCharArray();
     Arrays.sort(charArray1);
     Arrays.sort(charArray2);
-
-    // System.out.println("Arrays.toString(charArray1):" + Arrays.toString(charArray1));
-    // System.out.println("Arrays.toString(charArray2):" + Arrays.toString(charArray2));
-
     if (Arrays.toString(charArray1).equals(Arrays.toString(charArray2)))
       return true;
     else
@@ -52,7 +40,8 @@ public class Anagram {
   }
 
   /**
-   * Wrong Implementations: Faild for ==>  str1=aa;str2=bc
+   * Wrong Implementations: Faild for ==> str1=aa;str2=bc
+   * 
    * @param str1
    * @param str2
    */
@@ -69,5 +58,29 @@ public class Anagram {
 
   }
 
+  /**
+   * 
+   * Based on ASCII value
+   * 
+   * @param str1
+   * @param str2
+   * @return
+   */
+  public static boolean isAnagramSol2(String str1, String str2) {
+
+    boolean arr[] = new boolean[256];
+
+    for (char ch : str1.toCharArray()) {
+      arr[(int) ch] = true;
+    }
+    for (char ch : str2.toCharArray()) {
+      if (!arr[(int) ch]) {
+        return false;
+      }
+    }
+
+    return true;
+
+  }
 
 }

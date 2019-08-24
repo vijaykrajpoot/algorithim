@@ -18,7 +18,7 @@ public class IntegerToString {
     }
     String st = builder.reverse().toString();
     if (isNegative) {
-      st="-".concat(st);
+      st = "-".concat(st);
     }
 
     return st;
