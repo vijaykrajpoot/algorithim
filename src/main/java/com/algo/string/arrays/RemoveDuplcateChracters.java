@@ -13,7 +13,7 @@ package com.algo.string.arrays;
 public class RemoveDuplcateChracters {
 
   public static void main(String[] args) {
-    System.out.println(removeDuplicate(null));
+    System.out.println(removeDuplicate("VIJAY KUMAR RAJPOOT"));
   }
 
   /**
@@ -22,19 +22,29 @@ public class RemoveDuplcateChracters {
    * @return string after removing duplicate character
    */
   public static String removeDuplicate(String str) {
+
     boolean flag[] = new boolean[256];
     StringBuilder builder = new StringBuilder();
     if (str == null) {
       throw new IllegalArgumentException("Empty String");
     }
-    for (char ch : str.toCharArray()) {
-      if (!flag[(int) ch]) {
-        builder.append(ch);
-        flag[(int) ch] = true;
-      } else {
-        flag[(int) ch] = true;
+
+    for (int i = 0; i < str.length(); i++) {
+      int ch = str.charAt(i);
+      if (!flag[ch] == true) {
+        builder.append(str.charAt(i));
+        flag[ch] = true;
       }
     }
+
+    // for (char ch : str.toCharArray()) {
+    // if (!flag[(int) ch]) {
+    // builder.append(ch);
+    // flag[(int) ch] = true;
+    // } else {
+    // flag[(int) ch] = true;
+    // }
+    // }
 
     return builder.toString();
   }
