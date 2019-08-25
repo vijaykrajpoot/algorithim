@@ -1,6 +1,8 @@
 package com.algo.string.arrays;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Write a method to decide if two strings are anagrams or not.
@@ -17,7 +19,9 @@ public class Anagram {
     System.out.println("Anagram.isAnagram1(Dormito ry, Dirty room):" + Anagram.isAnagram("parliament", "partialmen"));
     System.out.println("Anagram.isAnagramSol2(ac, bb):" + Anagram.isAnagramSol2("ac", "bb"));
     System.out.println("Anagram.isAnagramSol2(\"Dormito ry\", \"Dirty room\"):" + Anagram.isAnagramSol2("Dormito ry", "Dirty room"));
-    System.out.println("Anagram.isAnagramSol2(ac, bb):" + Anagram.isAnagram("parliament", "partialmen"));
+    System.out.println("Anagram.isAnagramSol2(ac, bb):" + Anagram.isAnagramSol3("parliament", "partialmen"));
+    System.out.println("Anagram.isAnagramSol3(\"Dormito ry\", \"Dirty room\"):" + Anagram.isAnagramSol3("Dormito ry", "Dirty room"));
+    
   }
 
   /**
@@ -69,7 +73,7 @@ public class Anagram {
   public static boolean isAnagramSol2(String str1, String str2) {
 
     boolean arr[] = new boolean[256];
-
+    
     for (char ch : str1.toCharArray()) {
       arr[(int) ch] = true;
     }
@@ -78,9 +82,33 @@ public class Anagram {
         return false;
       }
     }
-
     return true;
-
   }
+
+  /**
+   * Using set
+   * 
+   * @param str1
+   * @param str2
+   * @return
+   */
+  public static boolean isAnagramSol3(String str1, String str2) {
+
+    Set<Character> charSet = new HashSet<Character>();
+
+    for (char ch : str1.toCharArray()) {
+      charSet.add(ch);
+    }
+
+    for (char ch : str2.toCharArray()) {
+      if (charSet.add(ch)) {
+        return false;
+      }
+
+    }
+    return true;
+  }
+
+
 
 }

@@ -13,7 +13,7 @@ package com.algo.string.arrays;
 public class RemoveDuplcateChracters {
 
   public static void main(String[] args) {
-    System.out.println(removeDuplicate("VIJAY KUMAR RAJPOOT"));
+    System.out.println(removeDuplicate("abababa"));
   }
 
   /**
