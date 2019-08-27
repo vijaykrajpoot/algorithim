@@ -21,6 +21,9 @@ public class Anagram {
     System.out.println("Anagram.isAnagramSol2(\"Dormito ry\", \"Dirty room\"):" + Anagram.isAnagramSol2("Dormito ry", "Dirty room"));
     System.out.println("Anagram.isAnagramSol2(ac, bb):" + Anagram.isAnagramSol3("parliament", "partialmen"));
     System.out.println("Anagram.isAnagramSol3(\"Dormito ry\", \"Dirty room\"):" + Anagram.isAnagramSol3("Dormito ry", "Dirty room"));
+    System.out.println("Anagram.isAnagramSol3(waterbottle, erbottlewat):" + Anagram.isAnagramSol3("waterbottle", "erbottlewat"));
+    
+    
     
   }
 
