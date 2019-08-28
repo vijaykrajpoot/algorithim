@@ -44,6 +44,7 @@ public class ArraySumSubSet {
       int temp = sum - arr[i];
       if (hashMap.containsValue(temp)) {
         System.out.println("(" + arr[i] + "," + temp + ")");
+        // Removed element to avoid same pair in different order
         hashMap.remove(arr[i]);
       }
     }
