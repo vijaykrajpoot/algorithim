@@ -1,1 +1,36 @@
-# Coding Interview algorithms in Java
+# Coding Interview problems in Java
+>## Arrays & String
+-	Anagram.java
+-	ArrayBinarySearch.java
+-	ArrayIntersection.java
+-	ArrayMissingNo.java
+-	ArraySumSubSet.java
+-	BinarySearch.java
+-	BracketsMatcher.java
+-	CharTest.java
+-	CountRecurringCharacter.java
+-	FindAFirstRecurringChracater.java
+-	FindAMaxElementInArray.java
+-	FindDuplicateElementInArray.java
+-	FindPairInSortedArray.java
+-	FindRepeatAndMissingNo.java
+-	FirstNonrepeatedCharacter.java
+-	FirstUniqueCharacterIndex.java
+-	IntegerEqual.java
+-	MaxSumContiguousSubarray.java
+-	MergeSort.java
+-	MergeTwoArray.java
+-	Permutation.java
+-	PermutationLogic2.java
+-	PrintAllAscii.java
+-	Queue.java
+-	RemoveAGivenChracter.java
+-	RemoveDuplcateChracters.java
+-	ReverseAnArray.java
+-	ReverseAString.java
+-	ReverseWordsInAString.java
+-	RotateMatrix.java
+-	Stack.java
+-	StringRotation.java
+-	UniqueCharacater.java
+-	ValidParentheses.java
