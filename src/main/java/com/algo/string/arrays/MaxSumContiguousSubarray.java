@@ -43,22 +43,16 @@ public class MaxSumContiguousSubarray {
     int finalSum = 0;
 
     for (int element : arr) {
-
       currentSum = currentSum + element;
       subArray.add(element);
-
       if (currentSum < 0) {
         currentSum = 0;
         subArray = new LinkedList<Integer>();
-      }
-      if (finalSum < currentSum) {
+      } else if (finalSum < currentSum) {
         finalSum = currentSum;
       }
-
     }
-
     System.out.println(" =======> Arrays.toString(subArray.toArray()):" + Arrays.toString(subArray.toArray()));
-
     return finalSum;
   }
 

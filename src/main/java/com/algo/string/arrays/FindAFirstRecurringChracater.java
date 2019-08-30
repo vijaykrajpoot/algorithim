@@ -7,17 +7,13 @@ import java.util.Map;
 public class FindAFirstRecurringChracater {
 
   public static void main(String[] args) {
-
     System.out.println("First Recurring Chracter (solutuon1) - LALALAND: " + FindAFirstRecurringChracater.solutuon1("LALALAND"));
     System.out.println("First Recurring Chracter (solutuon2) - VIJAYKRAJPOOT: " + FindAFirstRecurringChracater.solutuon2("VIJAYKRAJPOOT"));
-
-
     System.out.println("First Recurring Chracter(solutuon1) - QWERTYUIOP : " + FindAFirstRecurringChracater.solutuon1("QWERTYUIOP"));
     System.out.println("First Recurring Chracter(solutuon2) - QWERTYUIOP : " + FindAFirstRecurringChracater.solutuon2("QWERTYUIOP"));
-
   }
 
-  
+
   /**
    * Count using HashMap
    * 
@@ -38,8 +34,8 @@ public class FindAFirstRecurringChracater {
 
     return '\u0000';
   }
-  
-  
+
+
   /**
    * Using SET
    * 
@@ -58,4 +54,21 @@ public class FindAFirstRecurringChracater {
 
     return chFound;
   }
+
+
+
+  public static char solutuon3(String str) {
+
+    boolean chArr[] = new boolean[256];
+
+    for (int ch : str.toCharArray()) {
+      if (!chArr[ch]) {
+        chArr[ch] = true;
+      } else {
+        return (char) ch;
+      }
+    }
+    return '\u0000';
+  }
+
 }
