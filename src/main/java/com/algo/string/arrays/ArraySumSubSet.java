@@ -23,6 +23,11 @@ public class ArraySumSubSet {
     int arr1[] = {3, 5, 2, -4, 8, 11};
     printSumSubset(arr1, 7);
 
+    System.out.println("==========================");
+    
+    
+    int arr2[] = {10,1,2,7,6,1,5};
+    printSumSubset(arr2, 8);
 
   }
 
