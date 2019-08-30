@@ -1,5 +1,6 @@
-# Coding Interview problems in Java
->## Arrays & String
+# Coding interview problems in Java
+> ## Arrays & String [source] (https://github.com/vijaykrajpoot/algorithim/tree/master/src/main/java/com/algo/string/arrays)
+
 -	Anagram.java
 -	ArrayBinarySearch.java
 -	ArrayIntersection.java
