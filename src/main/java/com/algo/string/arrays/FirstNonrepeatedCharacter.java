@@ -17,12 +17,12 @@ public class FirstNonrepeatedCharacter {
 
   public static void main(String str[]) {
 
-    FirstNonrepeatedCharacter fu = new FirstNonrepeatedCharacter();
-    System.out.println(fu.findFirstNonRepeatedChracter("LALALAND"));
+    System.out.println(FirstNonrepeatedCharacter.findFirstNonRepeatedChracter("LALALAND"));
+    System.out.println(FirstNonrepeatedCharacter.findFirstNonRepeatedChracter("QWERTYUQ"));
 
   }
 
-  public char findFirstNonRepeatedChracter(String str) {
+  public static char findFirstNonRepeatedChracter(String str) {
 
     HashMap<Character, Integer> hashMap = new LinkedHashMap<>();
 
