@@ -1,26 +1,40 @@
 package com.algo.string.arrays;
 
-public class Arrays {
+/**
+ * 
+ * Given a binary matrix A, we want to flip the image horizontally, then invert it, and return the
+ * resulting image.
+ * 
+ * To flip an image horizontally means that each row of the image is reversed. For example, flipping
+ * [1, 1, 0] horizontally results in [0, 1, 1].
+ * 
+ * To invert an image means that each 0 is replaced by 1, and each 1 is replaced by 0. For example,
+ * inverting [0, 1, 1] results in [1, 0, 0].
+ * 
+ * @author Vijay Kumar Rajput
+ *
+ */
+public class FlipAnImage {
   int arr[][] = new int[20][20];
 
   public static void main(String[] args) {
     int arr[][] = {{1, 1, 0}, {1, 0, 1}, {0, 0, 0}};
     System.out.print("Actual :");
-    Arrays.display(arr);
+    FlipAnImage.display(arr);
 
     System.out.print("Reverse&Flip:");
-    Arrays.flipAndReverse(arr);
-    Arrays.display(arr);
+    FlipAnImage.flipAndReverse(arr);
+    FlipAnImage.display(arr);
 
     System.out.println("############################################");
 
     int arr1[][] = {{1, 1, 0, 0}, {1, 0, 0, 1}, {0, 1, 1, 1}, {1, 0, 1, 0}};
     System.out.print("Actual :");
-    Arrays.display(arr1);
+    FlipAnImage.display(arr1);
 
     System.out.print("Reverse&Flip:");
-    Arrays.flipAndReverse(arr1);
-    Arrays.display(arr1);
+    FlipAnImage.flipAndReverse(arr1);
+    FlipAnImage.display(arr1);
 
   }
 
