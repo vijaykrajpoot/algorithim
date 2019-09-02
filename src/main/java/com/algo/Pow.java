@@ -12,8 +12,6 @@ public class Pow {
 	}
 
 	private double pow(double x, long l) {
-		i++;
-		System.out.println("l:" + l);
 		if (l == 0) {
 			return 1.0;
 		}
@@ -35,7 +33,7 @@ public class Pow {
 
 	public static void main(String[] args) {
 		Pow pow = new Pow();
-		double aa = pow.myPow(2, (long) Integer.MAX_VALUE);
-		System.out.println("Iteration:" + i);
+		double aa = pow.myPow(2.2, 10);
+		System.out.println(" Pow:" + aa);
 	}
 }
