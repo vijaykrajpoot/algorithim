@@ -15,7 +15,7 @@ public class FindDuplicateElementInArray {
 
   public static void main(String[] args) {
 
-    int arr[] = {1, 2, 3, 1, 3, 6, 6};
+    int arr[] = {3,4,1,4,1};
     FindDuplicateElementInArray.findDuplicate(arr);
 
   }
