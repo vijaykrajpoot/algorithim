@@ -15,7 +15,7 @@ import java.util.List;
 public class FactorsOfANumber {
 
   public static void main(String[] args) {
-    List<Integer> ll = FactorsOfANumber.findFactors(6);
+    List<Integer> ll = FactorsOfANumber.findFactors(100);
 
     System.out.println(Arrays.toString(ll.toArray()));
 

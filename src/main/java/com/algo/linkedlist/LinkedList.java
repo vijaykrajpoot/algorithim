@@ -93,9 +93,9 @@ public class LinkedList {
 		// 6.
 		// in case of even size of list
 		// if we need number 5 in case of 1-10 list then make skip=false or move p1 & p2
-		// in else block.
+		// in else block or change if(skip) to if(!skip) :-)
 		while (p1.next != null) {
-			if (skip) {
+			if (!skip) {
 				p1 = p1.next;
 				p2 = p2.next;
 			} else {
@@ -156,7 +156,14 @@ public class LinkedList {
 		}
 		return second;
 	}
-
+	/**
+	 * 
+	 * Merge with duplicate numbers in sorted order
+	 * 
+	 * @param l1
+	 * @param l2
+	 * @return
+	 */
 	LinkedList mergedLinkedList(LinkedList l1, LinkedList l2) {
 
 		LinkedList mergedList = new LinkedList();
@@ -165,10 +172,10 @@ public class LinkedList {
 		Node l2Current = l2.start;
 
 		while (l1Current != null && l2Current != null) {
-			if (l1Current.data < l2Current.data) {
+			if (l1Current.data <= l2Current.data) {
 				mergedList.add(l1Current.data);
 				l1Current = l1Current.next;
-			} else if (l1Current.data > l2Current.data) {
+			} else if (l1Current.data >= l2Current.data) {
 				mergedList.add(l2Current.data);
 				l2Current = l2Current.next;
 			} else if (l1Current.data == l2Current.data) {
@@ -195,13 +202,20 @@ public class LinkedList {
 		LinkedList linkedList = new LinkedList();
 
 		LinkedList l1 = new LinkedList();
-		l1.add(1);
+		l1.add(10);
 		l1.add(20);
 		l1.add(30);
+		l1.add(40);
 		l1.add(50);
+		l1.add(60);
 		l1.add(70);
+		l1.add(80);
 		l1.add(90);
 		l1.add(100);
+		Node n=l1.findMiddleNodeLogic2();
+		System.out.println("Middle Node:"+n.data);
+	
+		
 		LinkedList l2 = new LinkedList();
 		l2.add(5);
 		l2.add(10);
@@ -209,7 +223,7 @@ public class LinkedList {
 		l2.add(40);
 		l2.add(60);
 		l2.add(80);
-		l2.add(100);
+		l2.add(300);
 		LinkedList mergedLL = linkedList.mergedLinkedList(l1, l2);
 		Node node = mergedLL.start;
 		while (node != null) {
