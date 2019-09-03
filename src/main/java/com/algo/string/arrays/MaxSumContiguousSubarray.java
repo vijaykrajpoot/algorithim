@@ -34,25 +34,24 @@ public class MaxSumContiguousSubarray {
     int[] arr2 = {-1, -2, -3, 4, -5, -6, -7, -8, -9};
     System.out.println("LaargestSum of " + Arrays.toString(arr2) + " is " + findLargestSumOfSubArray(arr2));
 
+    int[] arr3 = {-163, -20};
+    System.out.println("LaargestSum of " + Arrays.toString(arr3) + " is " + findLargestSumOfSubArray(arr3));
+
   }
 
   public static int findLargestSumOfSubArray(int[] arr) {
 
-    List<Integer> subArray = new LinkedList<Integer>();
     int currentSum = 0;
     int finalSum = 0;
 
     for (int element : arr) {
       currentSum = currentSum + element;
-      subArray.add(element);
       if (currentSum < 0) {
         currentSum = 0;
-        subArray = new LinkedList<Integer>();
       } else if (finalSum < currentSum) {
         finalSum = currentSum;
       }
     }
-    System.out.println(" =======> Arrays.toString(subArray.toArray()):" + Arrays.toString(subArray.toArray()));
     return finalSum;
   }
 

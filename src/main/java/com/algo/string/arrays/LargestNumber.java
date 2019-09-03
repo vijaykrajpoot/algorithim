@@ -15,8 +15,12 @@ public class LargestNumber {
 
 
   public static void main(String[] args) {
-    int arr[] = {3, 59,30, 34,95, 5, 9};
-    System.out.println("LargestNumber.formLargestNumber(arr):"+LargestNumber.formLargestNumber(arr));
+    int arr[] = {3, 30, 34, 5, 9};
+    System.out.println("LargestNumber.formLargestNumber(arr):" + LargestNumber.formLargestNumber(arr));
+    int arr1[] = {0, 0, 0, 0, 0};
+    System.out.println("LargestNumber.formLargestNumber(arr):" + LargestNumber.formLargestNumber(arr1));
+
+
 
   }
 
@@ -36,14 +40,22 @@ public class LargestNumber {
         return (o2 + o1).compareTo(o1 + o2);
       };
     });
-    
-    
+
+
     StringBuilder builder = new StringBuilder();
-    System.out.println("After Sorting: " + Arrays.toString(strArr));
+    // System.out.println("After Sorting: " + Arrays.toString(strArr));
+    boolean isAllZero = true;
     for (String st : strArr) {
+      if (isAllZero && st.equals("0")) {
+        isAllZero = true;
+      } else {
+        isAllZero = false;
+      }
       builder.append(st);
     }
-
+    if (isAllZero) {
+      return "0";
+    }
     System.out.println(builder.toString());
     return builder.toString();
 
