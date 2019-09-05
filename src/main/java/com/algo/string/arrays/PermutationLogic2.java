@@ -50,9 +50,9 @@ public class PermutationLogic2 {
     }
 
     for (int i = 0; i < inputString.length(); i++) {
-      if (isUsed[i] == true) {
-        continue;
-      }
+//      if (isUsed[i] == true) {
+//        continue;
+//      }
       result.append(inputString.charAt(i));
       isUsed[i] = true;
       printPermute();
@@ -73,7 +73,7 @@ public class PermutationLogic2 {
 
   // Driver code
   public static void main(String[] args) {
-    PermutationLogic2 permutation2 = new PermutationLogic2("abb");
+    PermutationLogic2 permutation2 = new PermutationLogic2("ABCD");
     permutation2.printPermute();
 
   }

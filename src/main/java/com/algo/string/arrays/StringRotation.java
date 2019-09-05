@@ -31,7 +31,7 @@ public class StringRotation {
     }
 
     String string = st1.concat(st1);
-    // System.out.println("string:" + string);
+     System.out.println("string:" + string);
     int index = string.indexOf(st2);
 
 

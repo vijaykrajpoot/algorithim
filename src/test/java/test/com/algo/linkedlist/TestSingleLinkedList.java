@@ -59,7 +59,7 @@ public class TestSingleLinkedList {
 	public void findMidWhenListisEvenSizeLogic2() {
 		IntStream.range(1, 11).forEach(i -> ll.add(i));
 		// ll.printList();
-		Assert.assertTrue(ll.findMiddleNodeLogic2().data == 6);
+		Assert.assertTrue(ll.findMiddleNodeLogic2().data == 5);
 
 	}
 
