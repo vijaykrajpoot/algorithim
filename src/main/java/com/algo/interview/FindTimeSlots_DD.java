@@ -1,5 +1,9 @@
-package com.algo;
+package com.algo.interview;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * 
@@ -28,6 +32,35 @@ package com.algo;
  */
 
 
-public class FindTimeSlots {
+public class FindTimeSlots_DD {
+
+  public static List<Integer> getSlots(List<Integer> timeSlots) {
+    int maxSoFar = 0;
+    List<Integer> result = new ArrayList<>(2);
+    for (int i = 0; i < timeSlots.size(); i++) {
+      if (i % 2 == 0) {
+        continue;
+      } else {
+        int diff = timeSlots.get(i + 1) - timeSlots.get(i);
+        if (diff > 0 && diff > maxSoFar) {
+          maxSoFar = diff;
+          if (maxSoFar >= 3) {
+            result.add(timeSlots.get(i));
+            result.add(timeSlots.get(i + 1));
+          }
+        }
+      }
+      System.out.println(maxSoFar);
+    }
+    return result;
+  }
+
+  public static void main(String[] args) {
+    List<Integer> timeSlots = Arrays.asList(new Integer[] {0, 2, 1, 7, 3, 13, 14, 15, 16, 19, 22});
+    List<Integer> ll = FindTimeSlots_DD.getSlots(timeSlots);
+    System.out.println(Arrays.toString(ll.toArray()));
+  }
+
+
 
 }
