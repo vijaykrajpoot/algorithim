@@ -56,7 +56,7 @@ public class FindTimeSlots_DD {
   }
 
   public static void main(String[] args) {
-    List<Integer> timeSlots = Arrays.asList(new Integer[] {0, 2, 1, 7, 3, 13, 14, 15, 16, 19, 22});
+    List<Integer> timeSlots = Arrays.asList(new Integer[] {0, 2, 1, 7, 3, 13, 16, 19, 24});
     List<Integer> ll = FindTimeSlots_DD.getSlots(timeSlots);
     System.out.println(Arrays.toString(ll.toArray()));
   }

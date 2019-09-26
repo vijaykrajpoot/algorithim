@@ -1,4 +1,4 @@
-package com.algo.string.arrays;
+package com.algo;
 
 public class PrintAllAscii {
 

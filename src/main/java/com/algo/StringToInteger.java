@@ -14,7 +14,7 @@ public class StringToInteger {
     long finalNumber = 0;
     int len = str.length();
     for (int i = 0; i < len; i++) {
-      int num = str.charAt(i) - 48;
+      int num = str.charAt(i) - '0';
       finalNumber = (long) (finalNumber + (num * Math.pow(10, (len - 1 - i))));
     }
     return finalNumber;
@@ -34,7 +34,9 @@ public class StringToInteger {
     int multiplyer = 1;
     for (int i = len - 1; i >= 0; i--) {
       int num = str.charAt(i) - 48;
-      finalNumber = finalNumber + num * (multiplyer);
+      System.out.println("num:"+num);
+      finalNumber = finalNumber + (num * multiplyer);
+      System.out.println("finalNumber:"+finalNumber);
       multiplyer = multiplyer * 10;
     }
 
@@ -73,10 +75,10 @@ public class StringToInteger {
   }
 
   public static void main(String[] args) {
-    System.out.println(convertToIntSol1("10000"));
+    System.out.println(convertToIntSol1("12345"));
 
-    System.out.println(convertToIntSol2("9009009"));
+    System.out.println(convertToIntSol2("123456"));
 
-    System.out.println(convertToIntSol3("-76876"));
+    System.out.println(convertToIntSol3("-87654332"));
   }
 }
