@@ -52,6 +52,7 @@ public class FlipAnImage {
   }
 
   static void flipAndReverse(int arr[][]) {
+    // reverse
     for (int i = 0; i < arr.length; i++) {
       for (int j = 0; j < arr[i].length / 2; j++) {
         int temp = arr[i][j];
@@ -60,6 +61,7 @@ public class FlipAnImage {
       }
     }
     display(arr);
+    // flip
     for (int i = 0; i < arr.length; i++) {
       for (int j = 0; j < arr[i].length; j++) {
         if (arr[i][j] == 0) {
