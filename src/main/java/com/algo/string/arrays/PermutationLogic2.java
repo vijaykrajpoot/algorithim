@@ -11,71 +11,81 @@ package com.algo.string.arrays;
  *
  */
 public class PermutationLogic2 {
-  
-  // Collect result
-  private StringBuilder result = new StringBuilder();
-  // Input data
-  private String inputString;
-  // Keep tracked which character has been used or not.
-  private boolean[] isUsed;
 
+	// Collect result
+	private StringBuilder result = new StringBuilder();
+	// Input data
+	private String inputString;
+	// Keep tracked which character has been used or not.
+	private boolean[] isUsed;
 
-  /**
-   * 
-   * @param inputString
-   */
-  public PermutationLogic2(String inputString) {
-    this.inputString = inputString;
-    isUsed = new boolean[inputString.length()];
-  }
+	/**
+	 * 
+	 * @param inputString
+	 */
+	public PermutationLogic2(String inputString) {
+		this.inputString = inputString;
+		isUsed = new boolean[inputString.length()];
+	}
 
-  /**
-   * 
-   * Permutation logic to print all permutation of string.
-   * 
-   * In case we need all the permutation of each character then comment first if condition in for
-   * loop.
-   * 
-   * * AAA AAB AAC ABA ABB ABC ACA ACB ACC BAA BAB BAC BBA BBB BBC BCA BCB BCC CAA CAB CAC CBA CBB CBC
-   * CCA CCB CCC
-   * 
-   * 
-   */
+	/**
+	 * 
+	 * Permutation logic to print all permutation of string.
+	 * 
+	 * In case we need all the permutation of each character then comment first if condition in for loop.
+	 * 
+	 * * AAA AAB AAC ABA ABB ABC ACA ACB ACC BAA BAB BAC BBA BBB BBC BCA BCB BCC CAA CAB CAC CBA CBB CBC CCA CCB CCC
+	 * 
+	 * 
+	 */
 
-  void printPermute() {
+	void printPermute() {
 
-    if (result.length() == inputString.length()) {
-      print(result.toString().toCharArray());
-      return;
-    }
+		if (result.length() == inputString.length()) {
+			print(result.toString().toCharArray());
+			return;
+		}
 
-    for (int i = 0; i < inputString.length(); i++) {
-      if (isUsed[i] == true) {
-        continue;
-      }
-      result.append(inputString.charAt(i));
-      isUsed[i] = true;
-      printPermute();
-      isUsed[i] = false;
-      result.setLength(result.length() - 1);
+		for (int i = 0; i < inputString.length(); i++) {
+			if (isUsed[i] == true) {
+				continue;
+			}
+			result.append(inputString.charAt(i));
+			isUsed[i] = true;
+			printPermute();
+			isUsed[i] = false;
+			result.setLength(result.length() - 1);
 
-    }
+		}
 
-  }
+	}
 
-  private void print(char arr[]) {
-    for (char ch : arr) {
-      System.out.print(ch);
-    }
-    System.out.println();
+	private void print(char arr[]) {
+		for (char ch : arr) {
+			System.out.print(ch);
+		}
+		System.out.println();
 
-  }
+	}
 
-  // Driver code
-  public static void main(String[] args) {
-    PermutationLogic2 permutation2 = new PermutationLogic2("ABC");
-    permutation2.printPermute();
+	// Driver code
+	public static void main(String[] args) {
+		String atoz = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-  }
+		char ch[] = atoz.toCharArray();
+		String permute = "";
+		for (int i = 0; i < ch.length; i++) {
+
+			if (ch[i] == 'Y') {
+				break;
+			} else {
+				permute = atoz.substring(i, i + 3);
+				PermutationLogic2 permutation2 = new PermutationLogic2(permute);
+				permutation2.printPermute();
+			}
+
+		}
+
+	}
 
 }
