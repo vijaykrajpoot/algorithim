@@ -1,15 +1,14 @@
 package com.algo.string.arrays;
 
 /**
- * Assume you have given a non empty string of characters from A-Z. You will have to compress the characters in that string
- * if they are repeating more then 2 time. If repeating characters are only two then do not compress it
- * <p>
+ * Assume you have given a non empty string of characters from A-Z. You will have to compress the characters in the given string if characters are repeating more than 2 time with number of repetition. If repeating characters are only two then no need to compress those characters. 
+ * 
  * Example -1
  * XXXYYYZZZ = X3Y3Z3
- * <p>
+ * 
  * Example -2
  * PPPPQQQMMPP=P4Q3MMPP
- * <p>
+ * 
  * Example -3
  * ASDFGHJK=ASDFGHJK;
  */
