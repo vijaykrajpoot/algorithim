@@ -4,7 +4,7 @@ import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Base64;
 
-public class Base64KeyGenerator {
+public class URLBase64KeyGenerator {
 
 	public static void main(String[] args) {
 		// Determine the number of bytes needed to produce a 6-character Base64 encoding
@@ -27,8 +27,9 @@ public class Base64KeyGenerator {
 
 	// Method to generate random bytes
 	public static byte[] generateRandomBytes(int length) {
+		String originalString = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 		byte[] bytes = new byte[length];
-		new SecureRandom().nextBytes(bytes);
+		new SecureRandom().nextBytes(originalString.getBytes());
 		return bytes;
 	}
 }

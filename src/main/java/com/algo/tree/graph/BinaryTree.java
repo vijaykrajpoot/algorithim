@@ -15,9 +15,7 @@ public class BinaryTree<T extends Comparable<T>> {
 	}
 
 	public void insertNode(Node<T> root, T data) {
-
 		Node<T> node = new Node<T>(data);
-
 		if (this.root == null) {
 			this.root = node;
 		} else {

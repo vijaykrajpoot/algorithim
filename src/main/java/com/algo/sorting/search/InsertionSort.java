@@ -22,10 +22,7 @@ public class InsertionSort {
 			}
 			arr[next + 1] = temp;
 		}
-
 		return arr;
-
-
 	}
 
 }
