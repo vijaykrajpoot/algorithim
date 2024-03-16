@@ -5,7 +5,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Base64;
 
-public class URLUniqueKeyGenerator {
+public class URLUniqueKeyGeneratorCrypto {
 	public static void main(String[] args) {
 		try {
 			// Generate a unique key using SHA-256 hashing
@@ -28,8 +28,12 @@ public class URLUniqueKeyGenerator {
 	public static String generateUniqueKey() throws NoSuchAlgorithmException {
 		MessageDigest digest = MessageDigest.getInstance("SHA-256");
 		byte[] hash = digest.digest(Long.toString(System.nanoTime()).getBytes());
+		//byte[] hash = digest.digest();
 		System.out.println("hash:"+ Arrays.toString(hash));
-		return bytesToHex(hash);
+		System.out.println("Length:"+hash.length);
+		String str=bytesToHex(hash);
+		System.out.println("Hex String:"+ str);
+		return str;
 	}
 
 	// Encode a string to Base64
@@ -45,5 +49,4 @@ public class URLUniqueKeyGenerator {
 		}
 		return result.toString();
 	}
-
 }

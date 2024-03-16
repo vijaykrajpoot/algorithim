@@ -1,18 +1,12 @@
+package com.algo.tree.graph;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.TreeMap;
 
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
 
-	TreeNode(int x) {
-		val = x;
-	}
-}
 
 public class BTreeTraversal {
 	TreeNode root;
