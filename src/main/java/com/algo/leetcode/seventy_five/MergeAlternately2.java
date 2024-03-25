@@ -38,32 +38,32 @@ word1 and word2 consist of lowercase English letters.*/
 
 public class MergeAlternately2 {
 
-	public static void main(String[] args) {
-		MergeAlternately2 solution = new MergeAlternately2();
-		String word1 = "abcd";
-		String word2 = "pq";
-		String mergedString = solution.mergeAlternately(word1, word2);
-		System.out.println("mergedString:" + mergedString);
-	}
+    public static void main(String[] args) {
+        MergeAlternately2 solution = new MergeAlternately2();
+        String word1 = "abcd";
+        String word2 = "pq";
+        String mergedString = solution.mergeAlternately(word1, word2);
+        System.out.println("mergedString:" + mergedString);
+    }
 
-	public String mergeAlternately(String word1, String word2) {
+    public String mergeAlternately(String word1, String word2) {
 
-		int len1 = word1.length();
-		int len2 = word2.length();
-		int minLength = Math.min(len1, len2);
-		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < minLength; i++) {
-			sb.append(word1.charAt(i));
-			sb.append(word2.charAt(i));
-		}
-		if (len1 > minLength) {
-			sb.append(word1.substring(minLength));
-		}
-		if (len2 > minLength) {
-			sb.append(word2.substring(minLength));
-		}
-		return sb.toString();
-	}
+        int len1 = word1.length();
+        int len2 = word2.length();
+        int minLength = Math.min(len1, len2);
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < minLength; i++) {
+            sb.append(word1.charAt(i));
+            sb.append(word2.charAt(i));
+        }
+        if (len1 > minLength) {
+            sb.append(word1.substring(minLength));
+        }
+        if (len2 > minLength) {
+            sb.append(word2.substring(minLength));
+        }
+        return sb.toString();
+    }
 
 
 }

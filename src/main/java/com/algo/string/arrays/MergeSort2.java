@@ -53,8 +53,6 @@ public class MergeSort2 {
 
     while (idx1 < len1 && idx2 < len2) {
 
-
-
       if (arr1[idx1] < arr2[idx2]) {
         arr[idx++] = arr1[idx1++];
       } else {

@@ -44,7 +44,12 @@ package com.algo.string.arrays;
 public class RotateMatrix {
 
   public static void main(String[] args) {
-    int matrix[][] = {{10, 15, 20, 25}, {30, 35, 40, 45}, {50, 55, 60, 65}, {70, 75, 80, 85}};
+    int matrix[][] = {
+            {10, 15, 20, 25},
+            {30, 35, 40, 45},
+            {50, 55, 60, 65},
+            {70, 75, 80, 85}
+      };
     display(matrix);
     rotateMatrix(matrix, false);
   //  System.out.println("=========================");

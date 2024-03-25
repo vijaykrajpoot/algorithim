@@ -122,8 +122,7 @@ public class LinkedList {
 		while (current != null) {
 			if (current.data == data) {
 				previous.next = current.next;
-				previous = current;
-				size--;
+                size--;
 				return true;
 
 			}
@@ -230,6 +229,11 @@ public class LinkedList {
 			System.out.print("-> " + node.data);
 			node = node.next;
 		}
+		System.out.println();
+		l2.printList(null);
+		l2.deleteNode(20);
+		l2.printList(null);
 	}
+
 
 }

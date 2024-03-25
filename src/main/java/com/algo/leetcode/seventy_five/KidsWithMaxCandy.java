@@ -1,7 +1,8 @@
 package com.algo.leetcode.seventy_five;
 
 /**
- * There are n kids with candies. You are given an integer array candies, where each candies[i] represents the number of candies the ith kid has, and an integer extraCandies, denoting the number of extra candies that you have.
+ * There are n kids with candies. You are given an integer array candies, where each candies[i] represents the number of candies
+ * the ith kid has, and an integer extraCandies, denoting the number of extra candies that you have.
  * <p>
  * Return a boolean array result of length n, where result[i] is true if, after giving the ith kid all the extraCandies, they will have the greatest number of candies among all the kids, or false otherwise.
  * <p>
@@ -46,16 +47,20 @@ import java.util.OptionalInt;
 public class KidsWithMaxCandy {
 	public static void main(String[] args) {
 		KidsWithMaxCandy maxCandyList = new KidsWithMaxCandy();
-		ArrayList<Boolean> aa = maxCandyList.kidsWithCandies(new int[]{12, 1, 12}, 10);
+		ArrayList<Boolean> aa = maxCandyList.kidsWithCandies(new int[]{4,2,1,1,2}, 1);
 		System.out.println(Arrays.toString(aa.toArray()));
 	}
 
 	public ArrayList<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
 		ArrayList<Boolean> candiesList = new ArrayList<>();
 		int max = 0;
-		OptionalInt maxOptional = Arrays.stream(candies).max();
-		if (maxOptional.isPresent())
-			max = maxOptional.getAsInt();
+
+		for(int i=0;i<candies.length;i++){
+			if(candies[i]>max){
+				max=candies[i];
+			}
+		}
+
 		for (int candy : candies) {
 			if ((candy + extraCandies) >= max) {
 				candiesList.add(true);
@@ -67,13 +72,5 @@ public class KidsWithMaxCandy {
 
 	}
 
-	int findMax(int[] arr) {
-		int max = 0;
-		for (int a : arr) {
-			if (a > max) {
-				max = a;
-			}
-		}
-		return max;
-	}
+
 }

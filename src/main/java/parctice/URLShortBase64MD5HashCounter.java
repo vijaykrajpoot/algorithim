@@ -1,4 +1,4 @@
-    package parctice;
+package parctice;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
@@ -46,9 +46,9 @@ public class URLShortBase64MD5HashCounter {
 //                binaryString.append((b >> i) & 1);
 //            }
 //        }
-         BigInteger bigInteger=new BigInteger(1,md5Bytes);
-         String binaryStr= bigInteger.toString(2);
-        System.out.println("binaryStr:"+ binaryStr);
+        BigInteger bigInteger = new BigInteger(1, md5Bytes);
+        String binaryStr = bigInteger.toString(2);
+        System.out.println("binaryStr:" + binaryStr);
         // Ensure the binary string is 128 bits long
         binaryString.append(binaryStr);
         while (binaryString.length() < 128) {
