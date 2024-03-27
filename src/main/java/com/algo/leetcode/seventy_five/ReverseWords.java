@@ -1,5 +1,7 @@
 package com.algo.leetcode.seventy_five;
 
+import java.util.Arrays;
+
 /**
  * Given an input string s, reverse the order of the words.
  * <p>
@@ -28,26 +30,30 @@ package com.algo.leetcode.seventy_five;
  */
 public class ReverseWords {
     public static void main(String[] args) {
-        String str = "This is a great example";
-        char[] charArray = str.toCharArray();
-        System.out.println("Original String: " + str);
-        reverseWords(charArray);
-        System.out.println("Reverse String : " + str);
+        String str = "   AA  BB  CC   ";
+        trim(str.toCharArray());
+        System.out.println("After Trim:" + str);
+//        char[] charArray = str.toCharArray();
+//        System.out.println("Original String: " + str);
+//        reverseWords(charArray);
+//        System.out.println("Reverse String : " + str);
     }
 
 
     public static void reverseWords(char[] str) {
         int start = 0;
+        int tempIdx = 0;
         int k = 0;
         int end = str.length - 1;
         reverseIt(str, start, end);
-        for (int i = 0; i <= str.length; i++) {
-            if (i == str.length || str[i] == ' ') {
+        for (int i = 0; i < str.length; i++) {
+            if (str[i] == ' ') {
                 k = i;
                 reverseIt(str, start, i - 1);
                 start = i + 1;
             }
         }
+        reverseIt(str, k + 1, str.length - 1);
     }
 
     static void reverseIt(char[] ch, int start, int end) {
@@ -58,5 +64,43 @@ public class ReverseWords {
             start++;
             end--;
         }
+    }
+
+    static void trim(char [] arr) {
+        int left = 0;
+        int right = arr.length - 1;
+
+        // Trim leading spaces
+        while (left <= right && arr[left] == ' ') {
+            left++;
+        }
+
+        // Trim trailing spaces
+        while (right >= left && arr[right] == ' ') {
+            right--;
+        }
+
+        int writeIndex = 0;
+        boolean spaceFound = false;
+
+        // Copy non-space characters to the beginning of the array
+        for (int i = left; i <= right; i++) {
+            char c = arr[i];
+
+            if (c != ' ') {
+                arr[writeIndex++] = c;
+                spaceFound = false;
+            } else if (!spaceFound) {
+                arr[writeIndex++] = c;
+                spaceFound = true;
+            }
+        }
+
+        // Resize array if necessary
+        if (writeIndex < arr.length) {
+            arr = Arrays.copyOf(arr, writeIndex);
+        }
+
+        System.out.println("Trimmed: " + Arrays.toString(arr));
     }
 }
