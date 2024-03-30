@@ -1,8 +1,9 @@
 package com.algo.string.arrays;
+
 public class ArrayMaxAverageSlidingWindow {
     public static void main(String[] args) {
-        int[] arr = new int[]{1, 12, -5, -6, 50, 3, 0, -45, 23};
-        double avg = average2(arr, 4);
+        int[] arr = new int[]{1, 12, -5, -6, 50, 3};
+        double avg = average(arr, 4);
         System.out.println(avg);
 
     }
@@ -10,8 +11,8 @@ public class ArrayMaxAverageSlidingWindow {
     static double average(int[] arr, int k) {
         double maxAvg = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
-            //System.out.println(i);
-            if (i < arr.length - 1 - k) {
+            System.out.println(i);
+            if (i <   k) {
                 // System.out.println("Inside:"+ i);
                 int sum = arr[i] + arr[i + 1] + arr[i + 2] + arr[i + 3];
                 System.out.println("sum:" + sum);
