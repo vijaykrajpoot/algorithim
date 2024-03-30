@@ -44,14 +44,14 @@ public class MaxNumberKSumPir_1679 {
         //4, 4, 1, 3, 1, 3, 2, 2, 5, 5, 1, 5, 2, 1, 2, 3, 5, 4 k=2
         // 2,2,2,3,1,1,4,1 k=2
         //Arrays.sort(arr);
-        int operation = maxNumberKSumPir1679.maxOperations1(arr, 4);
+        int operation = maxNumberKSumPir1679.maxOperations(arr, 4);
         System.out.println("operation:" + operation);
     }
 
     // 1,3,3,3,4
     // 2,2,2,3,1,1,4,1 K=4
     // 2,2,2,3,1,1,4,1 K=4
-    
+
     public int maxOperations(int[] arr, int k) {
         // 1,2,3,4, k = 5
         // 1,2,3,4,5,6,7 k=5
