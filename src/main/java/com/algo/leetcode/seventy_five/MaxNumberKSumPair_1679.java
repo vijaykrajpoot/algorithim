@@ -1,7 +1,6 @@
 package com.algo.leetcode.seventy_five;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 /**
  * You are given an integer array nums and an integer k.
@@ -35,11 +34,11 @@ import java.util.HashMap;
  * 1 <= nums[i] <= 109
  * 1 <= k <= 109
  */
-public class MaxNumberKSumPir_1679 {
+public class MaxNumberKSumPair_1679 {
 
 
     public static void main(String[] args) {
-        MaxNumberKSumPir_1679 maxNumberKSumPir1679 = new MaxNumberKSumPir_1679();
+        MaxNumberKSumPair_1679 maxNumberKSumPir1679 = new MaxNumberKSumPair_1679();
         int[] arr = new int[]{2,2,2,3,1,1,4,1};
         //4, 4, 1, 3, 1, 3, 2, 2, 5, 5, 1, 5, 2, 1, 2, 3, 5, 4 k=2
         // 2,2,2,3,1,1,4,1 k=2
