@@ -30,43 +30,43 @@ import java.util.Arrays;
  */
 public class ReverseWords {
     public static void main(String[] args) {
-        String str = "   AA  BB  CC   ";
-        trim(str.toCharArray());
-        System.out.println("After Trim:" + str);
-//        char[] charArray = str.toCharArray();
-//        System.out.println("Original String: " + str);
-//        reverseWords(charArray);
-//        System.out.println("Reverse String : " + str);
+        String str = "the   sky  is   blue";
+        //    trim(str.toCharArray());
+        // System.out.println("After Trim:" + str);
+        char[] charArray = str.toCharArray();
+        System.out.println("Original String: " + str);
+        str= reverseWords(charArray);
+        System.out.println("Reverse String : " + str);
     }
 
 
-    public static void reverseWords(char[] str) {
+    public static String reverseWords(char[] str) {
         int start = 0;
-        int tempIdx = 0;
-        int k = 0;
         int end = str.length - 1;
-        reverseIt(str, start, end);
+        reverseIt(str, 0, end);
+     //   System.out.println("Reversed St:" + Arrays.toString(str));
         for (int i = 0; i < str.length; i++) {
             if (str[i] == ' ') {
-                k = i;
                 reverseIt(str, start, i - 1);
-                start = i + 1;
+                start = i +1;
             }
         }
-        reverseIt(str, k + 1, str.length - 1);
+        // reverse the last word
+        reverseIt(str, start, end);
+        trim(str);
+        return new String(str);
     }
 
     static void reverseIt(char[] ch, int start, int end) {
-        while (start < end) {
-            char temp = ch[start];
-            ch[start] = ch[end];
+        for (int i = start; i <= end; i++, end--) {
+            char temp = ch[i];
+            ch[i] = ch[end];
             ch[end] = temp;
-            start++;
-            end--;
         }
+
     }
 
-    static void trim(char [] arr) {
+    static void trim(char[] arr) {
         int left = 0;
         int right = arr.length - 1;
 
@@ -86,7 +86,6 @@ public class ReverseWords {
         // Copy non-space characters to the beginning of the array
         for (int i = left; i <= right; i++) {
             char c = arr[i];
-
             if (c != ' ') {
                 arr[writeIndex++] = c;
                 spaceFound = false;
@@ -101,6 +100,6 @@ public class ReverseWords {
             arr = Arrays.copyOf(arr, writeIndex);
         }
 
-        System.out.println("Trimmed: " + Arrays.toString(arr));
+       // System.out.println("Trimmed: " + Arrays.toString(arr));
     }
 }

@@ -55,10 +55,10 @@ class MaxVowelsInSubString_1456 {
         }
         int maxV = count;
         for (int i = k; i < s.length(); i++) {
-            if (hashSet.contains(s.charAt(i))) {
+            if (isV(s.charAt(i))) {
                 count++;
             }
-            if (hashSet.contains(s.charAt(i - k))) {
+            if (isV(s.charAt(i - k))) {
                 count--;
             }
         }

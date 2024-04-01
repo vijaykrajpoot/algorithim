@@ -1,5 +1,7 @@
 package com.algo.leetcode.seventy_five;
 
+import org.junit.Assert;
+
 import java.util.Arrays;
 
 /**
@@ -39,17 +41,38 @@ public class MaxNumberKSumPair_1679 {
 
     public static void main(String[] args) {
         MaxNumberKSumPair_1679 maxNumberKSumPir1679 = new MaxNumberKSumPair_1679();
-        int[] arr = new int[]{2,2,2,3,1,1,4,1};
-        //4, 4, 1, 3, 1, 3, 2, 2, 5, 5, 1, 5, 2, 1, 2, 3, 5, 4 k=2
-        // 2,2,2,3,1,1,4,1 k=2
-        //Arrays.sort(arr);
-        int operation = maxNumberKSumPir1679.maxOperations(arr, 4);
-        System.out.println("operation:" + operation);
+        int operation=0;
+        int[] arr = new int[]{1,2,3,4};
+//        operation = maxNumberKSumPir1679.maxOperations(arr, 4);
+//        Assert.assertEquals(2, operation);
+        operation = maxNumberKSumPir1679.maxOperations(arr, 5);
+        Assert.assertEquals(2, operation);
+
     }
 
     // 1,3,3,3,4
     // 2,2,2,3,1,1,4,1 K=4
     // 2,2,2,3,1,1,4,1 K=4
+
+    public int maxSum(int[] arr, int k) {
+        int sum=0;
+        int l1=0;
+        for (int i = 0; i < arr.length; i++) {
+            sum=sum+arr[i];
+            if(sum==k){
+                l1=i;
+                break;
+            }
+        }
+
+        for(int j=l1;j<arr.length;j++){
+
+        }
+
+
+    return -1;
+    }
+
 
     public int maxOperations(int[] arr, int k) {
         // 1,2,3,4, k = 5
@@ -59,15 +82,11 @@ public class MaxNumberKSumPair_1679 {
         int high = arr.length - 1;
         int count = 0;
         while (low < high) {
-            int num1 = arr[low];
-            int num2 = arr[high];
-            int sum = num1 + num2;
-
+            int sum = arr[low] + arr[high];
             if (sum == k) {
                 count++;
                 low++;
                 high--;
-                continue;
             } else if (sum < k) {
                 low++;
             } else {
