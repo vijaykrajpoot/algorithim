@@ -19,7 +19,7 @@ public class CircularLinkedList {
 		}
 	}
 
-	public boolean isCicrularLinkedList() {
+	public boolean isCircularLinkedList() {
 		Node current = start;
 		while (current.next != start) {
 			current = current.next;

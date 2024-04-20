@@ -35,7 +35,6 @@ public class LevelOrderBottom {
                     q.add(node.right);
                 }
             }
-
         }
         return result;
     }

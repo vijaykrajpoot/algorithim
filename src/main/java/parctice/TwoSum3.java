@@ -2,6 +2,7 @@ package parctice;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class TwoSum3 {
@@ -19,7 +20,9 @@ public class TwoSum3 {
 				return new int[]{i, idx};
 			}
 		}
-		return new int[]{};
+		List<Long> aa=null;
+		aa.stream().mapToLong(Long::longValue).sum();
+ 		return new int[]{};
 	}
 
 	private static int findItem(int[] arr, int element) {
