@@ -43,7 +43,7 @@ public class Permutation {
 
   // Driver code
   public static void main(String[] args) {
-    String s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    String s = "abc";
 
     Map<Character, Integer> hashMap = new LinkedHashMap<>();
 

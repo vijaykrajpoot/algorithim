@@ -1,6 +1,8 @@
 package parctice;
 
 
+import com.algo.tree.graph.TreeNode;
+
 import java.util.Stack;
 
 public class BinarySearchTree {
@@ -34,16 +36,12 @@ public class BinarySearchTree {
 
 	public void printTree(Node node) {
 		if (node != null) {
-
 			printTree(node.left);
 			System.out.println(node.data);
 			printTree(node.right);
-
-
 		}
 
 	}
-
 	public static void main(String[] args) {
 		BinarySearchTree binarySearchTree = new BinarySearchTree();
 		binarySearchTree.insert(10);

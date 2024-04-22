@@ -58,10 +58,7 @@ public class ContainerWithMostWater_11 {
                 right--;
             }
         }
-
         return maxArea;
-
-
     }
 
 

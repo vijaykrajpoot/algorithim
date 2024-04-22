@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class InsertionSort {
 
 	public static void main(String[] args) {
-		int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+		int[] arr = {9, 8,10, 7, 6, 5,0, 4,-1, 3, 2, 1};
 		InsertionSort insertionSort = new InsertionSort();
 
 		int[] sortedArr = insertionSort.insertionSort(arr);
@@ -31,9 +31,10 @@ public class InsertionSort {
 		for(int i =0;i<arr.length-1;i++){
 			for(int j=i+1; j<=arr.length-1; j++){
 				if(arr[i]>arr[j]){
-					int temp=arr[j];
-					arr[j]=arr[i];
-					arr[i]=temp;
+					int temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+
 				}
 			}
 		}

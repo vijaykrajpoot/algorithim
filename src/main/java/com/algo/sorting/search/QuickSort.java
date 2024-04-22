@@ -7,7 +7,7 @@ public class QuickSort {
 
     public static void main(String[] args) {
         QuickSort qs = new QuickSort();
-         int[] arr = {3, 2, 1, 44, -232, 6, 7, 9, 67, -89, 32, -1, 12};
+        int[] arr = {3, 2, 1, 44, -232, 1, 6, 7, 9, 67, -89, 6, 32, -1, 12};
         //int[] arr = {10, 5, 8, 9, 3, 6, 15, 12, 16, 6};
 
         System.out.println(Arrays.toString(arr));
@@ -18,8 +18,8 @@ public class QuickSort {
     void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             int j = partition(arr, low, high);
-            System.out.println("Partition Value:" + j);
-            quickSort(arr, low, j );
+            //  System.out.println("Partition Value:" + j);
+            quickSort(arr, low, j);
             quickSort(arr, j + 1, high);
         }
     }
@@ -31,15 +31,15 @@ public class QuickSort {
         while (i < j) {
             do {
                 i++;
-            } while (arr[i] < pivot);
+            } while (pivot > arr[i]);
             do {
                 j--;
-            } while (arr[j] > pivot);
+            } while (pivot < arr[j]);
             if (i < j) {
                 swap(arr, i, j);
             }
         }
-        // swap(arr, low, j);
+        //swap(arr, low, j);
         return j;
     }
 

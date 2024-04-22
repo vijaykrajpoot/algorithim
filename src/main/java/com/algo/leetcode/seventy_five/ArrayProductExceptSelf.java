@@ -1,5 +1,8 @@
 package com.algo.leetcode.seventy_five;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 /**
  * Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
  * <p>
@@ -22,6 +25,12 @@ public class ArrayProductExceptSelf {
 
     public static void main(String[] args) {
 
+        int[] arr = IntStream.of(-1, 1, 0, -3, 3).toArray();
+        ArrayProductExceptSelf a = new ArrayProductExceptSelf();
+        arr = IntStream.of(3, 4, 6, 1, 2).toArray();
+        System.out.println(Arrays.toString(a.productExceptSelf(arr)));
+
+
     }
 
 
@@ -33,19 +42,17 @@ public class ArrayProductExceptSelf {
 
         left[0] = 1;
         right[nums.length - 1] = 1;
-        right[nums.length - 1] = 1;
 
 
-
-        for (int i = 1; i < nums.length ; i++) {
+        for (int i = 1; i < nums.length; i++) {
             left[i] = left[i - 1] * nums[i - 1];
         }
-
-        for (int i = nums.length - 2; i >= 0; i--) {
+        System.out.println(Arrays.toString(left));
+        for (int i = nums.length - 2; i >=0 ; i--) {
             right[i] = right[i + 1] * nums[i + 1];
         }
-
-        for (int i = 0; i < nums.length - 1; i++) {
+        System.out.println(Arrays.toString(right));
+        for (int i = 0; i < nums.length ; i++) {
             result[i] = left[i] * right[i];
         }
 
