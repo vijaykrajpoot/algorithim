@@ -7,7 +7,8 @@ import java.util.Arrays;
 /**
  * You are given an integer array nums and an integer k.
  * <p>
- * In one operation, you can pick two numbers from the array whose sum equals k and remove them from the array.
+ * In one operation, you can pick two numbers from the array whose sum equals k and
+ * remove them from the array.
  * <p>
  * Return the maximum number of operations you can perform on the array.
  * <p>
@@ -64,10 +65,10 @@ public class MaxNumberKSumPair_1679 {
                 break;
             }
         }
-
-        for(int j=l1;j<arr.length;j++){
-
-        }
+//
+//        for(int j=l1;j<arr.length;j++){
+//
+//        }
 
 
     return -1;

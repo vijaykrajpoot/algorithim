@@ -35,7 +35,7 @@ public class ReverseWords {
         // System.out.println("After Trim:" + str);
         char[] charArray = str.toCharArray();
         System.out.println("Original String: " + str);
-        str= reverseWords(charArray);
+        str = reverseWords(charArray);
         System.out.println("Reverse String : " + str);
     }
 
@@ -44,11 +44,11 @@ public class ReverseWords {
         int start = 0;
         int end = str.length - 1;
         reverseIt(str, 0, end);
-     //   System.out.println("Reversed St:" + Arrays.toString(str));
+        System.out.println("Reversed St:" + Arrays.toString(str));
         for (int i = 0; i < str.length; i++) {
             if (str[i] == ' ') {
                 reverseIt(str, start, i - 1);
-                start = i +1;
+                start = i + 1;
             }
         }
         // reverse the last word
@@ -62,6 +62,16 @@ public class ReverseWords {
             char temp = ch[i];
             ch[i] = ch[end];
             ch[end] = temp;
+        }
+
+    }
+
+    void removeExtraSpaces(char[] ch) {
+        int space = 0;
+        for (int i = 0; i < ch.length; i++) {
+            if (ch[i] == ' ') {
+                space++;
+            }
         }
 
     }
@@ -100,6 +110,6 @@ public class ReverseWords {
             arr = Arrays.copyOf(arr, writeIndex);
         }
 
-       // System.out.println("Trimmed: " + Arrays.toString(arr));
+        // System.out.println("Trimmed: " + Arrays.toString(arr));
     }
 }

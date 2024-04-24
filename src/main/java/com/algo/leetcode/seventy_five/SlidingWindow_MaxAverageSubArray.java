@@ -19,11 +19,11 @@ package com.algo.leetcode.seventy_five;
  * Input: nums = [5], k = 1
  * Output: 5.00000
  */
-public class MaxAverageSubArray {
+public class SlidingWindow_MaxAverageSubArray {
 
     public static void main(String[] args) {
 
-        MaxAverageSubArray maxAverageSubArray = new MaxAverageSubArray();
+        SlidingWindow_MaxAverageSubArray maxAverageSubArray = new SlidingWindow_MaxAverageSubArray();
         int[] arr = new int[]{1, 12, -5, -6, 50, 3};
         double average = maxAverageSubArray.findMaxSubArray(arr, 4);
         System.out.println("Average:" + average);
@@ -36,9 +36,9 @@ public class MaxAverageSubArray {
         }
 
         double maxAvg = (double) sum / k;
-
+        // 4 element sum is already there now use +1 element and removed the 1 element  [SLIDING window]
         for (int i = k; i < arr.length; i++) {
-            sum = sum + arr[i] + arr[i - k];
+            sum = sum + arr[i] - arr[i - k];
             double curAvg = (double) sum / k;
             if (curAvg > maxAvg) {
                 maxAvg = curAvg;

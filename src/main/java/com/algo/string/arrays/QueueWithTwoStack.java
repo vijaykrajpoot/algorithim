@@ -41,7 +41,6 @@ public class QueueWithTwoStack {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         StackQ stackQ = new StackQ();
-
         int q = scanner.nextInt();
         while (q > 0) {
             int in = scanner.nextInt();
