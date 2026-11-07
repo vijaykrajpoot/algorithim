@@ -1,4 +1,4 @@
-package com.algo.string.arrays;
+package com.algo.string.arrays; // Declares the package so the class is organized under the correct Java namespace.
 
 /**
  * Objective: Given a number, find out whether its colorful or not.
@@ -19,9 +19,9 @@ package com.algo.string.arrays;
  *
  * 326 is not a colorful number as it generates 3 2 6 (3*2)=6 (2*6)=12.
  */
-public class ColorfulNumbers {
+public class ColorfulNumbers { // Defines the Java type that contains the related data and behavior.
 
 
 
 
-}
+} // Closes the current block and ends the active scope.

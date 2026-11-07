@@ -1,4 +1,4 @@
-package com.algo.leetcode.seventy_five;
+package com.algo.leetcode.seventy_five; // Declares the package so the class is organized under the correct Java namespace.
 
 /**
  * There are n kids with candies. You are given an integer array candies,
@@ -43,37 +43,37 @@ package com.algo.leetcode.seventy_five;
  * 1 <= extraCandies <= 50
  */
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.OptionalInt;
+import java.util.ArrayList; // Imports the classes needed to support this file's logic.
+import java.util.Arrays; // Imports the classes needed to support this file's logic.
+import java.util.OptionalInt; // Imports the classes needed to support this file's logic.
 
-public class KidsWithMaxCandy {
-	public static void main(String[] args) {
-		KidsWithMaxCandy maxCandyList = new KidsWithMaxCandy();
-		ArrayList<Boolean> aa = maxCandyList.kidsWithCandies(new int[]{4,2,1,1,2}, 1);
-		System.out.println(Arrays.toString(aa.toArray()));
-	}
+public class KidsWithMaxCandy { // Defines the Java type that contains the related data and behavior.
+	public static void main(String[] args) { // Defines the method that performs this unit of work for the class.
+		KidsWithMaxCandy maxCandyList = new KidsWithMaxCandy(); // Stores the computed or supplied value in a variable for later use.
+		ArrayList<Boolean> aa = maxCandyList.kidsWithCandies(new int[]{4,2,1,1,2}, 1); // Stores the computed or supplied value in a variable for later use.
+		System.out.println(Arrays.toString(aa.toArray())); // Prints the result to the console so the current state can be inspected.
+	} // Closes the current block and ends the active scope.
 
-	public ArrayList<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-		ArrayList<Boolean> candiesList = new ArrayList<>();
-		int max = 0;
+	public ArrayList<Boolean> kidsWithCandies(int[] candies, int extraCandies) { // Defines the method that performs this unit of work for the class.
+		ArrayList<Boolean> candiesList = new ArrayList<>(); // Stores the computed or supplied value in a variable for later use.
+		int max = 0; // Stores the computed or supplied value in a variable for later use.
 
-		for(int i=0;i<candies.length;i++){
-			if(candies[i]>max){
-				max=candies[i];
-			}
-		}
+		for(int i=0;i<candies.length;i++){ // Carries out the current statement to support the program's logic.
+			if(candies[i]>max){ // Carries out the current statement to support the program's logic.
+				max=candies[i]; // Stores the computed or supplied value in a variable for later use.
+			} // Closes the current block and ends the active scope.
+		} // Closes the current block and ends the active scope.
 
-		for (int candy : candies) {
-			if ((candy + extraCandies) >= max) {
-				candiesList.add(true);
-			} else {
-				candiesList.add(false);
-			}
-		}
-		return candiesList;
+		for (int candy : candies) { // Repeats the loop body as long as the loop condition remains true.
+			if ((candy + extraCandies) >= max) { // Checks whether the condition is true before taking the matching action.
+				candiesList.add(true); // Executes the current statement to update state or trigger the required behavior.
+			} else { // Closes the current block and ends the active scope.
+				candiesList.add(false); // Executes the current statement to update state or trigger the required behavior.
+			} // Closes the current block and ends the active scope.
+		} // Closes the current block and ends the active scope.
+		return candiesList; // Returns the computed value to the caller and exits the method.
 
-	}
+	} // Closes the current block and ends the active scope.
 
 
-}
+} // Closes the current block and ends the active scope.

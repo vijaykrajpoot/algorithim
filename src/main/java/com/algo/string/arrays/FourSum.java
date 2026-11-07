@@ -1,4 +1,4 @@
-package com.algo.string.arrays;
+package com.algo.string.arrays; // Declares the package so the class is organized under the correct Java namespace.
 
 /**
  * 4 Sum
@@ -16,7 +16,7 @@ package com.algo.string.arrays;
  * [0, 0, 1, 2]
  * ]
  */
-public class FourSum {
+public class FourSum { // Defines the Java type that contains the related data and behavior.
 
 
-}
+} // Closes the current block and ends the active scope.

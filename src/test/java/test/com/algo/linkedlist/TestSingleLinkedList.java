@@ -1,178 +1,178 @@
-package test.com.algo.linkedlist;
+package test.com.algo.linkedlist; // Declares the package so the class is organized under the correct Java namespace.
 
-import java.util.stream.IntStream;
+import java.util.stream.IntStream; // Imports the classes needed to support this file's logic.
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.Assert; // Imports the classes needed to support this file's logic.
+import org.junit.Test; // Imports the classes needed to support this file's logic.
 
-import com.algo.linkedlist.LinkedList;
+import com.algo.linkedlist.LinkedList; // Imports the classes needed to support this file's logic.
 
-public class TestSingleLinkedList {
+public class TestSingleLinkedList { // Defines the Java type that contains the related data and behavior.
 
-	LinkedList ll = new LinkedList();
+	LinkedList ll = new LinkedList(); // Stores the computed or supplied value in a variable for later use.
 
-	@Test
-	public void createLinkedList() {
-		IntStream.range(0, 10).forEach(i -> ll.add(++i));
-		Assert.assertTrue(ll.size() == 10);
-	}
+	@Test // Provides metadata for the Java element that follows.
+	public void createLinkedList() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(0, 10).forEach(i -> ll.add(++i)); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 10); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findMidLinkedListLogic1() {
-		IntStream.range(1, 10).forEach(i -> ll.add(i));
-		ll.printList("findMidLinkedListLogic1:");
-		Assert.assertTrue(ll.findMiddleNodeLogic1().data == 5);
+	@Test // Provides metadata for the Java element that follows.
+	public void findMidLinkedListLogic1() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(1, 10).forEach(i -> ll.add(i)); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("findMidLinkedListLogic1:"); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.findMiddleNodeLogic1().data == 5); // Executes the current statement to update state or trigger the required behavior.
 		
-	}
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findMidLinkedListLogic2() {
-		IntStream.range(1, 10).forEach(i -> ll.add(i));
-		Assert.assertTrue(ll.findMiddleNodeLogic2().data == 5);
+	@Test // Provides metadata for the Java element that follows.
+	public void findMidLinkedListLogic2() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(1, 10).forEach(i -> ll.add(i)); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.findMiddleNodeLogic2().data == 5); // Executes the current statement to update state or trigger the required behavior.
 		// ll.printList();
-	}
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findMidWhen1ElementLog2() {
-		IntStream.range(1, 2).forEach(i -> ll.add(i));
-		ll.printList("findMidWhen1ElementLog2:");
-		Assert.assertTrue(ll.findMiddleNodeLogic2().data == 1);
+	@Test // Provides metadata for the Java element that follows.
+	public void findMidWhen1ElementLog2() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(1, 2).forEach(i -> ll.add(i)); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("findMidWhen1ElementLog2:"); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.findMiddleNodeLogic2().data == 1); // Executes the current statement to update state or trigger the required behavior.
 
-	}
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findMidWhen1ElementLog1() {
-		IntStream.range(1, 2).forEach(i -> ll.add(i));
-		ll.printList("findMidWhen1ElementLog1:");
-		Assert.assertTrue(ll.findMiddleNodeLogic1().data == 1);
+	@Test // Provides metadata for the Java element that follows.
+	public void findMidWhen1ElementLog1() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(1, 2).forEach(i -> ll.add(i)); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("findMidWhen1ElementLog1:"); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.findMiddleNodeLogic1().data == 1); // Executes the current statement to update state or trigger the required behavior.
 
-	}
+	} // Closes the current block and ends the active scope.
 
-	@Test(expected = IllegalStateException.class)
-	public void findMidWhenZeroElementLogic2() {
-		IntStream.range(1, 1).forEach(i -> ll.add(i));
-		Assert.assertNotNull(ll.findMiddleNodeLogic2());
+	@Test(expected = IllegalStateException.class) // Provides metadata for the Java element that follows.
+	public void findMidWhenZeroElementLogic2() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(1, 1).forEach(i -> ll.add(i)); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertNotNull(ll.findMiddleNodeLogic2()); // Executes the current statement to update state or trigger the required behavior.
 		// ll.printList();
-	}
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findMidWhenListisEvenSizeLogic2() {
-		IntStream.range(1, 11).forEach(i -> ll.add(i));
+	@Test // Provides metadata for the Java element that follows.
+	public void findMidWhenListisEvenSizeLogic2() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(1, 11).forEach(i -> ll.add(i)); // Executes the current statement to update state or trigger the required behavior.
 		// ll.printList();
-		Assert.assertTrue(ll.findMiddleNodeLogic2().data == 5);
+		Assert.assertTrue(ll.findMiddleNodeLogic2().data == 5); // Executes the current statement to update state or trigger the required behavior.
 
-	}
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findMidWhenListisEvenSizeLogic1() {
-		IntStream.range(1, 11).forEach(i -> ll.add(i));
+	@Test // Provides metadata for the Java element that follows.
+	public void findMidWhenListisEvenSizeLogic1() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(1, 11).forEach(i -> ll.add(i)); // Executes the current statement to update state or trigger the required behavior.
 		// ll.printList();
-		Assert.assertTrue(ll.findMiddleNodeLogic1().data == 6);
-	}
+		Assert.assertTrue(ll.findMiddleNodeLogic1().data == 6); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void deleteANodeFromLinkedList() {
-		IntStream.range(0, 10).forEach(i -> ll.add(++i));
-		Assert.assertTrue(ll.size() == 10);
-		ll.printList("deleteANodeFromLinkedList:");
-		ll.deleteNode(7);
-		ll.printList("deleteANodeFromLinkedList:");
-		Assert.assertTrue(ll.size() == 9);
-	}
+	@Test // Provides metadata for the Java element that follows.
+	public void deleteANodeFromLinkedList() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(0, 10).forEach(i -> ll.add(++i)); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 10); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("deleteANodeFromLinkedList:"); // Executes the current statement to update state or trigger the required behavior.
+		ll.deleteNode(7); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("deleteANodeFromLinkedList:"); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 9); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void deleteFirstNodeFromLinkedList() {
-		IntStream.range(0, 10).forEach(i -> ll.add(++i));
-		Assert.assertTrue(ll.size() == 10);
-		ll.printList("deleteANodeFromLinkedList:");
-		ll.deleteNode(1);
-		ll.printList("deleteANodeFromLinkedList:");
-		Assert.assertTrue(ll.size() == 9);
-	}
+	@Test // Provides metadata for the Java element that follows.
+	public void deleteFirstNodeFromLinkedList() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(0, 10).forEach(i -> ll.add(++i)); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 10); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("deleteANodeFromLinkedList:"); // Executes the current statement to update state or trigger the required behavior.
+		ll.deleteNode(1); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("deleteANodeFromLinkedList:"); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 9); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void deleteLastNodeFromLinkedList() {
-		IntStream.range(0, 10).forEach(i -> ll.add(++i));
-		Assert.assertTrue(ll.size() == 10);
-		ll.printList("deleteLastNodeFromLinkedList:");
-		ll.deleteNode(10);
-		ll.printList("deleteLastNodeFromLinkedList:");
-		Assert.assertTrue(ll.size() == 9);
-	}
+	@Test // Provides metadata for the Java element that follows.
+	public void deleteLastNodeFromLinkedList() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(0, 10).forEach(i -> ll.add(++i)); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 10); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("deleteLastNodeFromLinkedList:"); // Executes the current statement to update state or trigger the required behavior.
+		ll.deleteNode(10); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("deleteLastNodeFromLinkedList:"); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 9); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void deleteNodeWhen2NodeInList() {
-		IntStream.range(0, 2).forEach(i -> ll.add(++i));
-		Assert.assertTrue(ll.size() == 2);
-		ll.printList("deleteNodeWhen2NodeInList:");
-		ll.deleteNode(2);
-		ll.printList("deleteNodeWhen2NodeInList:");
-		Assert.assertTrue(ll.size() == 1);
-	}
+	@Test // Provides metadata for the Java element that follows.
+	public void deleteNodeWhen2NodeInList() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(0, 2).forEach(i -> ll.add(++i)); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 2); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("deleteNodeWhen2NodeInList:"); // Executes the current statement to update state or trigger the required behavior.
+		ll.deleteNode(2); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("deleteNodeWhen2NodeInList:"); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 1); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test(expected = IllegalStateException.class)
-	public void deleteNodeFromEmptyNodeInList() {
-		IntStream.range(0, 0).forEach(i -> ll.add(++i));
-		Assert.assertTrue(ll.size() == 0);
-		ll.printList("deleteNodeFromEmptyNodeInList:");
-		ll.deleteNode(2);
-		ll.printList("deleteNodeFromEmptyNodeInList:");
-		Assert.assertTrue(ll.size() == 0);
-	}
+	@Test(expected = IllegalStateException.class) // Provides metadata for the Java element that follows.
+	public void deleteNodeFromEmptyNodeInList() { // Defines the method that performs this unit of work for the class.
+		IntStream.range(0, 0).forEach(i -> ll.add(++i)); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 0); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("deleteNodeFromEmptyNodeInList:"); // Executes the current statement to update state or trigger the required behavior.
+		ll.deleteNode(2); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("deleteNodeFromEmptyNodeInList:"); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.size() == 0); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findSecondLargest() {
-		int arr[] = { 104, 887, 524, 132, 75, 542, 311, 318, 459, 143 };
-		for (int i = 0; i < arr.length; i++) {
-			ll.add(arr[i]);
-		}
-		ll.printList("findSecondLargest:");
-		System.out.println("ll.findSecondLargest():" + ll.findSecondLargest());
-		Assert.assertTrue(ll.findSecondLargest() == 542);
-	}
+	@Test // Provides metadata for the Java element that follows.
+	public void findSecondLargest() { // Defines the method that performs this unit of work for the class.
+		int arr[] = { 104, 887, 524, 132, 75, 542, 311, 318, 459, 143 }; // Executes the current statement to update state or trigger the required behavior.
+		for (int i = 0; i < arr.length; i++) { // Repeats the loop body as long as the loop condition remains true.
+			ll.add(arr[i]); // Executes the current statement to update state or trigger the required behavior.
+		} // Closes the current block and ends the active scope.
+		ll.printList("findSecondLargest:"); // Executes the current statement to update state or trigger the required behavior.
+		System.out.println("ll.findSecondLargest():" + ll.findSecondLargest()); // Prints the result to the console so the current state can be inspected.
+		Assert.assertTrue(ll.findSecondLargest() == 542); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findSecondLargestWhenListIsSortedOrderByAscending() {
+	@Test // Provides metadata for the Java element that follows.
+	public void findSecondLargestWhenListIsSortedOrderByAscending() { // Defines the method that performs this unit of work for the class.
 
-		IntStream.range(0, 100).forEach(i -> ll.add(++i));
-		ll.printList("findSecondLargest:");
-		Assert.assertTrue(ll.findSecondLargest() == 99);
-	}
+		IntStream.range(0, 100).forEach(i -> ll.add(++i)); // Executes the current statement to update state or trigger the required behavior.
+		ll.printList("findSecondLargest:"); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.findSecondLargest() == 99); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findSecondLargestWhenListIsSortedOrderByDescending() {
-		for (int i = 100; i > 0; i--) {
-			ll.add(i);
-		}
-		ll.printList("findSecondLargest:");
-		Assert.assertTrue(ll.findSecondLargest() == 99);
-	}
+	@Test // Provides metadata for the Java element that follows.
+	public void findSecondLargestWhenListIsSortedOrderByDescending() { // Defines the method that performs this unit of work for the class.
+		for (int i = 100; i > 0; i--) { // Repeats the loop body as long as the loop condition remains true.
+			ll.add(i); // Executes the current statement to update state or trigger the required behavior.
+		} // Closes the current block and ends the active scope.
+		ll.printList("findSecondLargest:"); // Executes the current statement to update state or trigger the required behavior.
+		Assert.assertTrue(ll.findSecondLargest() == 99); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findSecondLargestWhenListHasNegativeAndPositiveInt() {
+	@Test // Provides metadata for the Java element that follows.
+	public void findSecondLargestWhenListHasNegativeAndPositiveInt() { // Defines the method that performs this unit of work for the class.
 //		Random random=new Random();
 //		IntStream.range(0, 10).forEach(i -> ll.add((random.nextInt(65536)-32768)));
 
-		int arr[] = { 14522, 30884, -12306, 254, -21498, 25113, 16181, -28164, 24136, -25679 };
-		for (int i = 0; i < arr.length; i++) {
-			ll.add(arr[i]);
-		}
-		ll.printList("findSecondLargest:");
-		System.out.println("ll.findSecondLargest():" + ll.findSecondLargest());
-		Assert.assertTrue(ll.findSecondLargest() == 25113);
-	}
+		int arr[] = { 14522, 30884, -12306, 254, -21498, 25113, 16181, -28164, 24136, -25679 }; // Executes the current statement to update state or trigger the required behavior.
+		for (int i = 0; i < arr.length; i++) { // Repeats the loop body as long as the loop condition remains true.
+			ll.add(arr[i]); // Executes the current statement to update state or trigger the required behavior.
+		} // Closes the current block and ends the active scope.
+		ll.printList("findSecondLargest:"); // Executes the current statement to update state or trigger the required behavior.
+		System.out.println("ll.findSecondLargest():" + ll.findSecondLargest()); // Prints the result to the console so the current state can be inspected.
+		Assert.assertTrue(ll.findSecondLargest() == 25113); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
 
-	@Test
-	public void findSecondLargestWhenListHasOnlyRandomNegativeInt() {
+	@Test // Provides metadata for the Java element that follows.
+	public void findSecondLargestWhenListHasOnlyRandomNegativeInt() { // Defines the method that performs this unit of work for the class.
 //		Random random=new Random();
 //		IntStream.range(0, 10).forEach(i -> ll.add((random.nextInt(65536)-32768)));
 
-		int arr[] = { -14522, -30884, -12306, -254, -21498, -25113, -16181, -28164, -24136, -25679 };
-		for (int i = 0; i < arr.length; i++) {
-			ll.add(arr[i]);
-		}
-		ll.printList("findSecondLargest:");
-		System.out.println("ll.findSecondLargest():" + ll.findSecondLargest());
-		Assert.assertTrue(ll.findSecondLargest() == -12306);
-	}
-}
+		int arr[] = { -14522, -30884, -12306, -254, -21498, -25113, -16181, -28164, -24136, -25679 }; // Executes the current statement to update state or trigger the required behavior.
+		for (int i = 0; i < arr.length; i++) { // Repeats the loop body as long as the loop condition remains true.
+			ll.add(arr[i]); // Executes the current statement to update state or trigger the required behavior.
+		} // Closes the current block and ends the active scope.
+		ll.printList("findSecondLargest:"); // Executes the current statement to update state or trigger the required behavior.
+		System.out.println("ll.findSecondLargest():" + ll.findSecondLargest()); // Prints the result to the console so the current state can be inspected.
+		Assert.assertTrue(ll.findSecondLargest() == -12306); // Executes the current statement to update state or trigger the required behavior.
+	} // Closes the current block and ends the active scope.
+} // Closes the current block and ends the active scope.

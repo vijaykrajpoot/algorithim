@@ -1,37 +1,37 @@
-package com.algo.tree.graph;
+package com.algo.tree.graph; // Declares the package so the class is organized under the correct Java namespace.
 
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.ArrayList; // Imports the classes needed to support this file's logic.
+import java.util.Deque; // Imports the classes needed to support this file's logic.
+import java.util.LinkedList; // Imports the classes needed to support this file's logic.
+import java.util.List; // Imports the classes needed to support this file's logic.
+import java.util.Queue; // Imports the classes needed to support this file's logic.
 
-public class BTreeRightSideView {
-	public List<Integer> rightSideView(TreeNode root) {
-		Queue<TreeNode> q = new LinkedList<>();
-		List<Integer> result = new ArrayList<>();
-		q.add(root);
-		while (!q.isEmpty()) {
-			int qSize=q.size();
-			TreeNode node = q.poll();
-			TreeNode lastElement = null;
-			for (TreeNode treeNode : q) {
-				lastElement = treeNode;
-			}
-			if (lastElement != null) {
-				result.add(lastElement.val);
-			}
+public class BTreeRightSideView { // Defines the Java type that contains the related data and behavior.
+	public List<Integer> rightSideView(TreeNode root) { // Defines the method that performs this unit of work for the class.
+		Queue<TreeNode> q = new LinkedList<>(); // Stores the computed or supplied value in a variable for later use.
+		List<Integer> result = new ArrayList<>(); // Stores the computed or supplied value in a variable for later use.
+		q.add(root); // Executes the current statement to update state or trigger the required behavior.
+		while (!q.isEmpty()) { // Keeps executing this block until the loop condition becomes false.
+			int qSize=q.size(); // Stores the computed or supplied value in a variable for later use.
+			TreeNode node = q.poll(); // Stores the computed or supplied value in a variable for later use.
+			TreeNode lastElement = null; // Stores the computed or supplied value in a variable for later use.
+			for (TreeNode treeNode : q) { // Repeats the loop body as long as the loop condition remains true.
+				lastElement = treeNode; // Stores the computed or supplied value in a variable for later use.
+			} // Closes the current block and ends the active scope.
+			if (lastElement != null) { // Checks whether the condition is true before taking the matching action.
+				result.add(lastElement.val); // Executes the current statement to update state or trigger the required behavior.
+			} // Closes the current block and ends the active scope.
 
-			for (int i = 0; i < qSize; i++) {
-				if (node.left != null) {
-					q.add(node.left);
-				}
-				if (node.right != null) {
-					q.add(node.right);
-				}
-			}
+			for (int i = 0; i < qSize; i++) { // Repeats the loop body as long as the loop condition remains true.
+				if (node.left != null) { // Checks whether the condition is true before taking the matching action.
+					q.add(node.left); // Executes the current statement to update state or trigger the required behavior.
+				} // Closes the current block and ends the active scope.
+				if (node.right != null) { // Checks whether the condition is true before taking the matching action.
+					q.add(node.right); // Executes the current statement to update state or trigger the required behavior.
+				} // Closes the current block and ends the active scope.
+			} // Closes the current block and ends the active scope.
 
-		}
-		return result;
-	}
-}
+		} // Closes the current block and ends the active scope.
+		return result; // Returns the computed value to the caller and exits the method.
+	} // Closes the current block and ends the active scope.
+} // Closes the current block and ends the active scope.

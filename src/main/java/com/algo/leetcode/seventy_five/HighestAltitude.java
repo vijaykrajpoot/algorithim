@@ -1,4 +1,4 @@
-package com.algo.leetcode.seventy_five;
+package com.algo.leetcode.seventy_five; // Declares the package so the class is organized under the correct Java namespace.
 
 /**
  * There is a biker going on a road trip.
@@ -22,26 +22,26 @@ package com.algo.leetcode.seventy_five;
  * Output: 0
  * Explanation: The altitudes are [0,-4,-7,-9,-10,-6,-3,-1]. The highest is 0.
  */
-public class HighestAltitude {
-    public static void main(String[] args) {
-        int arr[] = new int[]{0,-4,-7,-9,-10,-6,-3,-1};
-        HighestAltitude highestAltitude = new HighestAltitude();
-        int result = highestAltitude.largestAltitude(arr);
-        System.out.println("result:" + result);
-    }
+public class HighestAltitude { // Defines the Java type that contains the related data and behavior.
+    public static void main(String[] args) { // Defines the method that performs this unit of work for the class.
+        int arr[] = new int[]{0,-4,-7,-9,-10,-6,-3,-1}; // Executes the current statement to update state or trigger the required behavior.
+        HighestAltitude highestAltitude = new HighestAltitude(); // Stores the computed or supplied value in a variable for later use.
+        int result = highestAltitude.largestAltitude(arr); // Stores the computed or supplied value in a variable for later use.
+        System.out.println("result:" + result); // Prints the result to the console so the current state can be inspected.
+    } // Closes the current block and ends the active scope.
 
-    public int largestAltitude(int[] gain) {
-        int sum = 0;
-        int result = 0;
-        for (int i = 0; i < gain.length; i++) {
-            sum = sum + gain[i];
-            if (sum > result) {
-                result = sum;
-            }
-        }
-        return result;
-    }
+    public int largestAltitude(int[] gain) { // Defines the method that performs this unit of work for the class.
+        int sum = 0; // Stores the computed or supplied value in a variable for later use.
+        int result = 0; // Stores the computed or supplied value in a variable for later use.
+        for (int i = 0; i < gain.length; i++) { // Repeats the loop body as long as the loop condition remains true.
+            sum = sum + gain[i]; // Stores the computed or supplied value in a variable for later use.
+            if (sum > result) { // Checks whether the condition is true before taking the matching action.
+                result = sum; // Stores the computed or supplied value in a variable for later use.
+            } // Closes the current block and ends the active scope.
+        } // Closes the current block and ends the active scope.
+        return result; // Returns the computed value to the caller and exits the method.
+    } // Closes the current block and ends the active scope.
 
-}
+} // Closes the current block and ends the active scope.
 
 
