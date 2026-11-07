@@ -2,10 +2,10 @@ package com.algo;
 public class Fibonacci {
   public static void main(String[] args) {
     System.out.println("Fibonacci.fibonacci(10):" + Fibonacci.fibonacci(10));
-    System.out.print("Fibonacci.fibonacciRecursion(10):"); // Prints the value without moving to a new line.
+    System.out.print("Fibonacci.fibonacciRecursion(10):");
     Fibonacci.fibonacciRecursion(10);
     System.out.println();
-    System.out.print("Fibonacci.fibonacciItrative(10):"); // Prints the value without moving to a new line.
+    System.out.print("Fibonacci.fibonacciItrative(10):");
     Fibonacci.fibonacciItrative(10);
   }
   public static int fibonacci(int n) {
@@ -19,7 +19,7 @@ public class Fibonacci {
     int n3 = 0;
     for (int i = 2; i <= n; i++) {
       n3 = n1 + n2;
-      System.out.print(n3 + " "); // Prints the value without moving to a new line.
+      System.out.print(n3 + " ");
       n1 = n2;
       n2 = n3;
     }
@@ -29,13 +29,12 @@ public class Fibonacci {
   static int n3 = 0;
   public static void fibonacciRecursion(int n) {
     if (n <= 0) {
-      return; // Declares a variable to hold data needed by this method.
+      return;
     }
     n1 = n2;
     n2 = n3;
     n3 = n1 + n2;
-    System.out.print(n3 + " "); // Prints the value without moving to a new line.
-
+    System.out.print(n3 + " ");
     fibonacciRecursion(n - 1);
   }
 }

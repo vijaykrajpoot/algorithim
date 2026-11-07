@@ -3,11 +3,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-// Definition for a Node.
 class MyNode {
-	public int val; // Declares a variable to hold data needed by this method.
-	public List<MyNode> children; // Declares a variable to hold data needed by this method.
-
+	public int val;
+	public List<MyNode> children;
 	public MyNode() {
 	}
 	public MyNode(int _val) {
@@ -20,20 +18,19 @@ class MyNode {
 };
 public class NArray {
 	public List<List<Integer>> levelOrder(MyNode root) {
-		List<List<Integer>> result = new ArrayList<>();  //1
-		Queue<MyNode> queue = new LinkedList<>();   //1
-		queue.add(root); // add root
-		while (!queue.isEmpty()) { // Keeps executing this block until the loop condition becomes false.
+		List<List<Integer>> result = new ArrayList<>();
+		Queue<MyNode> queue = new LinkedList<>();
+		queue.add(root);
+		while (!queue.isEmpty()) {
 			int levelSize = queue.size();
 			List<Integer> list = new ArrayList<>();
-			for (int i = 0; i < levelSize; i++) { // O(N)
+			for (int i = 0; i < levelSize; i++) {
 				MyNode node = queue.poll();
 				if (node == null) {
-					continue; // Skips the rest of the current loop iteration and moves to the next one.
+					continue;
 				}
 				list.add(node.val);
-				// Add the child nodes to queue.
-				for (MyNode myNode : node.children) {  //O(N)
+				for (MyNode myNode : node.children) {
 					queue.add(myNode);
 				}
 			}

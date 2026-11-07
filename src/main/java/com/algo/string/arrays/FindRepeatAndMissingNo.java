@@ -35,7 +35,6 @@ public class FindRepeatAndMissingNo {
     int[] retArr = new int[2];
     Arrays.sort(arr);
     for (int i = 0; i < arr.length; i++) {
-
       if (i < arr.length - 1 && arr[i + 1] - arr[i] == 0) {
         retArr[0] = arr[i];
       }

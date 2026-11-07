@@ -14,12 +14,12 @@ public class PrefixMatcher {
         for (int i = 0; i < strings.size(); i++) {
             String currentString = strings.get(i);
             for (int j = 0; j < strings.size(); j++) {
-                if (i != j) { // Avoid comparing a string with itself
+                if (i != j) {
                     String otherString = strings.get(j);
                     if (isPrefix(otherString, currentString)) {
                         strings.remove(currentString);
-                        i--; // Decrement i to account for the removed string
-                        break; // Exit the inner loop since we've removed the string // Exits the current loop or switch branch immediately.
+                        i--;
+                        break;
                     }
                 }
             }

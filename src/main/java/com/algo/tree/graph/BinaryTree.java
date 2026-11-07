@@ -1,8 +1,7 @@
 package com.algo.tree.graph;
 import java.util.Stack;
 public class BinaryTree<T extends Comparable<T>> {
-	private Node<T> root; // Declares a variable to hold data needed by this method.
-
+	private Node<T> root;
 	public void insert(T data) {
 		insertNode(getRoot(), data);
 	}
@@ -37,32 +36,32 @@ public class BinaryTree<T extends Comparable<T>> {
 		globalStack.push(root);
 		int nBlanks = 50;
 		boolean isRowEmpty = false;
-		while (isRowEmpty == false) { // Keeps executing this block until the loop condition becomes false.
+		while (isRowEmpty == false) {
 			Stack<Node<T>> localStack = new Stack<Node<T>>();
 			isRowEmpty = true;
 			for (int j = 0; j < nBlanks; j++)
-				System.out.print(' '); // Prints the value without moving to a new line.
-			while (globalStack.isEmpty() == false) { // Keeps executing this block until the loop condition becomes false.
+				System.out.print(' ');
+			while (globalStack.isEmpty() == false) {
 				Node<T> temp = globalStack.pop();
 				if (temp != null) {
-					System.out.print(temp.data); // Prints the value without moving to a new line.
+					System.out.print(temp.data);
 					localStack.push(temp.leftNode);
 					localStack.push(temp.rightNode);
 					if (temp.leftNode != null || temp.rightNode != null)
 						isRowEmpty = false;
 				} else {
-					System.out.print("##"); // Prints the value without moving to a new line.
+					System.out.print("##");
 					localStack.push(null);
 					localStack.push(null);
 				}
 				for (int j = 0; j < nBlanks * 2 - 2; j++)
-					System.out.print(' '); // Prints the value without moving to a new line.
-			} // end while globalStack not empty
+					System.out.print(' ');
+			}
 			System.out.println();
 			nBlanks /= 2;
-			while (localStack.isEmpty() == false) // Keeps executing this block until the loop condition becomes false.
+			while (localStack.isEmpty() == false)
 				globalStack.push(localStack.pop());
-		} // end while isRowEmpty is false
+		}
 	}
 	public static void main(String[] args) {
 		BinaryTree<Integer> binaryTree = new BinaryTree<Integer>();
@@ -89,10 +88,9 @@ public class BinaryTree<T extends Comparable<T>> {
 	}
 }
 class Node<T extends Comparable<T>> {
-	Node<T> leftNode; // Declares a variable to hold data needed by this method.
-	Node<T> rightNode; // Declares a variable to hold data needed by this method.
-	T data; // Declares a variable to hold data needed by this method.
-
+	Node<T> leftNode;
+	Node<T> rightNode;
+	T data;
 	public Node(T data) {
 		this.data = data;
 	}

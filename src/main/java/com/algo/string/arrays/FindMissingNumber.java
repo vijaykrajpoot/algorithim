@@ -29,27 +29,19 @@ package com.algo.string.arrays;
 public class FindMissingNumber {
     public static void main(String[] args) {
         int[] nums = {0, 2, 3, 1, 4};
-        System.out.println("Missing number: " + findMissingNumber(nums)); // Output: 5
-//        int[] nums2 = {0, 1, 2, 4, 5, 6};
-//        System.out.println("Missing number: " + findMissingNumber(nums2)); // Output: 3
-//        int[] nums3 = {1, 3, 6, 4, 2, 5};
-//        System.out.println("Missing number: " + findMissingNumber(nums3)); // Output: 0
+        System.out.println("Missing number: " + findMissingNumber(nums));
     }
     private static int findMissingNumber(int[] nums) {
         int n = nums.length;
-        // 1. Create the auxiliary array of size n + 1
-        // All elements default to false (unmarked)
         boolean[] marked = new boolean[n + 1];
-        // 2. Scan the original array and mark the found indices as true
         for (int num : nums) {
             marked[num] = true;
         }
-        // 3. Scan the auxiliary array to find the index that is still false
         for (int i = 0; i <= n; i++) {
             if (!marked[i]) {
-                return i; // This is the missing number
+                return i;
             }
         }
-        return -1; // Fallback, though the problem guarantees a missing number
+        return -1;
     }
 }

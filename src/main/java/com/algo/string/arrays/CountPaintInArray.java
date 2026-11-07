@@ -21,7 +21,6 @@ public class CountPaintInArray {
     System.out.println(hashMap);
     for (Map.Entry<Integer, Integer> it : hashMap.entrySet()) {
       int count = it.getValue();
-      // Formula based of Pattern
       noOfPairsOfEachElement = (count * (count - 1)) / 2;
       System.out.println("Nnumber Of Pairs of " + it.getKey() + " : " + noOfPairsOfEachElement);
       noOfPairs += noOfPairsOfEachElement;

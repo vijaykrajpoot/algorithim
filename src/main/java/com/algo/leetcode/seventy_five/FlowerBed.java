@@ -31,12 +31,12 @@ public class FlowerBed {
         int count=0;
         int i=0;
         if (n == 0) {
-            return true; // No flowers need to be planted
+            return true;
         }
-        while ( i < flowerbed.length){ // Keeps executing this block until the loop condition becomes false.
+        while ( i < flowerbed.length){
             if(flowerbed[i]==1){
                 i=i+2;
-                continue; // Skips the rest of the current loop iteration and moves to the next one.
+                continue;
             }
             int emptyCounter=0;
             while( i < flowerbed.length && flowerbed[i]==0) {

@@ -3,7 +3,7 @@ import java.util.Stack;
 public class BracketsMatcher {
 	public static boolean isBracketsBalanced(String str) {
 		if (str == null || str.length() == 0)
-			throw new IllegalArgumentException("Invalid Input"); // Raises an exception to signal an invalid or unexpected condition.
+			throw new IllegalArgumentException("Invalid Input");
 		Stack<Character> stack = new Stack<Character>();
 		for (int i = 0; i < str.length(); i++) {
 			char ch = str.charAt(i);

@@ -15,11 +15,11 @@ public class FindDuplicateElementInArray {
 	static void findDuplicate(int arr[]) {
 		int n = arr.length;
 		for (int i = 0; i < n; i++) {
-			int index = (arr[i] % n) - 1; // Calculate index properly
+			int index = (arr[i] % n) - 1;
 			if (arr[index] >= n) {
 				System.out.println("Duplicate element found: " + (index + 1));
 			} else {
-				arr[index] += n; // Mark the element as visited
+				arr[index] += n;
 			}
 		}
 	}

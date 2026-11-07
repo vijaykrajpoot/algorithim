@@ -44,7 +44,7 @@ public class CountRecurringCharacter {
         } else {
           map.put(String.valueOf(ch), 1);
         }
-        continue; // Skips the rest of the current loop iteration and moves to the next one.
+        continue;
       } else {
         map.put(String.valueOf(ch), 1);
         count = 0;

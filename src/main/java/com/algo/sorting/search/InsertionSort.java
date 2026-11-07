@@ -9,14 +9,13 @@ public class InsertionSort {
 	}
 	int[] insertionSort(int[] arr) {
 		for (int i = 1; i < arr.length; i++) {
-			int selected = arr[i];      // Current element to insert
-			int prev = i - 1;           // Start comparing with the previous element
-			// Shift elements > selected to the right
-			while (prev >= 0 && arr[prev] > selected) { // Keeps executing this block until the loop condition becomes false.
-				arr[prev + 1] = arr[prev];  // Move larger elements forward
-				prev--;                     // Move left in the sorted subarray
+			int selected = arr[i];
+			int prev = i - 1;
+			while (prev >= 0 && arr[prev] > selected) {
+				arr[prev + 1] = arr[prev];
+				prev--;
 			}
-			arr[prev + 1] = selected;  // Insert selected in its correct position
+			arr[prev + 1] = selected;
 		}
 		return arr;
 	}

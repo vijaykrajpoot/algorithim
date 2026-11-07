@@ -5,9 +5,7 @@ package com.algo.string.arrays;
  * method to rotate the image by 90 degrees. Can you do this in place?
  * 
  *
- * 
-
-//@formatter:off
+ * // @formatter:off
   10'  15  20  25'
   30   35  40  45
   50   55  60  65
@@ -32,7 +30,6 @@ package com.algo.string.arrays;
   20  40  60  80
   15  35  55  75
   10  30  50  70
-//@formatter:off
  * 
  * 
  * 
@@ -43,15 +40,13 @@ package com.algo.string.arrays;
 public class RotateMatrix {
   public static void main(String[] args) {
     int matrix[][] = {
-            {10, 15, 20, 25}, // Opens a new block to group the related statements.
-            {30, 35, 40, 45}, // Opens a new block to group the related statements.
-            {50, 55, 60, 65}, // Opens a new block to group the related statements.
-            {70, 75, 80, 85} // Opens a new block to group the related statements.
+            {10, 15, 20, 25},
+            {30, 35, 40, 45},
+            {50, 55, 60, 65},
+            {70, 75, 80, 85}
       };
     display(matrix);
     rotateMatrix(matrix, false);
-  //  System.out.println("=========================");
-  //  display(matrix);
 
   }
   public static void rotateMatrix(int matrix[][], boolean isClockWise) {
@@ -72,9 +67,9 @@ public class RotateMatrix {
     int len = matrix.length;
     for (int row = 0; row < len; row++) {
       for (int col = 0; col < len; col++) {
-        System.out.print("  " + matrix[row][col]); // Prints the value without moving to a new line.
+        System.out.print("  " + matrix[row][col]);
       }
-      System.out.print("\n"); // Prints the value without moving to a new line.
+      System.out.print("\n");
     }
   }
 }

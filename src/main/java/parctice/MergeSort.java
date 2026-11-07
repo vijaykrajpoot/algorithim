@@ -13,11 +13,9 @@ public class MergeSort {
         } else {
             int mid = length / 2;
             int remLength = length - mid;
-            // Create auxiliary array
 
             int[] arr1 = new int[mid];
             int[] arr2 = new int[remLength];
-            // Copy the element
 
             System.arraycopy(arr, 0, arr1, 0, mid);
             System.arraycopy(arr, mid, arr2, 0, remLength);
@@ -33,17 +31,17 @@ public class MergeSort {
         int idx1 = 0;
         int idx2 = 0;
         int[] arr = new int[l1 + l2];
-        while (idx1 < l1 && idx2 < l2) { // Keeps executing this block until the loop condition becomes false.
+        while (idx1 < l1 && idx2 < l2) {
             if (arr1[idx1] < arr2[idx2]) {
                 arr[idx++] = arr1[idx1++];
             } else {
                 arr[idx++] = arr2[idx2++];
             }
         }
-        while (idx1 < l1) { // Keeps executing this block until the loop condition becomes false.
+        while (idx1 < l1) {
             arr[idx++] = arr1[idx1++];
         }
-        while (idx2 < l2) { // Keeps executing this block until the loop condition becomes false.
+        while (idx2 < l2) {
             arr[idx++] = arr2[idx2++];
         }
         return arr;

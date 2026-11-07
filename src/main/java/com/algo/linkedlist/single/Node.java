@@ -9,10 +9,8 @@ package com.algo.linkedlist.single;
  */
 
 public class Node<T> {
-	T data; // Declares a variable to hold data needed by this method.
-
-	Node<T> next; // Declares a variable to hold data needed by this method.
-
+	T data;
+	Node<T> next;
 	public Node(T data) {
 		this.data = data;
 	}

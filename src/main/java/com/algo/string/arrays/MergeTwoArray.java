@@ -16,7 +16,7 @@ public class MergeTwoArray {
   static void mergeArray(int arr1[], int arr2[]) {
     int idx1 = 0, idx2 = 0, idx = 0;
     int arr3[] = new int[arr1.length + arr2.length];
-    while (idx1 < arr1.length && idx2 < arr2.length) { // Keeps executing this block until the loop condition becomes false.
+    while (idx1 < arr1.length && idx2 < arr2.length) {
       if (arr1[idx1] < arr2[idx2]) {
         arr3[idx++] = arr1[idx1++];
       } else {
@@ -24,21 +24,21 @@ public class MergeTwoArray {
       }
     }
     for (int i = 0; i < arr3.length; i++) {
-      System.out.print(arr3[i] + ","); // Prints the value without moving to a new line.
+      System.out.print(arr3[i] + ",");
     }
-    while (idx1 < arr1.length) { // Keeps executing this block until the loop condition becomes false.
+    while (idx1 < arr1.length) {
       arr3[idx++] = arr1[idx1++];
     }
     System.out.println();
     for (int i = 0; i < arr3.length; i++) {
-      System.out.print(arr3[i] + ","); // Prints the value without moving to a new line.
+      System.out.print(arr3[i] + ",");
     }
     System.out.println();
-    while (idx2 < arr2.length) { // Keeps executing this block until the loop condition becomes false.
+    while (idx2 < arr2.length) {
       arr3[idx++] = arr2[idx2++];
     }
     for (int i = 0; i < arr3.length; i++) {
-      System.out.print(arr3[i] + ","); // Prints the value without moving to a new line.
+      System.out.print(arr3[i] + ",");
     }
   }
 }

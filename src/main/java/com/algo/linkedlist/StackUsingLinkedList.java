@@ -24,9 +24,8 @@ public class StackUsingLinkedList {
     }
 }
 class LinkedListX {
-    NodeX start; // Declares a variable to hold data needed by this method.
-    NodeX current; // Declares a variable to hold data needed by this method.
-
+    NodeX start;
+    NodeX current;
     void add(int data) {
         NodeX node = new NodeX(data);
         if (start == null) {
@@ -40,20 +39,20 @@ class LinkedListX {
     }
     void show() {
         NodeX current = start;
-        while (current != null) { // Keeps executing this block until the loop condition becomes false.
-            System.out.print(current.data); // Prints the value without moving to a new line.
+        while (current != null) {
+            System.out.print(current.data);
             if (current.next != null) {
-                System.out.print(" -> "); // Prints the value without moving to a new line.
+                System.out.print(" -> ");
             }
             current = current.next;
         }
     }
     void reverseShow() {
         NodeX node = current;
-        while (node != null) { // Keeps executing this block until the loop condition becomes false.
-            System.out.print(node.data); // Prints the value without moving to a new line.
+        while (node != null) {
+            System.out.print(node.data);
             if (node.prev != null) {
-                System.out.print(" -> "); // Prints the value without moving to a new line.
+                System.out.print(" -> ");
             }
             node = node.prev;
         }
@@ -66,17 +65,15 @@ class LinkedListX {
     }
 }
 class NodeX {
-    NodeX next; // Declares a variable to hold data needed by this method.
-    NodeX prev; // Declares a variable to hold data needed by this method.
-    int data; // Declares a variable to hold data needed by this method.
-
+    NodeX next;
+    NodeX prev;
+    int data;
     public NodeX(int data) {
         this.data = data;
     }
 }
 class Stack {
-    LinkedListX linkedListX; // Declares a variable to hold data needed by this method.
-
+    LinkedListX linkedListX;
     public Stack() {
         this.linkedListX = new LinkedListX();
     }

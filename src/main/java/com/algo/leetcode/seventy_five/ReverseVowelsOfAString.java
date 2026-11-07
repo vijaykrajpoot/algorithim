@@ -35,18 +35,17 @@ public class ReverseVowelsOfAString {
         int stIdx = 0;
         int endIdx = s.length() - 1;
         char[] charArray = s.toCharArray();
-        while (stIdx < endIdx) { // Keeps executing this block until the loop condition becomes false.
+        while (stIdx < endIdx) {
             if (isVowel(s.charAt(stIdx)) && isVowel(s.charAt(endIdx))) {
-                // Swap
                 char temp = charArray[stIdx];
                 charArray[stIdx] = charArray[endIdx];
                 charArray[endIdx] = temp;
             } else if (!isVowel(s.charAt(stIdx))) {
                 stIdx++;
-                continue; // Skips the rest of the current loop iteration and moves to the next one.
+                continue;
             } else if (!isVowel(s.charAt(endIdx))) {
                 endIdx--;
-                continue; // Skips the rest of the current loop iteration and moves to the next one.
+                continue;
             }
             stIdx++;
             endIdx--;

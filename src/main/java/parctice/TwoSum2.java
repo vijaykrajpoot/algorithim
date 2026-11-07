@@ -10,9 +10,7 @@ public class TwoSum2 {
         Arrays.sort(arr);
         int leftIdx = 0;
         int rightIdx = arr.length - 1;
-        // 1,2,3,4,5,6,7,8,9 =13
-        //10
-        while (leftIdx < rightIdx) { // Keeps executing this block until the loop condition becomes false.
+        while (leftIdx < rightIdx) {
             int sum = arr[leftIdx] + arr[rightIdx];
             if (sum == target) {
                 System.out.println(leftIdx + "," + rightIdx);

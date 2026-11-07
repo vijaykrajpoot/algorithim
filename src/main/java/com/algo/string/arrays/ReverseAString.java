@@ -16,13 +16,11 @@ public class ReverseAString {
 			s[j] = temp;
 		}
 		for (int i = 0; i < s.length; i++) {
-			System.out.print(s[i] + ","); // Prints the value without moving to a new line.
+			System.out.print(s[i] + ",");
 		}
 	}
 	public static void main(String[] args) {
-		//char aa[] =new char[] {'h','e','l','l','o',};
 		char aa[] =null;
-		new ReverseAString().reverseString(aa); // Creates a new object instance so the code can use that class's behavior.
-
+		new ReverseAString().reverseString(aa);
 	}
 }

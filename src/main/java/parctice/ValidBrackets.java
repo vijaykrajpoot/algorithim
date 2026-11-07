@@ -4,13 +4,12 @@ import java.util.Stack;
 public class ValidBrackets {
 	public static void main(String[] args) {
 		ValidBrackets validator = new ValidBrackets();
-		System.out.println(validator.isValid("()")); // true
-		System.out.println(validator.isValid("()[]{}")); // true
-		System.out.println(validator.isValid("(]")); // false
-		System.out.println(validator.isValid("([)]")); // false
-		System.out.println(validator.isValid("{[]}")); // true
+		System.out.println(validator.isValid("()"));
+		System.out.println(validator.isValid("()[]{}"));
+		System.out.println(validator.isValid("(]"));
+		System.out.println(validator.isValid("([)]"));
+		System.out.println(validator.isValid("{[]}"));
 	}
-	// [ ]
 	public boolean isValid(String str) {
 		char[] ch = str.toCharArray();
 		Stack<Character> charStack = new Stack<>();

@@ -1,5 +1,4 @@
 package com.algo.leetcode.seventy_five;
-// 1768. Merge Strings Alternately
 /*
 You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1.
 If a string is longer than the other, append the additional letters onto the end of the merged string.
@@ -46,7 +45,7 @@ public class MergeAlternately {
 		int len2 = arr2.length;
 		char[] arr = new char[len1 + len2];
 		boolean skip = false;
-		while (idx1 < len1 && idx2 < len2) { // Keeps executing this block until the loop condition becomes false.
+		while (idx1 < len1 && idx2 < len2) {
 			if (!skip) {
 				arr[idx++] = arr1[idx1++];
 			} else {
@@ -54,10 +53,10 @@ public class MergeAlternately {
 			}
 			skip = !skip;
 		}
-		while (idx1 < len1) { // Keeps executing this block until the loop condition becomes false.
+		while (idx1 < len1) {
 			arr[idx++] = arr1[idx1++];
 		}
-		while (idx2 < len2) { // Keeps executing this block until the loop condition becomes false.
+		while (idx2 < len2) {
 			arr[idx++] = arr2[idx2++];
 		}
 		return new String(arr);

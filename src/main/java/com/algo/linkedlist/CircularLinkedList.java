@@ -1,8 +1,7 @@
 package com.algo.linkedlist;
 public class CircularLinkedList {
-	Node start; // Declares a variable to hold data needed by this method.
-	Node current; // Declares a variable to hold data needed by this method.
-
+	Node start;
+	Node current;
 	public void add(int data) {
 		if (start == null) {
 			Node node = new Node(data);
@@ -17,7 +16,7 @@ public class CircularLinkedList {
 	}
 	public boolean isCircularLinkedList() {
 		Node current = start;
-		while (current.next != start) { // Keeps executing this block until the loop condition becomes false.
+		while (current.next != start) {
 			current = current.next;
 		}
 		return current.next == start;
@@ -27,9 +26,9 @@ public class CircularLinkedList {
 	 */
 	public void printList() {
 		Node curret = start;
-		System.out.print("List: "); // Prints the value without moving to a new line.
-		while (curret.next != start) { // Keeps executing this block until the loop condition becomes false.
-			System.out.print("=>" + curret.data); // Prints the value without moving to a new line.
+		System.out.print("List: ");
+		while (curret.next != start) {
+			System.out.print("=>" + curret.data);
 			curret = curret.next;
 		}
 		System.out.println();

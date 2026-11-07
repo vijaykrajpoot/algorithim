@@ -2,8 +2,6 @@ package com.algo.string.arrays;
 import java.util.Random;
 public class CharTest {
 	private static Random rand = new Random();
-	// r - 0-9
-	// r - 10 -35
 	public static void main(String[] args) {
 		StringBuilder shortURL = new StringBuilder();
 		for (int i = 0; i < 6; ++i) {

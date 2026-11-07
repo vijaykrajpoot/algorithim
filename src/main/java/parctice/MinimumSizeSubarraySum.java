@@ -5,11 +5,10 @@ public class MinimumSizeSubarraySum {
 		int windowSum = 0;
 		int windowStart = 0;
 		for (int windowEnd = 0; windowEnd < nums.length; windowEnd++) {
-			windowSum += nums[windowEnd]; // Expand the window
-			// Shrink the window until the sum is less than the target
-			while (windowSum >= target) { // Keeps executing this block until the loop condition becomes false.
+			windowSum += nums[windowEnd];
+			while (windowSum >= target) {
 				minLength = Math.min(minLength, windowEnd - windowStart + 1);
-				windowSum -= nums[windowStart]; // Shrink the window
+				windowSum -= nums[windowStart];
 				windowStart++;
 			}
 		}

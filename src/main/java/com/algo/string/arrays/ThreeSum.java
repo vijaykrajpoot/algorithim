@@ -30,7 +30,7 @@ public class ThreeSum {
         for (int i = 0; i < arr.length - 1; i++) {
             int low = i + 1;
             int high = arr.length - 1;
-            while (low < high) { // Keeps executing this block until the loop condition becomes false.
+            while (low < high) {
                 int sum = arr[i] + arr[low] + arr[high];
                 if (sum == 0) {
                     StringBuilder bb = new StringBuilder();
@@ -60,7 +60,7 @@ public class ThreeSum {
         for (int i = 0; i < arr.length - 2; i++) {
             int low = i + 1;
             int high = arr.length - 1;
-            while (low < high) { // Keeps executing this block until the loop condition becomes false.
+            while (low < high) {
                 int sum = arr[low] + arr[high] + arr[i];
                 if (sum == 0) {
                     ll.add(Arrays.asList(arr[i], arr[low], arr[high]));

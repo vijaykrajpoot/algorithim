@@ -28,7 +28,6 @@ public class ReverseWordsInAString {
         stIndex = endIndex;
       }
     }
-    // Exit from loop after endIndex == string length and reverse last string
     if (endIndex >= resversedString.length()) {
       rrString = rrString + reverseMe(resversedString.substring(stIndex, resversedString.length()));;
     }
@@ -41,7 +40,6 @@ public class ReverseWordsInAString {
       ch[i] = ch[str.length() - 1 - i];
       ch[str.length() - 1 - i] = temp;
     }
- //   System.out.println("str:" + str + ":ch.len:" + ch.length + "  :String(ch):" + new String(ch));
     return new String(ch);
   }
 }

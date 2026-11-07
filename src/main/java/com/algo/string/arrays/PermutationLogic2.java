@@ -8,13 +8,9 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  */
 public class PermutationLogic2 {
-    // Collect result
     private StringBuilder result = new StringBuilder();
-    // Input data
-    private String inputString; // Declares a variable to hold data needed by this method.
-    // Keep tracked which character has been used or not.
-    private boolean[] isUsed; // Declares a variable to hold data needed by this method.
-
+    private String inputString;
+    private boolean[] isUsed;
     /**
      * @param inputString
      */
@@ -33,11 +29,11 @@ public class PermutationLogic2 {
     void printPermute() {
         if (result.length() == inputString.length()) {
             print(result.toString().toCharArray());
-            return; // Declares a variable to hold data needed by this method.
+            return;
         }
         for (int i = 0; i < inputString.length(); i++) {
             if (isUsed[i] == true) {
-                continue; // Skips the rest of the current loop iteration and moves to the next one.
+                continue;
             }
             result.append(inputString.charAt(i));
             isUsed[i] = true;
@@ -48,18 +44,17 @@ public class PermutationLogic2 {
     }
     private void print(char arr[]) {
         for (char ch : arr) {
-            System.out.print(ch); // Prints the value without moving to a new line.
+            System.out.print(ch);
         }
         System.out.println();
     }
-    // Driver code
     public static void main(String[] args) {
         String atoz = "abcd";
         char ch[] = atoz.toCharArray();
         String permute = "";
         for (int i = 0; i < ch.length; i++) {
             if (i + ch.length > ch.length) {
-                return; // Declares a variable to hold data needed by this method.
+                return;
             }
             permute = atoz.substring(i, i + ch.length);
             PermutationLogic2 permutation2 = new PermutationLogic2(permute);

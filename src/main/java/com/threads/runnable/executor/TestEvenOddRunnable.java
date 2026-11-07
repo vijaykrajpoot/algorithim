@@ -11,8 +11,6 @@ public class TestEvenOddRunnable {
 		EvenOddNumberRunnable evenOddNumberRunnable200 = new EvenOddNumberRunnable(IntStream.range(100, 200).toArray());
 		EvenOddNumberRunnable evenOddNumberRunnable300 = new EvenOddNumberRunnable(IntStream.range(200, 300).toArray());
 		EvenOddNumberRunnable evenOddNumberRunnable400 = new EvenOddNumberRunnable(IntStream.range(300, 400).toArray());
-		// ExecutorService executorService=Executors.newSingleThreadExecutor();
-		// executorService.execute(evenOddNumberRunnable);
 		ExecutorService executorServiceT = Executors.newFixedThreadPool(10);
 		Future<String> future1 = executorServiceT.submit(evenOddNumberRunnable100);
 		System.out.println(LocalTime.now() + "::" + future1.get());
@@ -22,10 +20,6 @@ public class TestEvenOddRunnable {
 		System.out.println(LocalTime.now() + "::" + future3.get());
 		Future<String> future4 = executorServiceT.submit(evenOddNumberRunnable400);
 		System.out.println(LocalTime.now() + "::" + future4.get());
-		// System.out.println( LocalTime.now()+"::"+future1.get());
-		// System.out.println( LocalTime.now()+"::"+future2.get());
-		// System.out.println( LocalTime.now()+"::"+future3.get());
-		// System.out.println( LocalTime.now()+"::"+future4.get());
 
 		executorServiceT.shutdown();
 	}

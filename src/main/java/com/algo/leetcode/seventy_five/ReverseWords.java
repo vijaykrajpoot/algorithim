@@ -29,8 +29,6 @@ import java.util.Arrays;
 public class ReverseWords {
     public static void main(String[] args) {
         String str = "the   sky  is   blue";
-        //    trim(str.toCharArray());
-        // System.out.println("After Trim:" + str);
         char[] charArray = str.toCharArray();
         System.out.println("Original String: " + str);
         str = reverseWords(charArray);
@@ -47,7 +45,6 @@ public class ReverseWords {
                 start = i + 1;
             }
         }
-        // reverse the last word
         reverseIt(str, start, end);
         trim(str);
         return new String(str);
@@ -70,17 +67,14 @@ public class ReverseWords {
     static void trim(char[] arr) {
         int left = 0;
         int right = arr.length - 1;
-        // Trim leading spaces
-        while (left <= right && arr[left] == ' ') { // Keeps executing this block until the loop condition becomes false.
+        while (left <= right && arr[left] == ' ') {
             left++;
         }
-        // Trim trailing spaces
-        while (right >= left && arr[right] == ' ') { // Keeps executing this block until the loop condition becomes false.
+        while (right >= left && arr[right] == ' ') {
             right--;
         }
         int writeIndex = 0;
         boolean spaceFound = false;
-        // Copy non-space characters to the beginning of the array
         for (int i = left; i <= right; i++) {
             char c = arr[i];
             if (c != ' ') {
@@ -91,10 +85,8 @@ public class ReverseWords {
                 spaceFound = true;
             }
         }
-        // Resize array if necessary
         if (writeIndex < arr.length) {
             arr = Arrays.copyOf(arr, writeIndex);
         }
-        // System.out.println("Trimmed: " + Arrays.toString(arr));
     }
 }

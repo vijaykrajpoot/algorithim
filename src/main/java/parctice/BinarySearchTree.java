@@ -46,7 +46,6 @@ public class BinarySearchTree {
 		binarySearchTree.insert(8);
 		binarySearchTree.insert(7);
 		binarySearchTree.printTree(binarySearchTree.root);
-	//	binarySearchTree.displayTree();
 	}
 	/**
 	 * Copied Data Structures & Algorithms in Java by Robert Lafore
@@ -56,39 +55,38 @@ public class BinarySearchTree {
 		globalStack.push(root);
 		int nBlanks = 50;
 		boolean isRowEmpty = false;
-		while (isRowEmpty == false) { // Keeps executing this block until the loop condition becomes false.
+		while (isRowEmpty == false) {
 			Stack<Node> localStack = new Stack<>();
 			isRowEmpty = true;
 			for (int j = 0; j < nBlanks; j++)
-				System.out.print(' '); // Prints the value without moving to a new line.
-			while (globalStack.isEmpty() == false) { // Keeps executing this block until the loop condition becomes false.
+				System.out.print(' ');
+			while (globalStack.isEmpty() == false) {
 				Node temp = globalStack.pop();
 				if (temp != null) {
-					System.out.print(temp.data); // Prints the value without moving to a new line.
+					System.out.print(temp.data);
 					localStack.push(temp.left);
 					localStack.push(temp.right);
 					if (temp.left != null || temp.right != null)
 						isRowEmpty = false;
 				} else {
-					System.out.print("##"); // Prints the value without moving to a new line.
+					System.out.print("##");
 					localStack.push(null);
 					localStack.push(null);
 				}
 				for (int j = 0; j < nBlanks * 2 - 2; j++)
-					System.out.print(' '); // Prints the value without moving to a new line.
-			} // end while globalStack not empty
+					System.out.print(' ');
+			}
 			System.out.println();
 			nBlanks /= 2;
-			while (localStack.isEmpty() == false) // Keeps executing this block until the loop condition becomes false.
+			while (localStack.isEmpty() == false)
 				globalStack.push(localStack.pop());
-		} // end while isRowEmpty is false
+		}
 	}
 }
 class Node {
-	int data; // Declares a variable to hold data needed by this method.
-	Node left; // Declares a variable to hold data needed by this method.
-	Node right; // Declares a variable to hold data needed by this method.
-
+	int data;
+	Node left;
+	Node right;
 	public Node(int data) {
 		this.data = data;
 	}

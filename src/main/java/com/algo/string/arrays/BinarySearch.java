@@ -2,7 +2,7 @@ package com.algo.string.arrays;
 public class BinarySearch {
   public static boolean search(int arr[], int num) {
     if (arr == null || arr.length == 0) {
-      throw new IllegalArgumentException("Input is Empty || Null"); // Raises an exception to signal an invalid or unexpected condition.
+      throw new IllegalArgumentException("Input is Empty || Null");
     }
     return s(arr, num, 0, arr.length) > -1;
   }

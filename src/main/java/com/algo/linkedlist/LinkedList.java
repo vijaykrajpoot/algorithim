@@ -6,10 +6,9 @@ package com.algo.linkedlist;
  *
  */
 public class LinkedList {
-	private Node start; // Declares a variable to hold data needed by this method.
-	private Node current; // Declares a variable to hold data needed by this method.
-	private long size; // Declares a variable to hold data needed by this method.
-
+	private Node start;
+	private Node current;
+	private long size;
 	public long size() {
 		return size;
 	}
@@ -36,9 +35,9 @@ public class LinkedList {
 		Node curret = start;
 		if (listHeading == null)
 			listHeading = "List:";
-		System.out.print(listHeading); // Prints the value without moving to a new line.
-		while (curret != null) { // Keeps executing this block until the loop condition becomes false.
-			System.out.print("-> " + curret.data); // Prints the value without moving to a new line.
+		System.out.print(listHeading);
+		while (curret != null) {
+			System.out.print("-> " + curret.data);
 			curret = curret.next;
 		}
 		System.out.println();
@@ -51,16 +50,13 @@ public class LinkedList {
 
 	public Node findMiddleNodeLogic1() {
 		if (start == null) {
-			throw new IllegalStateException("Empty List"); // Raises an exception to signal an invalid or unexpected condition.
+			throw new IllegalStateException("Empty List");
 		}
 		Node node1 = start;
 		Node node2 = start;
 		int i = 0;
-		// Here i=0 is very important because in case of even size of list
-		// if we need to return Mid+1 i.e. 1-10 list return 6 then i must be 0 so that
-		// node2.next will execute
 
-		while (node1.next != null) { // Keeps executing this block until the loop condition becomes false.
+		while (node1.next != null) {
 			node1 = node1.next;
 			if (((i++) % 2) == 0)
 				node2 = node2.next;
@@ -78,16 +74,11 @@ public class LinkedList {
 	 */
 	public Node findMiddleNodeLogic2() {
 		if (start == null) {
-			throw new IllegalStateException("Empty List"); // Raises an exception to signal an invalid or unexpected condition.
+			throw new IllegalStateException("Empty List");
 		}
 		Node p1 = start, p2 = start;
 		boolean skip = true;
-		// if block is moving p1/p2 both pointers to return Mid+1 i.e. 1-10 list return
-		// 6.
-		// in case of even size of list
-		// if we need number 5 in case of 1-10 list then make skip=false or move p1 & p2
-		// in else block or change if(skip) to if(!skip) :-)
-		while (p1.next != null) { // Keeps executing this block until the loop condition becomes false.
+		while (p1.next != null) {
 			if (!skip) {
 				p1 = p1.next;
 				p2 = p2.next;
@@ -100,7 +91,7 @@ public class LinkedList {
 	}
 	public boolean deleteNode(int data) {
 		if (start == null) {
-			throw new IllegalStateException("Empty List"); // Raises an exception to signal an invalid or unexpected condition.
+			throw new IllegalStateException("Empty List");
 		}
 		Node current = start;
 		Node previous = start;
@@ -109,7 +100,7 @@ public class LinkedList {
 			size--;
 			return true;
 		}
-		while (current != null) { // Keeps executing this block until the loop condition becomes false.
+		while (current != null) {
 			if (current.data == data) {
 				previous.next = current.next;
                 size--;
@@ -124,14 +115,11 @@ public class LinkedList {
 		int first = Integer.MIN_VALUE;
 		int second = Integer.MIN_VALUE;
 		Node current = start;
-		while (current != null) { // Keeps executing this block until the loop condition becomes false.
+		while (current != null) {
 			if (current.data > first) {
 				second = first;
 				first = current.data;
 			} else {
-				// 104, 887, 524, 132, 75, 542, 311, 318, 459, 143
-				// In this case since 887 is higher then second largest will always remain 104
-				// So this else condition is required
 				if (current.data > second) {
 					second = current.data;
 				}
@@ -152,7 +140,7 @@ public class LinkedList {
 		LinkedList mergedList = new LinkedList();
 		Node l1Current = l1.start;
 		Node l2Current = l2.start;
-		while (l1Current != null && l2Current != null) { // Keeps executing this block until the loop condition becomes false.
+		while (l1Current != null && l2Current != null) {
 			if (l1Current.data <= l2Current.data) {
 				mergedList.add(l1Current.data);
 				l1Current = l1Current.next;
@@ -165,11 +153,11 @@ public class LinkedList {
 				l2Current = l2Current.next;
 			}
 		}
-		while (l1Current != null) { // Keeps executing this block until the loop condition becomes false.
+		while (l1Current != null) {
 			mergedList.add(l1Current.data);
 			l1Current = l1Current.next;
 		}
-		while (l2Current != null) { // Keeps executing this block until the loop condition becomes false.
+		while (l2Current != null) {
 			mergedList.add(l2Current.data);
 			l2Current = l2Current.next;
 		}
@@ -200,8 +188,8 @@ public class LinkedList {
 		l2.add(300);
 		LinkedList mergedLL = linkedList.mergedLinkedList(l1, l2);
 		Node node = mergedLL.start;
-		while (node != null) { // Keeps executing this block until the loop condition becomes false.
-			System.out.print("-> " + node.data); // Prints the value without moving to a new line.
+		while (node != null) {
+			System.out.print("-> " + node.data);
 			node = node.next;
 		}
 		System.out.println();

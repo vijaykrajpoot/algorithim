@@ -47,8 +47,8 @@ public class MoveZeros_283 {
         int val = 0;
         for (int i = 0; i < nums.length && j < nums.length; ) {
             if (nums[i] == 0) {
-                while (nums[j++] != 0 & j < nums.length) { // Keeps executing this block until the loop condition becomes false.
-                    continue; // Skips the rest of the current loop iteration and moves to the next one.
+                while (nums[j++] != 0 & j < nums.length) {
+                    continue;
                 }
                 if (j < nums.length && nums[j] != 0) {
                     val = nums[j];

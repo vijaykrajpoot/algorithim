@@ -16,23 +16,6 @@ public class PrimeNumber {
     long endTime = Instant.now().toEpochMilli();
     long timeElapsed = endTime - stTime;
     System.out.println(timeElapsed);
-    // System.out.println("PrimeNumber.isPrime(" + number + ") :" + PrimeNumber.isPrime(number));
-    // number = 7;
-    // System.out.println("PrimeNumber.isPrime(" + number + ") :" + PrimeNumber.isPrime(number));
-    // number = 25;
-    // System.out.println("PrimeNumber.isPrime(" + number + ") :" + PrimeNumber.isPrime(number));
-    // number = 343;
-    // System.out.println("PrimeNumber.isPrime(" + number + ") :" + PrimeNumber.isPrime(number));
-    // number = 0;
-    // System.out.println("PrimeNumber.isPrime(" + number + ") :" + PrimeNumber.isPrime(number));
-    // number = 2;
-    // System.out.println("PrimeNumber.isPrime(" + number + ") :" + PrimeNumber.isPrime(number));
-    // number = 1;
-    // System.out.println("PrimeNumber.isPrime(" + number + ") :" + PrimeNumber.isPrime(number));
-    // number = -23;
-    // System.out.println("PrimeNumber.isPrime(" + number + ") :" + PrimeNumber.isPrime(number));
-    // number = 29;
-    // System.out.println("PrimeNumber.isPrime(" + number + ") :" + PrimeNumber.isPrime(number));
 
   }
   static boolean isPrime(int numnber) {

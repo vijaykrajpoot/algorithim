@@ -14,8 +14,6 @@ public class FindAMaxElementInArray {
     long duration = (endTime - startTime) / 1000000;
     System.out.println("findMaxElementSolutuon1: TimeSpend:" + duration + " maxNumber: " + maxNumber);
     System.out.flush();
-    // System.out.println("#######################");
-    // System.out.flush();
     startTime = System.nanoTime();
     FindAMaxElementInArray.findMaxelementSolutuon2(arr);
     endTime = System.nanoTime();
@@ -28,7 +26,6 @@ public class FindAMaxElementInArray {
     int[] arr = new int[LIMIT];
     for (int i = 0; i < LIMIT; i++) {
       int num = random.nextInt(100);
-      // System.out.println("[" + i + "]:" + num);
       arr[i] = num;
     }
     return arr;
@@ -72,14 +69,13 @@ public class FindAMaxElementInArray {
         if (arr[j] > arr[i]) {
           isMax = false;
           countJ++;
-          break; // Exits the current loop or switch branch immediately.
+          break;
         }
       }
       countI++;
       if (isMax)
-        break; // Exits the current loop or switch branch immediately.
+        break;
     }
-    // System.out.flush();
     return arr[i];
   }
 }

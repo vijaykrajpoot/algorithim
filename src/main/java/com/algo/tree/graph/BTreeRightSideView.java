@@ -9,7 +9,7 @@ public class BTreeRightSideView {
 		Queue<TreeNode> q = new LinkedList<>();
 		List<Integer> result = new ArrayList<>();
 		q.add(root);
-		while (!q.isEmpty()) { // Keeps executing this block until the loop condition becomes false.
+		while (!q.isEmpty()) {
 			int qSize=q.size();
 			TreeNode node = q.poll();
 			TreeNode lastElement = null;

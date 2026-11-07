@@ -10,7 +10,6 @@ public class ArrayMaxAverageSlidingWindow {
         for (int i = 0; i < arr.length; i++) {
             System.out.println(i);
             if (i <   k) {
-                // System.out.println("Inside:"+ i);
                 int sum = arr[i] + arr[i + 1] + arr[i + 2] + arr[i + 3];
                 System.out.println("sum:" + sum);
                 double calcSum = (double) sum / k;
@@ -27,11 +26,10 @@ public class ArrayMaxAverageSlidingWindow {
         double sum = 0;
         int start = 0;
         int end = 4;
-        // Average first 4
         for (int i = 0; i < k; i++) {
             sum = sum + arr[i];
         }
-        while (start < arr.length - 1 - k) { // Keeps executing this block until the loop condition becomes false.
+        while (start < arr.length - 1 - k) {
             sum = sum - arr[start] + arr[end];
             maxSum = Math.max(maxSum, sum);
             start++;

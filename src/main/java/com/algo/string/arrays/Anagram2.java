@@ -17,15 +17,14 @@ public class Anagram2 {
 		StringBuilder sb = new StringBuilder();
 		for (char c : tArr) {
 			if (c == ' ')
-				continue; // Skips the rest of the current loop iteration and moves to the next one.
+				continue;
 			int index = actualString.indexOf(c);
 			if (index > -1) {
 				result = true;
-			//	System.out.println("sourceArr[" + index + "]:" + sourceArr[index]);
 				sb.append(sourceArr[index]);
 			}else{
 				result =false;
-				break; // Exits the current loop or switch branch immediately.
+				break;
 			}
 		}
 		System.out.println(sb.toString());

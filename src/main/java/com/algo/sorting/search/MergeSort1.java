@@ -28,16 +28,16 @@ public class MergeSort1 {
         int l2 = arr2.length;
         int idx = 0, idx1 = 0, idx2 = 0;
         int arr[] = new int[l1 + l2];
-        while (idx1 < l1 && idx2 < l2) { // Keeps executing this block until the loop condition becomes false.
+        while (idx1 < l1 && idx2 < l2) {
             if (arr1[idx1] < arr2[idx2])
                 arr[idx++] = arr1[idx1++];
-            else // Runs this branch when the previous conditional check is false.
+            else
                 arr[idx++] = arr2[idx2++];
         }
-        while (idx2 < l2) { // Keeps executing this block until the loop condition becomes false.
+        while (idx2 < l2) {
             arr[idx++] = arr2[idx2++];
         }
-        while (idx1 < l1) { // Keeps executing this block until the loop condition becomes false.
+        while (idx1 < l1) {
             arr[idx++] = arr1[idx1++];
         }
         return arr;

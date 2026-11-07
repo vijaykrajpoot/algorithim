@@ -5,12 +5,12 @@ public class ArrayBinarySearch {
         int upperIdx = arr.length - 1;
         int midIdx = 0;
         int indexFound = -1;
-        while (lowerIdx < upperIdx) { // Keeps executing this block until the loop condition becomes false.
+        while (lowerIdx < upperIdx) {
             midIdx = (lowerIdx + upperIdx) / 2;
             if (arr[midIdx] == num) {
                 indexFound = midIdx;
             }
-            { // Opens a new block to group the related statements.
+            {
                 if (arr[midIdx] > num) {
                     upperIdx = midIdx - 1;
                 } else {

@@ -38,9 +38,9 @@ public class RemoveDuplicateSortedArray {
         int[] nums = {1,2,3,4,5,6,7,8,9};
         int k = removeDuplicates(nums);
         System.out.println("Number of unique elements: " + k);
-        System.out.print("Modified array: "); // Prints the value without moving to a new line.
+        System.out.print("Modified array: ");
         for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " "); // Prints the value without moving to a new line.
+            System.out.print(nums[i] + " ");
         }
     }
     public static int removeDuplicates(int[] nums) {

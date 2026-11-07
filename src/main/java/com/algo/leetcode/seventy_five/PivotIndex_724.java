@@ -65,7 +65,7 @@ public class PivotIndex_724 {
     }
     int calcSum(int[] arr, int startIdx, int endIdx) {
         int sum = 0;
-        while (startIdx <= endIdx) { // Keeps executing this block until the loop condition becomes false.
+        while (startIdx <= endIdx) {
             sum = sum + arr[startIdx];
             startIdx++;
         }

@@ -2,8 +2,7 @@ package com.algo.string.arrays;
 import java.util.EmptyStackException;
 public class Stack<T> {
 	private int top = -1;
-	private final T[] array; // Declares a variable to hold data needed by this method.
-
+	private final T[] array;
 	private final int maxSize=200;
 	@SuppressWarnings("unchecked")
 	public Stack() {
@@ -11,13 +10,13 @@ public class Stack<T> {
     }
 	public void push(T element) {
 		if (top == maxSize-1) {
-			throw new StackOverflowError("Stack is Over Flowed"); // Raises an exception to signal an invalid or unexpected condition.
+			throw new StackOverflowError("Stack is Over Flowed");
 		}
 		array[++top] = element;
 	}
 	public T pop() {
 		if (top == -1) {
-			throw new EmptyStackException(); // Raises an exception to signal an invalid or unexpected condition.
+			throw new EmptyStackException();
 		}
 		return array[top--];
 	}

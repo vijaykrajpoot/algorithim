@@ -22,7 +22,6 @@ public class LargestNumber {
       strArr[i] = String.valueOf(arr[i]);
     }
     System.out.println("Before Sorting: " + Arrays.toString(strArr));
-    // Sort higer number like 95
     Arrays.sort(strArr, new Comparator<String>() {
       public int compare(String o1, String o2) {
         System.err.println((o2 + o1) + "-" + (o1 + o2) + "==>" + (o2 + o1).compareTo(o1 + o2));
@@ -30,7 +29,6 @@ public class LargestNumber {
       };
     });
     StringBuilder builder = new StringBuilder();
-    // System.out.println("After Sorting: " + Arrays.toString(strArr));
     boolean isAllZero = true;
     for (String st : strArr) {
       if (isAllZero && st.equals("0")) {

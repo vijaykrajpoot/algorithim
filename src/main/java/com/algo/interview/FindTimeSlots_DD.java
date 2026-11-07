@@ -36,7 +36,7 @@ public class FindTimeSlots_DD {
     List<Integer> result = new ArrayList<>(2);
     for (int i = 0; i < timeSlots.size(); i++) {
       if (i % 2 == 0) {
-        continue; // Skips the rest of the current loop iteration and moves to the next one.
+        continue;
       } else {
         int diff = timeSlots.get(i + 1) - timeSlots.get(i);
         if (diff > 0 && diff > maxSoFar) {

@@ -19,7 +19,7 @@ public class DutchNationalFlag {
         int start = 0;
         int mid = 0;
         int end = balls.size()-1;
-        while (mid <= end) { // Keeps executing this block until the loop condition becomes false.
+        while (mid <= end) {
             if (balls.get(mid) == 'R') {
                 swap(balls, start, mid);
                 start++;

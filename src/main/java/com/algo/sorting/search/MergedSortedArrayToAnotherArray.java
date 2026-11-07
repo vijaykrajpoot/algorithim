@@ -29,7 +29,7 @@ public class MergedSortedArrayToAnotherArray {
     static ArrayList<Integer> merge_one_into_another(ArrayList<Integer> first, ArrayList<Integer> second) {
         int idx1 = 0;
         int idx2 = 0;
-        while (idx1 < first.size()) { // Keeps executing this block until the loop condition becomes false.
+        while (idx1 < first.size()) {
             if (idx2 >= second.size()  || first.get(idx1) <=second.get(idx2)) {
                 second.add(idx2++, first.get(idx1++));
             } else {

@@ -15,7 +15,7 @@ public class BTreeZigZag {
 			for( int i = 0;i<qSize; i++ ){
 				TreeNode node=q.poll();
 				if(node==null){
-					continue; // Skips the rest of the current loop iteration and moves to the next one.
+					continue;
 				}
 				list.add(node.val);
 				if(node.left!=null){

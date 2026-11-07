@@ -17,33 +17,32 @@ public class FlipAnImage {
   int arr[][] = new int[20][20];
   public static void main(String[] args) {
     int arr[][] = {{1, 1, 0}, {1, 0, 1}, {0, 0, 0}};
-    System.out.print("Actual :"); // Prints the value without moving to a new line.
+    System.out.print("Actual :");
     FlipAnImage.display(arr);
-    System.out.print("Reverse&Flip:"); // Prints the value without moving to a new line.
+    System.out.print("Reverse&Flip:");
     FlipAnImage.flipAndReverse(arr);
     FlipAnImage.display(arr);
     System.out.println("############################################");
     int arr1[][] = {{1, 1, 0, 0}, {1, 0, 0, 1}, {0, 1, 1, 1}, {1, 0, 1, 0}};
-    System.out.print("Actual :"); // Prints the value without moving to a new line.
+    System.out.print("Actual :");
     FlipAnImage.display(arr1);
-    System.out.print("Reverse&Flip:"); // Prints the value without moving to a new line.
+    System.out.print("Reverse&Flip:");
     FlipAnImage.flipAndReverse(arr1);
     FlipAnImage.display(arr1);
   }
   public static void display(int arr[][]) {
-    System.out.print("[ "); // Prints the value without moving to a new line.
+    System.out.print("[ ");
     for (int i = 0; i < arr.length; i++) {
-      System.out.print("["); // Prints the value without moving to a new line.
+      System.out.print("[");
       for (int j = 0; j < arr[i].length; j++) {
-        System.out.print(arr[i][j] + " "); // Prints the value without moving to a new line.
+        System.out.print(arr[i][j] + " ");
       }
-      System.out.print("]"); // Prints the value without moving to a new line.
+      System.out.print("]");
     }
     System.out.println("]");
     System.out.flush();
   }
   static void flipAndReverse(int arr[][]) {
-    // reverse
     for (int i = 0; i < arr.length; i++) {
       for (int j = 0; j < arr[i].length / 2; j++) {
         int temp = arr[i][j];
@@ -52,7 +51,6 @@ public class FlipAnImage {
       }
     }
     display(arr);
-    // flip
     for (int i = 0; i < arr.length; i++) {
       for (int j = 0; j < arr[i].length; j++) {
         if (arr[i][j] == 0) {

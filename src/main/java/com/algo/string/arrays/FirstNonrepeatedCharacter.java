@@ -31,6 +31,6 @@ public class FirstNonrepeatedCharacter {
         return entry.getKey();
       }
     }
-    throw new RuntimeException("There is no First Repeated Chracter"); // Raises an exception to signal an invalid or unexpected condition.
+    throw new RuntimeException("There is no First Repeated Chracter");
   }
 }

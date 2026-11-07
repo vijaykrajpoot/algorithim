@@ -9,7 +9,7 @@ class StackQ {
     }
     public int dequeue() {
         if (s2.isEmpty()) {
-            while (!s1.isEmpty()) { // Keeps executing this block until the loop condition becomes false.
+            while (!s1.isEmpty()) {
                 s2.push(s1.pop());
             }
         }
@@ -20,7 +20,7 @@ class StackQ {
     }
     public int peek() {
         if (s2.isEmpty()) {
-            while (!s1.isEmpty()) { // Keeps executing this block until the loop condition becomes false.
+            while (!s1.isEmpty()) {
                 s2.push(s1.pop());
             }
         }
@@ -35,7 +35,7 @@ public class QueueWithTwoStack {
         Scanner scanner = new Scanner(System.in);
         StackQ stackQ = new StackQ();
         int q = scanner.nextInt();
-        while (q > 0) { // Keeps executing this block until the loop condition becomes false.
+        while (q > 0) {
             int in = scanner.nextInt();
             System.out.println("In==> " + in);
             if (in == 1) {

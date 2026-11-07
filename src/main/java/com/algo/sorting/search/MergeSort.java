@@ -2,7 +2,6 @@ package com.algo.sorting.search;
 import java.util.Arrays;
 public class MergeSort {
 	public MergeSort() {
-		// TODO Auto-generated constructor stub
 	}
 	public static void main(String[] args) {
 		MergeSort mergeSort = new MergeSort();
@@ -16,7 +15,7 @@ public class MergeSort {
 		int len = arr.length;
 		if (len <= 1)
 			return arr;
-		else { // Runs this branch when the previous conditional check is false.
+		else {
 			int mid = len / 2;
 			int remLen = len - mid;
 			int arr1[] = new int[mid];
@@ -35,16 +34,16 @@ public class MergeSort {
 		int l2 = arr2.length;
 		int idx = 0, idx1 = 0, idx2 = 0;
 		int arr[] = new int[l1 + l2];
-		while (idx1 < l1 && idx2 < l2) { // Keeps executing this block until the loop condition becomes false.
+		while (idx1 < l1 && idx2 < l2) {
 			if (arr1[idx1] < arr2[idx2])
 				arr[idx++] = arr1[idx1++];
-			else // Runs this branch when the previous conditional check is false.
+			else
 				arr[idx++] = arr2[idx2++];
 		}
-		while (idx2 < l2) { // Keeps executing this block until the loop condition becomes false.
+		while (idx2 < l2) {
 			arr[idx++] = arr2[idx2++];
 		}
-		while (idx1 < l1) { // Keeps executing this block until the loop condition becomes false.
+		while (idx1 < l1) {
 			arr[idx++] = arr1[idx1++];
 		}
 		return arr;

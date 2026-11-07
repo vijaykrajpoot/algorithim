@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
  * operation.
  * 
  * 
- *  // @formatter:off
+ * // @formatter:off
  *   First List ==> A B C D E F G 
  *   
  *         DELETED 'D' ==> A B C E F G 
@@ -22,7 +22,7 @@ import java.util.stream.IntStream;
  *       DELETED 'B' ==> E X Y Z 
  *       DELETED 'Y' ==> E X Z 
  *         ADDED 'R' ==> E X Z R 
- *   // @formatter:on
+ * // @formatter:on
  *s
  * 
  * 
@@ -31,8 +31,8 @@ import java.util.stream.IntStream;
  * @param <T>
  */
 public class LinkedList<T> {
-  private Node<T> firstNode; // Declares a variable to hold data needed by this method.
-  private Node<T> currentNode; // Declares a variable to hold data needed by this method.
+  private Node<T> firstNode;
+  private Node<T> currentNode;
   private Node<T> preNode = firstNode;
   /**
    * Insert and element in a list
@@ -56,12 +56,11 @@ public class LinkedList<T> {
     if (firstNode.data.equals(data)) {
       firstNode = currentNode.next;
     } else {
-      while (currentNode != null) { // Keeps executing this block until the loop condition becomes false.
+      while (currentNode != null) {
         if (currentNode.data.equals(data)) {
           preNode.next = currentNode.next;
-          // moved current to next after deleting current node
           currentNode = currentNode.next;
-          break; // Exits the current loop or switch branch immediately.
+          break;
         } else {
           preNode = currentNode;
           currentNode = currentNode.next;
@@ -73,8 +72,7 @@ public class LinkedList<T> {
     int i = 0;
     Node<T> p1 = firstNode;
     Node<T> p2 = firstNode;
-    while (p1 != null) { // Keeps executing this block until the loop condition becomes false.
-      // System.out.println((i++) + " %2 = " + i++ % 2);
+    while (p1 != null) {
       if (i++ % 2 == 1) {
         p1 = p1.next;
         p2 = p2.next;
@@ -88,7 +86,7 @@ public class LinkedList<T> {
     Node<T> node1 = firstNode;
     Node<T> node2 = firstNode;
     int i = 0;
-    while (node1 != null) { // Keeps executing this block until the loop condition becomes false.
+    while (node1 != null) {
       if ((++i) % 2 == 0) {
         node2 = node2.next;
       }
@@ -100,7 +98,7 @@ public class LinkedList<T> {
     Node<T> node1 = firstNode;
     Node<T> node2 = firstNode;
     boolean skip = false;
-    while (node1 != null) { // Keeps executing this block until the loop condition becomes false.
+    while (node1 != null) {
       if (skip) {
         node1 = node1.next;
         node2 = node2.next;
@@ -113,8 +111,8 @@ public class LinkedList<T> {
   }
   public void displayList() {
     Node<T> currentNode = firstNode;
-    while (currentNode != null) { // Keeps executing this block until the loop condition becomes false.
-      System.out.print(currentNode.data + " "); // Prints the value without moving to a new line.
+    while (currentNode != null) {
+      System.out.print(currentNode.data + " ");
       currentNode = currentNode.next;
     }
     System.out.println();
@@ -133,37 +131,37 @@ public class LinkedList<T> {
     strlinkedList.add("G");
     strlinkedList.displayList();
     strlinkedList.deleteElement("D");
-    System.out.print("DELETED 'D' ==> "); // Prints the value without moving to a new line.
+    System.out.print("DELETED 'D' ==> ");
     strlinkedList.displayList();
     strlinkedList.deleteElement("A");
-    System.out.print("DELETED 'A' ==> "); // Prints the value without moving to a new line.
+    System.out.print("DELETED 'A' ==> ");
     strlinkedList.displayList();
     strlinkedList.deleteElement("G");
-    System.out.print("DELETED 'G' ==> "); // Prints the value without moving to a new line.
+    System.out.print("DELETED 'G' ==> ");
     strlinkedList.displayList();
     strlinkedList.deleteElement("F");
-    System.out.print("DELETED 'F' ==> "); // Prints the value without moving to a new line.
+    System.out.print("DELETED 'F' ==> ");
     strlinkedList.displayList();
     strlinkedList.deleteElement("C");
-    System.out.print("DELETED 'C' ==> "); // Prints the value without moving to a new line.
+    System.out.print("DELETED 'C' ==> ");
     strlinkedList.displayList();
-    System.out.print("ADDED 'X' ==> "); // Prints the value without moving to a new line.
+    System.out.print("ADDED 'X' ==> ");
     strlinkedList.add("X");
     strlinkedList.displayList();
-    System.out.print("ADDED 'Y' ==> "); // Prints the value without moving to a new line.
+    System.out.print("ADDED 'Y' ==> ");
     strlinkedList.add("Y");
     strlinkedList.displayList();
-    System.out.print("ADDED 'Z' ==> "); // Prints the value without moving to a new line.
+    System.out.print("ADDED 'Z' ==> ");
     strlinkedList.add("Z");
     strlinkedList.displayList();
     strlinkedList.displayList();
     strlinkedList.deleteElement("B");
-    System.out.print("DELETED 'B' ==> "); // Prints the value without moving to a new line.
+    System.out.print("DELETED 'B' ==> ");
     strlinkedList.displayList();
     strlinkedList.deleteElement("Y");
-    System.out.print("DELETED 'Y' ==> "); // Prints the value without moving to a new line.
+    System.out.print("DELETED 'Y' ==> ");
     strlinkedList.displayList();
-    System.out.print("ADDED 'R' ==> "); // Prints the value without moving to a new line.
+    System.out.print("ADDED 'R' ==> ");
     strlinkedList.add("R");
     strlinkedList.displayList();
   }

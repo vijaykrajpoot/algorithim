@@ -1,8 +1,7 @@
 package com.algo.linkedlist.dd;
 public class DoubleLinkedList {
-    Node start; // Declares a variable to hold data needed by this method.
-    Node current; // Declares a variable to hold data needed by this method.
-
+    Node start;
+    Node current;
     void add(int data) {
         Node node = new Node(data);
         if (start == null) {
@@ -16,18 +15,18 @@ public class DoubleLinkedList {
     }
     void printBackward() {
         Node node = current;
-        while (node != null) { // Keeps executing this block until the loop condition becomes false.
-            System.out.print(node.data); // Prints the value without moving to a new line.
-            System.out.print(" "); // Prints the value without moving to a new line.
+        while (node != null) {
+            System.out.print(node.data);
+            System.out.print(" ");
             node = node.prev;
         }
         System.out.println();
     }
     void printForward() {
         Node node = start;
-        while (node != null) { // Keeps executing this block until the loop condition becomes false.
-            System.out.print(node.data); // Prints the value without moving to a new line.
-            System.out.print(" "); // Prints the value without moving to a new line.
+        while (node != null) {
+            System.out.print(node.data);
+            System.out.print(" ");
             node = node.next;
         }
         System.out.println();
@@ -35,7 +34,7 @@ public class DoubleLinkedList {
     boolean delete(int data) {
         boolean isDeleted = false;
         Node node = start;
-        while (node != null) { // Keeps executing this block until the loop condition becomes false.
+        while (node != null) {
             if (node.data == data) {
                 node.prev.next = node.next;
                 isDeleted = true;
@@ -47,7 +46,7 @@ public class DoubleLinkedList {
     boolean addAfter(int data, int newValue) {
         Node current = start;
         boolean isAdded = false;
-        while (current != null) { // Keeps executing this block until the loop condition becomes false.
+        while (current != null) {
             if (current.data == data) {
                 Node newNode = new Node(newValue);
                 newNode.prev = current;
@@ -61,7 +60,7 @@ public class DoubleLinkedList {
     }
     void addBefore(int before, int data) {
         Node current = start;
-        while (current != null) { // Keeps executing this block until the loop condition becomes false.
+        while (current != null) {
             if (current.data == before) {
                 Node newNode = new Node(data);
                 if (current.prev == null) {
@@ -81,7 +80,6 @@ public class DoubleLinkedList {
         for (int i = 10; i <= 100; i += 10) {
             ddl.add(i);
         }
-        //  ddl.crate_cycle();
         ddl.printForward();
         ddl.printBackward();
         ddl.delete(50);
@@ -99,7 +97,7 @@ public class DoubleLinkedList {
         Node node = start;
         Node prevNode = null;
         Node cycleNode = null;
-        while (node.next != null) { // Keeps executing this block until the loop condition becomes false.
+        while (node.next != null) {
             if (node.data == 10) {
                 cycleNode = node;
             }
@@ -115,12 +113,12 @@ public class DoubleLinkedList {
             start = newNode;
         }
         int curPos = 1;
-        while (current != null) { // Keeps executing this block until the loop condition becomes false.
+        while (current != null) {
             if (curPos == position - 1) {
                 Node newNode = new Node(data);
                 newNode.next = current.next;
                 current.next = newNode;
-                break; // Exits the current loop or switch branch immediately.
+                break;
             }
             curPos++;
             current = current.next;
@@ -129,7 +127,7 @@ public class DoubleLinkedList {
     boolean has_cycle(Node start) {
         Node slow = start;
         Node fast = start.next;
-        while (fast != null && fast.next != null) { // Keeps executing this block until the loop condition becomes false.
+        while (fast != null && fast.next != null) {
             if (slow == fast) {
                 return true;
             }

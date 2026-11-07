@@ -3,8 +3,8 @@ package com.algo.tree.graph;
 Given a binary tree, check whether it is a mirror of itself i.e. symmetric around its centre.
 Example One
 Tree
-https://aaronice.gitbook.io/lintcode/trees/symmetric-tree
-https://aaronice.gitbook.io/lintcode/trees/symmetric-tree
+https:
+https:
 */
 
 
@@ -17,7 +17,7 @@ public class SymmetricTree {
         }
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        while (!queue.isEmpty()) { // Keeps executing this block until the loop condition becomes false.
+        while (!queue.isEmpty()) {
             int qSize = queue.size();
             Object[] nodeArr = queue.toArray();
             for (int idx = 0; idx < qSize / 2; idx++) {
@@ -28,7 +28,7 @@ public class SymmetricTree {
             for (int i = 0; i < qSize; i++) {
                 TreeNode treeNode = queue.poll();
                 if (treeNode == null) {
-                    continue; // Skips the rest of the current loop iteration and moves to the next one.
+                    continue;
                 }
                 if (treeNode.left != null) {
                     queue.add(treeNode.left);
@@ -38,7 +38,6 @@ public class SymmetricTree {
                 }
             }
         }
-        // Write your code here.
         return true;
     }
 }

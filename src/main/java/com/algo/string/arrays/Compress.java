@@ -18,14 +18,14 @@ public class Compress {
     static String compress(String str) {
         int counter = 1;
         char ch[] = str.toCharArray();
-        char prevCh; // Declares a variable to hold data needed by this method.
+        char prevCh;
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < ch.length; i++) {
             prevCh = ch[i];
             if (i + 1 < ch.length) {
                 if (prevCh == ch[i + 1]) {
                     counter++;
-                    continue; // Skips the rest of the current loop iteration and moves to the next one.
+                    continue;
                 }
             }
             if (counter > 2) {

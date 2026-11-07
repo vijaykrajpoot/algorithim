@@ -1,9 +1,8 @@
 package test.com.code.tree.graph.algo;
 public class BTree {
-	private int value; // Declares a variable to hold data needed by this method.
-	private BTree left; // Declares a variable to hold data needed by this method.
-	private BTree right; // Declares a variable to hold data needed by this method.
-
+	private int value;
+	private BTree left;
+	private BTree right;
 	public int getValue() {
 		return value;
 	}
@@ -33,12 +32,12 @@ public class BTree {
 			if(value>bTree.value){
 				if(bTree.right!=null)
 					bTree=bTree.right;
-				else // Runs this branch when the previous conditional check is false.
+				else
 					return -1;
 			}else{
 				if(bTree.left!=null)
 					bTree=bTree.left;
-				else // Runs this branch when the previous conditional check is false.
+				else
 					return -1;
 			}
 		}

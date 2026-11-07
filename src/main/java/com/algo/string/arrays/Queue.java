@@ -1,6 +1,6 @@
 package com.algo.string.arrays;
 public class Queue {
-	private int maxSize; // Declares a variable to hold data needed by this method.
+	private int maxSize;
 	private int arr[];
 	int front = -1;
 	int rear = -1;
@@ -14,14 +14,14 @@ public class Queue {
 			rear = 0;
 			arr[rear] = num;
 		} else if (rear + 1 >= maxSize) {
-			throw new IndexOutOfBoundsException("OverFlow"); // Raises an exception to signal an invalid or unexpected condition.
+			throw new IndexOutOfBoundsException("OverFlow");
 		} else if (rear + 1 < maxSize) {
 			arr[++rear] = num;
 		}
 	}
 	public int deQueue() {
 		if (isEmpty()) {
-			throw new IndexOutOfBoundsException("UnderFlow"); // Raises an exception to signal an invalid or unexpected condition.
+			throw new IndexOutOfBoundsException("UnderFlow");
 		} else {
 			int element = arr[front];
 			if (rear == front) {
@@ -34,14 +34,13 @@ public class Queue {
 		}
 	}
 	void show() {
-		System.out.print("Elemnt:"); // Prints the value without moving to a new line.
-
-		System.out.print("\nQueue = "); // Prints the value without moving to a new line.
+		System.out.print("Elemnt:");
+		System.out.print("\nQueue = ");
 		if (isEmpty()) {
 			System.out.println("Empty...");
 		}
 		for (int i = front; i <= rear; i++)
-			System.out.print(arr[i] + " "); // Prints the value without moving to a new line.
+			System.out.print(arr[i] + " ");
 		System.out.println();
 	}
 	boolean isEmpty() {
@@ -57,7 +56,6 @@ public class Queue {
 		queue.deQueue();
 		queue.deQueue();
 		queue.enQueue(70);
-		// queue.enQueue(80);
 		queue.show();
 		 queue.deQueue();
 		 queue.enQueue(50);

@@ -5,7 +5,7 @@ public class MergeSort2 {
     MergeSort mergeSort = new MergeSort();
     int[] m = mergeSort.mergeS(arr);
     for (int i = 0; i < m.length; i++) {
-      System.out.print(m[i] + ","); // Prints the value without moving to a new line.
+      System.out.print(m[i] + ",");
     }
   }
   int[] mergeS(int arr[]) {
@@ -29,17 +29,17 @@ public class MergeSort2 {
     int len2 = arr2.length;
     int arr[] = new int[len1 + len2];
     int idx1 = 0, idx2 = 0, idx = 0;
-    while (idx1 < len1 && idx2 < len2) { // Keeps executing this block until the loop condition becomes false.
+    while (idx1 < len1 && idx2 < len2) {
 
       if (arr1[idx1] < arr2[idx2]) {
         arr[idx++] = arr1[idx1++];
       } else {
         arr[idx++] = arr2[idx2++];
       }
-      while (idx1 < len1) { // Keeps executing this block until the loop condition becomes false.
+      while (idx1 < len1) {
         arr[idx++] = arr1[idx1++];
       }
-      while (idx2 < len2) { // Keeps executing this block until the loop condition becomes false.
+      while (idx2 < len2) {
         arr[idx++] = arr2[idx2++];
       }
     }

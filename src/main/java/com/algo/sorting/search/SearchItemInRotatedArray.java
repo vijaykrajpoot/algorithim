@@ -3,13 +3,11 @@ public class SearchItemInRotatedArray {
     public static int search(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;
-        // 50,56,57,58,59,70,80,90,95,|97|,98,99 |100| ,10,20,30,40
-        while (left <= right) { // Keeps executing this block until the loop condition becomes false.
+        while (left <= right) {
             int mid = left + (right - left) / 2;
             if (arr[mid] == target) {
                 return mid;
             }
-            // If left half is sorted
             if (arr[left] <= arr[mid]) {
                 if (arr[left] <= target && target < arr[mid]) {
                     right = mid - 1;
@@ -17,8 +15,7 @@ public class SearchItemInRotatedArray {
                     left = mid + 1;
                 }
             }
-            // If right half is sorted
-            else { // Runs this branch when the previous conditional check is false.
+            else {
                 if (arr[mid] < target && target <= arr[right]) {
                     left = mid + 1;
                 } else {
@@ -31,7 +28,7 @@ public class SearchItemInRotatedArray {
     public static void main(String[] args) {
         int[] nums = {50, 56, 57, 58, 59, 70, 80, 90, 95, 97, 98, 99, 100, 10, 20, 30, 40};
         for(int a:nums) {
-            System.out.println(search(nums, a)); // Output: 4 (index of the target element)
+            System.out.println(search(nums, a));
         }
     }
 }

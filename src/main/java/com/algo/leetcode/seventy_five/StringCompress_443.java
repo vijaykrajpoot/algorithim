@@ -49,17 +49,16 @@ public class StringCompress_443 {
         out = s.compress(ch);
         System.out.println(out);
     }
-    // ["a","a","a","b","b","a","a"]
     public int compress(char[] chars) {
         int fIdx = 0;
         int count = 1;
-        char prevChar; // Declares a variable to hold data needed by this method.
+        char prevChar;
         for (int i = 0; i < chars.length; i++) {
             prevChar = chars[i];
             if (i + 1 < chars.length) {
                 if (prevChar == chars[i + 1]) {
                     count++;
-                    continue; // Skips the rest of the current loop iteration and moves to the next one.
+                    continue;
                 }
             }
             if (count > 2) {
@@ -77,9 +76,8 @@ public class StringCompress_443 {
         return fIdx;
     }
     private int convert(char[] chars, int value, int fIdx) {
-        String intString = String.valueOf(value); // Convert int to String
-        char[] charArray = intString.toCharArray(); // Convert String to char[]
-        // Printing each character in the char array
+        String intString = String.valueOf(value);
+        char[] charArray = intString.toCharArray();
         for (char c : charArray) {
             chars[fIdx++] = c;
         }

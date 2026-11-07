@@ -4,17 +4,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 class TrieNode {
-    Map<Character, TrieNode> children; // Declares a variable to hold data needed by this method.
-    boolean isEndOfWord; // Declares a variable to hold data needed by this method.
-
+    Map<Character, TrieNode> children;
+    boolean isEndOfWord;
     public TrieNode() {
         children = new HashMap<>();
         isEndOfWord = false;
     }
 }
 public class PrefixMatcher2 {
-    static TrieNode root; // Declares a variable to hold data needed by this method.
-
+    static TrieNode root;
     public static void insert(String key) {
         TrieNode current = root;
         for (int i = 0; i < key.length(); i++) {
@@ -41,11 +39,9 @@ public class PrefixMatcher2 {
         strings.add("ab");
         strings.add("bc");
         strings.add("abc hello");
-        // Construct the trie
         for (String str : strings) {
             insert(str);
         }
-        // Identify and remove prefix strings
         List<String> nonPrefixes = new ArrayList<>();
         for (String str : strings) {
             if (!isPrefix(str)) {

@@ -42,7 +42,7 @@ public class ContainerWithMostWater_11 {
         int left = 0;
         int right = height.length - 1;
         int maxArea = 0;
-        while (left < right) { // Keeps executing this block until the loop condition becomes false.
+        while (left < right) {
             int area = Math.min(height[left], height[right]) * (right - left);
             if (area > maxArea) {
                 maxArea = area;

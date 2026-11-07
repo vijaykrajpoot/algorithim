@@ -11,7 +11,6 @@ public class TwoSum1 {
     public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-
             int r = target - nums[i];
             if (hashMap.containsKey(r)) {
                 return new int[]{hashMap.get(r), i};
@@ -19,6 +18,6 @@ public class TwoSum1 {
             hashMap.put(nums[i], i + 1);
             System.out.println(hashMap);
         }
-        throw new IllegalArgumentException("No Two Sum Solution"); // Raises an exception to signal an invalid or unexpected condition.
+        throw new IllegalArgumentException("No Two Sum Solution");
     }
 }

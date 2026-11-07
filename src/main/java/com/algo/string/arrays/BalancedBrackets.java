@@ -13,11 +13,10 @@ public class BalancedBrackets {
             char ch = s.charAt(i);
             if (ch == '{' || ch == '[' || ch == '(') {
                 stack.push(ch);
-                continue; // Skips the rest of the current loop iteration and moves to the next one.
+                continue;
             } else if (stack.isEmpty()) {
                 return "NO";
             }
-            // closing
             if (ch == '}' || ch == ']' || ch == ')') {
                 poppedCh = stack.pop();
                 if (poppedCh != '{' && ch == '}') {

@@ -20,7 +20,6 @@ public class TestSingleLinkedList {
 	public void findMidLinkedListLogic2() {
 		IntStream.range(1, 10).forEach(i -> ll.add(i));
 		Assert.assertTrue(ll.findMiddleNodeLogic2().data == 5);
-		// ll.printList();
 	}
 	@Test
 	public void findMidWhen1ElementLog2() {
@@ -38,18 +37,15 @@ public class TestSingleLinkedList {
 	public void findMidWhenZeroElementLogic2() {
 		IntStream.range(1, 1).forEach(i -> ll.add(i));
 		Assert.assertNotNull(ll.findMiddleNodeLogic2());
-		// ll.printList();
 	}
 	@Test
 	public void findMidWhenListisEvenSizeLogic2() {
 		IntStream.range(1, 11).forEach(i -> ll.add(i));
-		// ll.printList();
 		Assert.assertTrue(ll.findMiddleNodeLogic2().data == 5);
 	}
 	@Test
 	public void findMidWhenListisEvenSizeLogic1() {
 		IntStream.range(1, 11).forEach(i -> ll.add(i));
-		// ll.printList();
 		Assert.assertTrue(ll.findMiddleNodeLogic1().data == 6);
 	}
 	@Test
@@ -123,8 +119,6 @@ public class TestSingleLinkedList {
 	}
 	@Test
 	public void findSecondLargestWhenListHasNegativeAndPositiveInt() {
-//		Random random=new Random();
-//		IntStream.range(0, 10).forEach(i -> ll.add((random.nextInt(65536)-32768)));
 
 		int arr[] = { 14522, 30884, -12306, 254, -21498, 25113, 16181, -28164, 24136, -25679 };
 		for (int i = 0; i < arr.length; i++) {
@@ -136,8 +130,6 @@ public class TestSingleLinkedList {
 	}
 	@Test
 	public void findSecondLargestWhenListHasOnlyRandomNegativeInt() {
-//		Random random=new Random();
-//		IntStream.range(0, 10).forEach(i -> ll.add((random.nextInt(65536)-32768)));
 
 		int arr[] = { -14522, -30884, -12306, -254, -21498, -25113, -16181, -28164, -24136, -25679 };
 		for (int i = 0; i < arr.length; i++) {

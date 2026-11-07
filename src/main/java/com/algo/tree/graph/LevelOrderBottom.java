@@ -3,14 +3,13 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-//https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 
 public class LevelOrderBottom {
     public List<Integer> rightSideView(TreeNode root) {
         Queue<TreeNode> q = new LinkedList<>();
         List<Integer> result = new ArrayList<>();
         q.add(root);
-        while (!q.isEmpty()) { // Keeps executing this block until the loop condition becomes false.
+        while (!q.isEmpty()) {
             int qSize = q.size();
             TreeNode lastElement = null;
             for (TreeNode treeNode : q) {
@@ -22,7 +21,7 @@ public class LevelOrderBottom {
             for (int i = 0; i < qSize; i++) {
                 TreeNode node = q.poll();
                 if (node == null)
-                    continue; // Skips the rest of the current loop iteration and moves to the next one.
+                    continue;
                 if (node.left != null) {
                     q.add(node.left);
                 }

@@ -1,8 +1,7 @@
 package com.threads.waitnotify;
 import java.util.concurrent.ThreadLocalRandom;
 public class Sender implements Runnable {
-	private Data data; // Declares a variable to hold data needed by this method.
-	
+	private Data data;
 	public Sender(Data data) {
 		this.data=data;
 	}
@@ -15,7 +14,7 @@ public class Sender implements Runnable {
 		for(String packet:packets){
 			System.err.println("Sending: Packet:"+packet);
 			data.send(packet);
-			try { // Attempts the guarded logic and prepares for possible failure.
+			try {
 				 Thread.sleep(ThreadLocalRandom.current().nextInt(1000, 5000));
 			} catch (InterruptedException e) {
 				Thread.currentThread().interrupt();

@@ -18,10 +18,9 @@ public class EvenOddSegregate {
         integers= segregate_evens_and_odds(integers);
     }
     static ArrayList<Integer> segregate_evens_and_odds(ArrayList<Integer> numbers) {
-        // Write your code here.
         int left = 0;
         int right = numbers.size() - 1;
-        while (left < right) { // Keeps executing this block until the loop condition becomes false.
+        while (left < right) {
             int leftNum = numbers.get(left);
             int rightNum = numbers.get(right);
             if (leftNum % 2 != 0) {

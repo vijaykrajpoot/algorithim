@@ -23,17 +23,16 @@ public class ValidParentheses {
 				charStack.push(ch);
 			} else {
 				if (closingBrackets.contains(ch)) {
-
 					if (!charStack.isEmpty()) {
 						if (hashMap.get(charStack.pop()).equals(ch)) {
 							isValid = true;
 						}else {
 							isValid = false;
-							break; // Exits the current loop or switch branch immediately.
+							break;
 						}
 					} else {
 						isValid = false;
-						break; // Exits the current loop or switch branch immediately.
+						break;
 					}
 				}
 			}

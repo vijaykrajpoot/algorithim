@@ -31,7 +31,6 @@ public class SlidingWindow_MaxAverageSubArray {
             sum = sum + arr[i];
         }
         double maxAvg = (double) sum / k;
-        // 4 element sum is already there now use +1 element and removed the 1 element  [SLIDING window]
         for (int i = k; i < arr.length; i++) {
             sum = sum + arr[i] - arr[i - k];
             double curAvg = (double) sum / k;

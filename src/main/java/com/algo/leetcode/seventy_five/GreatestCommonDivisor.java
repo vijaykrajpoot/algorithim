@@ -45,7 +45,7 @@ public class GreatestCommonDivisor {
 		return str2.substring(0,l);
 	}
 	private int gcd(int a, int b) {
-		while (b != 0) { // Keeps executing this block until the loop condition becomes false.
+		while (b != 0) {
 			int temp = b;
 			b = a % b;
 			a = temp;

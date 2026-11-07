@@ -22,7 +22,7 @@ public class RemoveDuplcateChracters {
     boolean flag[] = new boolean[256];
     StringBuilder builder = new StringBuilder();
     if (str == null) {
-      throw new IllegalArgumentException("Empty String"); // Raises an exception to signal an invalid or unexpected condition.
+      throw new IllegalArgumentException("Empty String");
     }
     for (int i = 0; i < str.length(); i++) {
       int ch = str.charAt(i);
@@ -31,14 +31,6 @@ public class RemoveDuplcateChracters {
         flag[ch] = true;
       }
     }
-    // for (char ch : str.toCharArray()) {
-    // if (!flag[(int) ch]) {
-    // builder.append(ch);
-    // flag[(int) ch] = true;
-    // } else {
-    // flag[(int) ch] = true;
-    // }
-    // }
 
     return builder.toString();
   }

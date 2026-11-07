@@ -6,18 +6,17 @@ public class FindPairInSortedArray {
     System.out.println("isPairInSortedRotatedArray(arr, sum):" + isPairInSortedRotatedArray(arr, sum));
   }
   static boolean isPairInSortedRotatedArray(int arr[], int sum) {
-    // find pivot point.
     int i = 0;
     for (i = 0; i < arr.length - 1; i++) {
       if (arr[i] > arr[i + 1]) {
         System.out.println("Pivot Index: " + i);
-        break; // Exits the current loop or switch branch immediately.
+        break;
       }
     }
     int higherIdx = i;
     int lowIdx = (i + 1) % arr.length;
     System.out.println("higherIdx:" + higherIdx + " lowIdx:" + lowIdx);
-    while (lowIdx != higherIdx) { // Keeps executing this block until the loop condition becomes false.
+    while (lowIdx != higherIdx) {
       System.out.println("arr[" + lowIdx + "]:" + arr[lowIdx] + " + arr[" + higherIdx + "]:" + arr[higherIdx] + " - Sum:" + (arr[lowIdx] + arr[higherIdx]) + " Sum:" + sum + " higherIdx:" + higherIdx
           + " lowIdx:" + lowIdx);
       if (arr[lowIdx] + arr[higherIdx] == sum) {

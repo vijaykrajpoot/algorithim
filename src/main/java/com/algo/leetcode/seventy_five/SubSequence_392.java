@@ -32,12 +32,6 @@ public class SubSequence_392 {
         boolean result=false;
         result = subSequence392.isSubsequence("abc", "ahbgdcdefg");
         System.out.println("isSubsequence:" + result);
-//        result = subSequence392.isSubsequence("axc", "ahbgdc");
-//        System.out.println("isSubsequence:" + result);
-//        result = subSequence392.isSubsequence("acb", "ahbgdc");
-//        System.out.println("isSubsequence:" + result);
-//        result = subSequence392.isSubsequence("aaaaaa", "bbaaaas");
-//        System.out.println("isSubsequence:" + result);
 
 
     }

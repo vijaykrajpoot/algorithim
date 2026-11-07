@@ -36,7 +36,7 @@ public class Anagram {
     Arrays.sort(charArray2);
     if (Arrays.toString(charArray1).equals(Arrays.toString(charArray2)))
       return true;
-    else // Runs this branch when the previous conditional check is false.
+    else
       return false;
   }
   /**

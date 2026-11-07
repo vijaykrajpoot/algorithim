@@ -65,16 +65,15 @@ public class LongestSubarray_1_Deleting_1_Element_1493 {
                 return 0;
             }
         }
-        // 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0,1,1,1,1,1,1
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == 1) {
-                current++; // Count the 1's
+                current++;
             } else {
                 if (prev + current > result) {
                     result = prev + current;
                 }
-                prev = current; // Keep track of the prev 1's
-                current = 0; // Make current= 0 so that after 0 it will have fresh 1's count
+                prev = current;
+                current = 0;
             }
         }
         if (prev + current > result) {

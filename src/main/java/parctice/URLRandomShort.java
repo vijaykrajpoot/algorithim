@@ -11,7 +11,7 @@ public class URLRandomShort {
 		HashSet<String> hashSet = new HashSet<>();
 		StringBuilder stringBuilder = new StringBuilder();
 		int cc = 0;
-		while (cc < Integer.MAX_VALUE) { // Keeps executing this block until the loop condition becomes false.
+		while (cc < Integer.MAX_VALUE) {
 			MessageDigest digest = MessageDigest.getInstance("SHA-256");
 			byte[] hash = digest.digest(Long.toString(cc).getBytes());
 			for (int i = 0; i < SHORT_URL_LENGTH; i++) {
@@ -19,7 +19,6 @@ public class URLRandomShort {
 				stringBuilder.append(CHARACTERS.charAt(idx));
 			}
 			boolean added = hashSet.add( stringBuilder.toString());
-		//	System.out.println(hashSet);
 			if (!added) {
 				System.out.println("Duplicate: ["+cc+"]: " + stringBuilder.toString());
 			}

@@ -7,7 +7,7 @@ public class IntegerToString {
       isNegative = true;
       number = Math.abs(number);
     }
-    while (number != 0) { // Keeps executing this block until the loop condition becomes false.
+    while (number != 0) {
       int reminder = number % 10;
       number = number / 10;
       builder.append(reminder);
