@@ -1,5 +1,4 @@
-package com.algo.string.arrays; // Declares the package so the class is organized under the correct Java namespace.
-
+package com.algo.string.arrays;
 /**
  * 4 Sum
  * Given a list of numbers, find all the unique quadruples that sum up to a given target value.
@@ -16,7 +15,5 @@ package com.algo.string.arrays; // Declares the package so the class is organize
  * [0, 0, 1, 2]
  * ]
  */
-public class FourSum { // Defines the Java type that contains the related data and behavior.
-
-
-} // Closes the current block and ends the active scope.
+public class FourSum {
+}

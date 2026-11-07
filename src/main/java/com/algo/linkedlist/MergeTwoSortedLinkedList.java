@@ -1,4 +1,4 @@
-package com.algo.linkedlist; // Declares the package so the class is organized under the correct Java namespace.
+package com.algo.linkedlist;
 /**
  * Merge two sorted linked lists and return it as a new list. 
  * 
@@ -8,9 +8,5 @@ package com.algo.linkedlist; // Declares the package so the class is organized u
  * @see LinkedList#mergedLinkedList(LinkedList, LinkedList)
  */
 
-public class MergeTwoSortedLinkedList { // Defines the Java type that contains the related data and behavior.
-
-  
-	
-	
-} // Closes the current block and ends the active scope.
+public class MergeTwoSortedLinkedList {
+}
