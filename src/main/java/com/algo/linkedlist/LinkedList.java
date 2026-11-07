@@ -5,10 +5,14 @@ package com.algo.linkedlist;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Traverses node references to add, remove, or inspect items in the linked structure.
+
+
 public class LinkedList {
 	private Node start;
 	private Node current;
 	private long size;
+
 	public long size() {
 		return size;
 	}

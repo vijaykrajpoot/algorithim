@@ -1,10 +1,13 @@
 package com.threads.runnable.executor.callable;
-public class EvenOddNumberRunnable implements Runnable {
+public class EvenOddNumberRunnable
+
+ implements Runnable {
 	private int[] arr;
 	public EvenOddNumberRunnable(int[] arr) {
 		this.arr = arr;
 	}
 	@Override
+
 	public void run() {
 		System.out.println("Thread.currentThread().getName():"+Thread.currentThread().getName());
 		for (int i : arr) {

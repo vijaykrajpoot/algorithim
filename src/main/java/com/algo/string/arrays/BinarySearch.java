@@ -1,5 +1,9 @@
 package com.algo.string.arrays;
+// Logic: Repeatedly narrows the search range around the middle value until the target is found or the range is empty.
+
+
 public class BinarySearch {
+
   public static boolean search(int arr[], int num) {
     if (arr == null || arr.length == 0) {
       throw new IllegalArgumentException("Input is Empty || Null");

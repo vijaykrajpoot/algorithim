@@ -1,5 +1,9 @@
 package com.algo.leetcode.seventy_five;
+// Logic: Solves the increasing triplet problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class IncreasingTriplet {
+
     public static void main(String[] args) {
         int[] arr = new int[]{2, 1, 5, 0, 4, 6};
         IncreasingTriplet increasingTriplet = new IncreasingTriplet();

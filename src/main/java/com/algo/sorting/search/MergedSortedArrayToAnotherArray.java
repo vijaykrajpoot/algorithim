@@ -17,7 +17,11 @@ import java.util.Iterator;
  * <p>
  * [1, 2, 3, 4, 5, 6]
  */
+// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
+
+
 public class MergedSortedArrayToAnotherArray {
+
     public static void main(String[] args) {
         ArrayList<Integer> first = new ArrayList<>();
         first.add(2);

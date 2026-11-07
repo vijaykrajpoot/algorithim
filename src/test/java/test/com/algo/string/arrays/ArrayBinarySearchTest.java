@@ -3,8 +3,13 @@ import static org.junit.Assert.*;
 import java.util.stream.IntStream;
 import org.junit.Test;
 import com.algo.string.arrays.ArrayBinarySearch;
+// Logic: Repeatedly narrows the search range around the middle value until the target is found or the range is empty.
+
+
+
 public class ArrayBinarySearchTest {
 	@Test
+
 	public void testSearch() {
 		assertEquals(6,ArrayBinarySearch.search(IntStream.range(1, 10).toArray(),7));
 	}

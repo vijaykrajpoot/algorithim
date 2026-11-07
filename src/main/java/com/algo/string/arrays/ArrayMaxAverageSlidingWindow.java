@@ -1,5 +1,9 @@
 package com.algo.string.arrays;
+// Logic: Solves the array max average sliding window problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class ArrayMaxAverageSlidingWindow {
+
     public static void main(String[] args) {
         int[] arr = new int[]{1, 12, -5, -6, 50, 3};
         double avg = average(arr, 4);

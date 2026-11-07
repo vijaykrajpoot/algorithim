@@ -1,8 +1,12 @@
 package com.algo.sorting.search;
 import java.util.Arrays;
+// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
+
+
 public class MergeSort {
 	public MergeSort() {
 	}
+
 	public static void main(String[] args) {
 		MergeSort mergeSort = new MergeSort();
 		int arr[] = {3, 2, 1, 44, -232, 6, 7, 9, 67, -89, 32, -1, 12};

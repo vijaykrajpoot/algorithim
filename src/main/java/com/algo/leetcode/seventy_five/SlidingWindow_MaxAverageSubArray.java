@@ -18,7 +18,11 @@ package com.algo.leetcode.seventy_five;
  * Input: nums = [5], k = 1
  * Output: 5.00000
  */
+// Logic: Solves the sliding window_ max average sub array problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class SlidingWindow_MaxAverageSubArray {
+
     public static void main(String[] args) {
         SlidingWindow_MaxAverageSubArray maxAverageSubArray = new SlidingWindow_MaxAverageSubArray();
         int[] arr = new int[]{1, 12, -5, -6, 50, 3};

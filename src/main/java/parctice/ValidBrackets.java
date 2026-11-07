@@ -1,7 +1,11 @@
 package parctice;
 import com.algo.string.arrays.ValidParentheses;
 import java.util.Stack;
+// Logic: Uses a stack to match opening and closing symbols in the correct order and detect invalid nesting.
+
+
 public class ValidBrackets {
+
 	public static void main(String[] args) {
 		ValidBrackets validator = new ValidBrackets();
 		System.out.println(validator.isValid("()"));

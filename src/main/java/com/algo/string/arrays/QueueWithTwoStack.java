@@ -1,9 +1,13 @@
 package com.algo.string.arrays;
 import java.util.Scanner;
 import java.util.Stack;
+// Logic: Enforces a strict add/remove order so data is processed according to stack or queue rules.
+
+
 class StackQ {
     Stack<Integer> s1 = new Stack<>();
     Stack<Integer> s2 = new Stack<>();
+
     public void enqueue(int value) {
         s1.push(value);
     }

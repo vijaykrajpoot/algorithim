@@ -8,7 +8,11 @@ import java.time.Instant;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Checks divisibility against possible factors to determine whether the number is prime.
+
+
 public class PrimeNumber {
+
   public static void main(String[] args) {
     int number = 1500450271;
     long stTime = Instant.now().toEpochMilli();

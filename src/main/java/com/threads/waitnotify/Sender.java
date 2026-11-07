@@ -1,11 +1,14 @@
 package com.threads.waitnotify;
 import java.util.concurrent.ThreadLocalRandom;
-public class Sender implements Runnable {
+public class Sender
+
+ implements Runnable {
 	private Data data;
 	public Sender(Data data) {
 		this.data=data;
 	}
 	@Override
+
 	public void run() {
 		System.err.println("Sender==>Thread.currentThread().getName():"+Thread.currentThread().getName());
 		String packets []={

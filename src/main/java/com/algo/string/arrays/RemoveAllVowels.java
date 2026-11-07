@@ -7,7 +7,11 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Solves the remove all vowels problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class RemoveAllVowels {
+
   public static void main(String[] args) {
     System.out.println(RemoveAllVowels.removeVowels("VIJAYKRAJPOOT"));
     System.out.println(RemoveAllVowels.removeVowels("what is your name ?"));

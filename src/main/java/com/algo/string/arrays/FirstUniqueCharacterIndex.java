@@ -1,6 +1,10 @@
 package com.algo.string.arrays;
 import java.util.HashMap;
+// Logic: Solves the first unique character index problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class FirstUniqueCharacterIndex {
+
 	public static void main(String[] args) {
 		System.out.println("FirstUniqueCharacter:" + FirstUniqueCharacterIndex.findFirstUniqueChracterIndex("LALALAND"));
 	}

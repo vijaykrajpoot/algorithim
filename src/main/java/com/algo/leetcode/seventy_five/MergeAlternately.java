@@ -27,7 +27,11 @@ merged: a p b q c   d
 Constraints:
 		1 <= word1.length, word2.length <= 100
 word1 and word2 consist of lowercase English letters.*/
+// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
+
+
 public class MergeAlternately {
+
 	public static void main(String[] args) {
 		MergeAlternately solution = new MergeAlternately();
 		String word1 = "abcd";

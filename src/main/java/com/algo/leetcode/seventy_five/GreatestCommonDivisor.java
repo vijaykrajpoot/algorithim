@@ -29,7 +29,11 @@ package com.algo.leetcode.seventy_five;
  * 1 <= str1.length, str2.length <= 1000
  * str1 and str2 consist of English uppercase letters.
  */
+// Logic: Verifies the algorithm against expected outputs for sample inputs.
+
+
 public class GreatestCommonDivisor {
+
 	public static void main(String[] args) {
 		GreatestCommonDivisor gcd = new GreatestCommonDivisor();
 		String aa = gcd.gcdOfStrings("ABBCABBC", "ABBC");

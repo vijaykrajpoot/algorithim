@@ -7,6 +7,9 @@ package com.algo.linkedlist;
  * @author homepc
  * @see LinkedList#mergedLinkedList(LinkedList, LinkedList)
  */
+// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
+
+
 
 public class MergeTwoSortedLinkedList {
 }

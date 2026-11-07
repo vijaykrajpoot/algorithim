@@ -1,7 +1,11 @@
 package com.algo.string.arrays;
 import java.util.Stack;
 import java.util.concurrent.ConcurrentNavigableMap;
+// Logic: Uses a stack to match opening and closing symbols in the correct order and detect invalid nesting.
+
+
 public class BalancedBrackets {
+
     public static void main(String[] args) {
         String string = isBalanced("{{[[(())]]}}");
         System.out.println(string);

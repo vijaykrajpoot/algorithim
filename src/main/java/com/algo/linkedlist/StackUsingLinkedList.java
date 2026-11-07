@@ -1,5 +1,9 @@
 package com.algo.linkedlist;
+// Logic: Traverses node references to add, remove, or inspect items in the linked structure.
+
+
 public class StackUsingLinkedList {
+
     public static void main(String[] args) {
         Stack stack = new Stack();
         System.out.println("stack.isEmpty:" + stack.isEmpty());

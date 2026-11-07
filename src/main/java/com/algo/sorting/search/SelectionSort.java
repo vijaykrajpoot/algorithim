@@ -1,6 +1,10 @@
 package com.algo.sorting.search;
 import java.util.Arrays;
+// Logic: Reorders the collection so elements appear in the required priority or ascending order.
+
+
 public class SelectionSort {
+
 	public static void main(String[] args) {
 		int[] arr = {50, 10, 80, 90, -10, 70, 10, 20, 30};
 		selectionSort(arr);

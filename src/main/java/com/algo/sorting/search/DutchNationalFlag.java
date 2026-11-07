@@ -1,6 +1,10 @@
 package com.algo.sorting.search;
 import java.util.ArrayList;
+// Logic: Solves the dutch national flag problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class DutchNationalFlag {
+
     public static void main(String[] args) {
         ArrayList<Character> characters=new ArrayList<>();
         characters.add('G');

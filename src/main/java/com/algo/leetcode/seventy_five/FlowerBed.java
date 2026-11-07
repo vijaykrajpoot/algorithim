@@ -19,7 +19,11 @@ package com.algo.leetcode.seventy_five;
  * Input: flowerbed = [1,0,0,0,1], n = 2
  * Output: false
  */
+// Logic: Scans the field for empty slots and ensures each planted flower stays separated from adjacent flowers.
+
+
 public class FlowerBed {
+
     public static void main(String[] args) {
         int []arr=new int[]{1,0,0,0,1};
         int numberOfFlower=1;

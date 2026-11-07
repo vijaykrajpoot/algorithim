@@ -1,6 +1,10 @@
 package parctice;
 import java.util.Arrays;
+// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
+
+
 public class MergeSort {
+
     public static void main(String[] args) {
         int[] arr = {10, 100, 40, 60, 30, 70, 60, 30, 80, 50};
         int[] sortedArray = mergeSort(arr);

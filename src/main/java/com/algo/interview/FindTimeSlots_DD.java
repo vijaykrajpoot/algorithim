@@ -28,9 +28,13 @@ import java.util.List;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Solves the find time slots_ d d problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 
 
 public class FindTimeSlots_DD {
+
   public static List<Integer> getSlots(List<Integer> timeSlots) {
     int maxSoFar = 0;
     List<Integer> result = new ArrayList<>(2);

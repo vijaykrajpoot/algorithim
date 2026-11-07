@@ -2,7 +2,11 @@ package com.algo.string.arrays;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+// Logic: Shifts elements to new positions while preserving their relative order within a rotated structure.
+
+
 public class RotateArray {
+
     public static void main(String[] args) {
         int[] arr = IntStream.of(1, 2, 3, 4, 5, 8, 9).toArray();
         RotateArray rotateArray = new RotateArray();

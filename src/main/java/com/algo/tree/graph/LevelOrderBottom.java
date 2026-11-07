@@ -3,8 +3,12 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+// Logic: Solves the level order bottom problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 
 public class LevelOrderBottom {
+
     public List<Integer> rightSideView(TreeNode root) {
         Queue<TreeNode> q = new LinkedList<>();
         List<Integer> result = new ArrayList<>();

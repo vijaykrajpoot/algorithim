@@ -9,7 +9,11 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Solves the remove duplcate chracters problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class RemoveDuplcateChracters {
+
   public static void main(String[] args) {
     System.out.println(removeDuplicate("abababa"));
   }

@@ -35,7 +35,11 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Output: Return 4, and the first 4 characters of the input array should be: ['a','b','1','2'].
  * Explanation: The groups are 'a' and 'bbbbbbbbbbbb'. This compresses to 'ab12'.
  */
+// Logic: Solves the string compress_443 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class StringCompress_443 {
+
     public static void main(String[] args) {
         StringCompress_443 s = new StringCompress_443();
         char[] ch = new char[]{'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'};

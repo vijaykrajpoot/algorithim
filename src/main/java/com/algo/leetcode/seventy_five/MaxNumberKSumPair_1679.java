@@ -34,7 +34,11 @@ import java.util.Arrays;
  * 1 <= nums[i] <= 109
  * 1 <= k <= 109
  */
+// Logic: Aggregates values across the collection to compute the required total or product.
+
+
 public class MaxNumberKSumPair_1679 {
+
     public static void main(String[] args) {
         MaxNumberKSumPair_1679 maxNumberKSumPir1679 = new MaxNumberKSumPair_1679();
         int operation=0;

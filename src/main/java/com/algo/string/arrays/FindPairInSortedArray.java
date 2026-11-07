@@ -1,5 +1,9 @@
 package com.algo.string.arrays;
+// Logic: Reorders the collection so elements appear in the required priority or ascending order.
+
+
 public class FindPairInSortedArray {
+
   public static void main(String[] args) {
     int arr[] = {5, 11, 15, 18, 20, 30, 1, 2, 3, 4};
     int sum = 16;

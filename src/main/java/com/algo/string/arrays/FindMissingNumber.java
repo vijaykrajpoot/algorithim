@@ -26,7 +26,11 @@ package com.algo.string.arrays;
  * Output:
  * 0
  */
+// Logic: Solves the find missing number problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class FindMissingNumber {
+
     public static void main(String[] args) {
         int[] nums = {0, 2, 3, 1, 4};
         System.out.println("Missing number: " + findMissingNumber(nums));

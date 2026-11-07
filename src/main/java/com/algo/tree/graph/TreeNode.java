@@ -1,5 +1,7 @@
 package com.algo.tree.graph;
-public class TreeNode<T> {
+public class TreeNode
+
+<T> {
     int val;
     TreeNode<T> left;
     TreeNode<T> right;

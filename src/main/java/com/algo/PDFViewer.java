@@ -1,8 +1,12 @@
 package com.algo;
 import java.util.*;
 import java.util.stream.Collectors;
+// Logic: Solves the p d f viewer problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class PDFViewer {
     static Map<Character, Integer> chIdx = new HashMap<>();
+
     public static void main(String[] args) {
         for (char ch = 'a'; ch <= 'z'; ch++) {
             int index = ch - 'a';

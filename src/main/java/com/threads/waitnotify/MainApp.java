@@ -1,7 +1,11 @@
 package com.threads.waitnotify;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+// Logic: Solves the main app problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class MainApp {
+
 	public static void main(String[] args) {
 		Data data=new Data();
 		ExecutorService executorServiceSender=Executors.newFixedThreadPool(2);

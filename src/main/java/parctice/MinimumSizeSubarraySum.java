@@ -1,5 +1,9 @@
 package parctice;
+// Logic: Aggregates values across the collection to compute the required total or product.
+
+
 public class MinimumSizeSubarraySum {
+
 	public static int minSubArrayLen(int target, int[] nums) {
 		int minLength = Integer.MAX_VALUE;
 		int windowSum = 0;

@@ -1,7 +1,11 @@
 package com.algo.string.arrays;
 import java.util.Random;
+// Logic: Verifies the algorithm against expected outputs for sample inputs.
+
+
 public class CharTest {
 	private static Random rand = new Random();
+
 	public static void main(String[] args) {
 		StringBuilder shortURL = new StringBuilder();
 		for (int i = 0; i < 6; ++i) {

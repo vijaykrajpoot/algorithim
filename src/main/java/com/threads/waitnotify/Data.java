@@ -1,4 +1,7 @@
 package com.threads.waitnotify;
+// Logic: Solves the data problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class Data {
 	private String packet;
 	boolean transferInProgress = true;

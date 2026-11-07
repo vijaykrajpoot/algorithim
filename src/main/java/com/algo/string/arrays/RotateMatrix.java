@@ -36,8 +36,12 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Shifts elements to new positions while preserving their relative order within a rotated structure.
+
+
 
 public class RotateMatrix {
+
   public static void main(String[] args) {
     int matrix[][] = {
             {10, 15, 20, 25},

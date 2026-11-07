@@ -1,6 +1,8 @@
 package com.threads.runnable.executor;
 import java.util.concurrent.Callable;
-public class EvenOddNumberRunnable implements Callable<String> {
+public class EvenOddNumberRunnable
+
+ implements Callable<String> {
 	private int[] arr;
 	public EvenOddNumberRunnable(int[] arr) {
 		this.arr = arr;

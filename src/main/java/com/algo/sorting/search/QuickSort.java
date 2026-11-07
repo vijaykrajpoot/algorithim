@@ -1,6 +1,10 @@
 package com.algo.sorting.search;
 import java.util.Arrays;
+// Logic: Chooses a pivot, partitions values around it, and recursively sorts the smaller partitions.
+
+
 public class QuickSort {
+
     public static void main(String[] args) {
         QuickSort qs = new QuickSort();
         int[] arr = {3, 10,2, -1, 44, -232, 1, 6, 7,-90, 9, -67, -89, 6, 32, -1, -12};

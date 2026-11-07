@@ -1,8 +1,13 @@
 package test.com.code.tree.graph.algo;
+// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
+
+
+
 public class BTree {
 	private int value;
 	private BTree left;
 	private BTree right;
+
 	public int getValue() {
 		return value;
 	}

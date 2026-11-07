@@ -1,6 +1,8 @@
 package com.algo.string.arrays;
 import java.util.EmptyStackException;
-public class Stack<T> {
+public class Stack
+
+<T> {
 	private int top = -1;
 	private final T[] array;
 	private final int maxSize=200;
@@ -8,6 +10,7 @@ public class Stack<T> {
 	public Stack() {
         array = (T[]) new Object[maxSize];
     }
+
 	public void push(T element) {
 		if (top == maxSize-1) {
 			throw new StackOverflowError("Stack is Over Flowed");

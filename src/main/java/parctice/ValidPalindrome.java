@@ -1,5 +1,9 @@
 package parctice;
+// Logic: Checks matching characters from both ends inward to determine whether the sequence reads the same forward and backward.
+
+
 public class ValidPalindrome {
+
 	public static void main(String[] args) {
 		ValidPalindrome palindromeChecker = new ValidPalindrome();
 		String s1 = "A man, a plan, a canal: Panama";

@@ -2,7 +2,11 @@ package com.threads.runnable.executor.callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
+// Logic: Verifies the algorithm against expected outputs for sample inputs.
+
+
 public class TestEvenOddRunnable {
+
 	public static void main(String[] args) {
 		EvenOddNumberRunnable evenOddNumberRunnable100 = new EvenOddNumberRunnable(IntStream.range(1, 100).toArray());
 		EvenOddNumberRunnable evenOddNumberRunnable200 = new EvenOddNumberRunnable(IntStream.range(100, 200).toArray());

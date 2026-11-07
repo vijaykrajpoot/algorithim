@@ -2,7 +2,11 @@ package com.algo.string.arrays;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+// Logic: Solves the count recurring character problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class CountRecurringCharacter {
+
   public static void main(String[] args) {
     CountRecurringCharacter.solutuon1("VIJAYKRAJPOOT").entrySet().forEach(entry -> {
       System.out.println(entry.getKey() + "-" + entry.getValue());

@@ -1,4 +1,7 @@
 package com.algo.string.arrays;
+// Logic: Enforces a strict add/remove order so data is processed according to stack or queue rules.
+
+
 public class Queue {
 	private int maxSize;
 	private int arr[];
@@ -8,6 +11,7 @@ public class Queue {
 		this.maxSize = maxSize;
 		arr = new int[maxSize];
 	}
+
 	public void enQueue(int num) {
 		if (rear == -1) {
 			front = 0;

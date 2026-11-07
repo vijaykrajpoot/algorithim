@@ -1,4 +1,7 @@
 package com.algo.linkedlist.dd;
+// Logic: Traverses node references to add, remove, or inspect items in the linked structure.
+
+
 public class DoubleLinkedList {
     Node start;
     Node current;
@@ -75,6 +78,7 @@ public class DoubleLinkedList {
             current = current.next;
         }
     }
+
     public static void main(String[] args) {
         DoubleLinkedList ddl = new DoubleLinkedList();
         for (int i = 10; i <= 100; i += 10) {

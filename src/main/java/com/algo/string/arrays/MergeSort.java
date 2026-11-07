@@ -1,7 +1,11 @@
 package com.algo.string.arrays;
+// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
+
+
 public class MergeSort {
   public MergeSort() {
   }
+
   public static void p(int result[]) {
     System.out.println();
     for (int j = 0; j < result.length; j++) {

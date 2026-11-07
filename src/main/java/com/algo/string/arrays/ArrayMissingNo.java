@@ -2,7 +2,11 @@ package com.algo.string.arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+// Logic: Solves the array missing no problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class ArrayMissingNo {
+
   public static void main(String[] args) {
     int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
     List<Integer> ll = ArrayMissingNo.getMissingNo(arr);

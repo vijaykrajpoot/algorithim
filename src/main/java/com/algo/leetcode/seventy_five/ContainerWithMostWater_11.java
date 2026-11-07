@@ -31,7 +31,11 @@ import org.mockito.internal.matchers.Find;
  * <p>
  * https://leetcode.com/problems/container-with-most-water/description/?envType=study-plan-v2&envId=leetcode-75
  */
+// Logic: Solves the container with most water_11 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class ContainerWithMostWater_11 {
+
     public static void main(String[] args) {
         ContainerWithMostWater_11 containerWithMostWater11 = new ContainerWithMostWater_11();
         int[] height = new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7};

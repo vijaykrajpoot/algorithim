@@ -30,7 +30,9 @@ import java.util.stream.IntStream;
  *
  * @param <T>
  */
-public class LinkedList<T> {
+public class LinkedList
+
+<T> {
   private Node<T> firstNode;
   private Node<T> currentNode;
   private Node<T> preNode = firstNode;
@@ -39,6 +41,7 @@ public class LinkedList<T> {
    * 
    * @param data
    */
+
   public void add(T data) {
     if (firstNode == null) {
       Node<T> node = new Node<T>(data);

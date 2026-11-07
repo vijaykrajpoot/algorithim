@@ -4,6 +4,9 @@ import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
+// Logic: Solves the permutation problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class Permutation {
   static Set<String> setStr = new HashSet<>();
   static void printPermutn(char str[], int count[], char result[], int level) {
@@ -30,6 +33,7 @@ public class Permutation {
     }
     System.out.println();
   }
+
   public static void main(String[] args) {
     String s = "abc";
     Map<Character, Integer> hashMap = new LinkedHashMap<>();

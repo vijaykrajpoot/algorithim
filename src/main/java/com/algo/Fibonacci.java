@@ -1,5 +1,9 @@
 package com.algo;
+// Logic: Builds the result from smaller known values using recurrence or iterative accumulation.
+
+
 public class Fibonacci {
+
   public static void main(String[] args) {
     System.out.println("Fibonacci.fibonacci(10):" + Fibonacci.fibonacci(10));
     System.out.print("Fibonacci.fibonacciRecursion(10):");

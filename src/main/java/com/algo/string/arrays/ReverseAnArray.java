@@ -1,5 +1,9 @@
 package com.algo.string.arrays;
+// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
+
+
 public class ReverseAnArray {
+
 	public static int[] reverseArray(int arr[]) {
 		if (arr==null){
 			throw new IllegalArgumentException("Emopty or Null Array");

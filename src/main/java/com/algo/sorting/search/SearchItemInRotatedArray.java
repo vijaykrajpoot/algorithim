@@ -1,5 +1,9 @@
 package com.algo.sorting.search;
+// Logic: Shifts elements to new positions while preserving their relative order within a rotated structure.
+
+
 public class SearchItemInRotatedArray {
+
     public static int search(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;

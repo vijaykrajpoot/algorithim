@@ -2,8 +2,13 @@ package test.com.code.string.arrays.algo;
 import org.junit.Assert;
 import org.junit.Test;
 import com.algo.string.arrays.ReverseAnArray;
+// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
+
+
+
 public class ReverseAnArrayTest {
 	@Test
+
 	public void testReverseArray() {
 		int [] testArray={10,20,30,40,50};
 		int [] excepted={50,40,30,20,10};

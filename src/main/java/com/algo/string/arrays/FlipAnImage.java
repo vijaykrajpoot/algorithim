@@ -13,8 +13,12 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Solves the flip an image problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class FlipAnImage {
   int arr[][] = new int[20][20];
+
   public static void main(String[] args) {
     int arr[][] = {{1, 1, 0}, {1, 0, 1}, {0, 0, 0}};
     System.out.print("Actual :");

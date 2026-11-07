@@ -1,7 +1,10 @@
 package com.algo.tree.graph;
 import java.util.Stack;
-public class BinaryTree<T extends Comparable<T>> {
+public class BinaryTree
+
+<T extends Comparable<T>> {
 	private Node<T> root;
+
 	public void insert(T data) {
 		insertNode(getRoot(), data);
 	}

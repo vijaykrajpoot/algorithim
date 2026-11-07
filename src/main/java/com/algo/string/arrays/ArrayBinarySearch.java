@@ -1,5 +1,9 @@
 package com.algo.string.arrays;
+// Logic: Repeatedly narrows the search range around the middle value until the target is found or the range is empty.
+
+
 public class ArrayBinarySearch {
+
     public static int search(int arr[], int num) {
         int lowerIdx = 0;
         int upperIdx = arr.length - 1;

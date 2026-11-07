@@ -1,6 +1,10 @@
 package com.algo.string.arrays;
 import java.util.Stack;
+// Logic: Uses a stack to match opening and closing symbols in the correct order and detect invalid nesting.
+
+
 public class BracketsMatcher {
+
 	public static boolean isBracketsBalanced(String str) {
 		if (str == null || str.length() == 0)
 			throw new IllegalArgumentException("Invalid Input");

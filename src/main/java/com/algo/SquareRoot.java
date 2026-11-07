@@ -1,5 +1,9 @@
 package com.algo;
+// Logic: Solves the square root problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class SquareRoot {
+
   public static void main(String[] args) {
     System.out.println(SquareRoot.squareRoot(100.00));
   }

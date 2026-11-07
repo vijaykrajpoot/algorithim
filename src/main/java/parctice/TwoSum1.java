@@ -2,7 +2,11 @@ package parctice;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+// Logic: Looks for a pair of values whose sum matches the target, often by tracking seen numbers or using two pointers.
+
+
 public class TwoSum1 {
+
     public static void main(String[] args) {
         int[] arr = {1, 4, 5, 3, 2};
         int[] result = twoSum(arr, 4);

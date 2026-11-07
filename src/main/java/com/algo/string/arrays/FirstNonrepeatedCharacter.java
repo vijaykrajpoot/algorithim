@@ -11,7 +11,11 @@ import java.util.Map;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Solves the first nonrepeated character problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class FirstNonrepeatedCharacter {
+
   public static void main(String str[]) {
     System.out.println(FirstNonrepeatedCharacter.findFirstNonRepeatedChracter("LALALAND"));
     System.out.println(FirstNonrepeatedCharacter.findFirstNonRepeatedChracter("QWERTYUQ"));

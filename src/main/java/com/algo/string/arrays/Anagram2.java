@@ -1,5 +1,9 @@
 package com.algo.string.arrays;
+// Logic: Compares character counts or sorted content to decide whether both strings contain the same letters.
+
+
 public class Anagram2 {
+
 	public static void main(String[] args) {
 		String s1="dormitory";
 		String s2="dirty room";

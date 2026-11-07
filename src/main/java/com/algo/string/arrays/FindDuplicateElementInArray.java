@@ -5,9 +5,13 @@ package com.algo.string.arrays;
  *
  * @author Vijay Kumar Rajput
  */
+// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
+
+
 
 
 public class FindDuplicateElementInArray {
+
 	public static void main(String[] args) {
 		int arr[] = {3, 4, 1, 20, 14};
 		FindDuplicateElementInArray.findDuplicate(arr);

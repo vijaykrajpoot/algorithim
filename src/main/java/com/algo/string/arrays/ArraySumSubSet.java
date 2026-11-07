@@ -9,7 +9,11 @@ import java.util.HashMap;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Aggregates values across the collection to compute the required total or product.
+
+
 public class ArraySumSubSet {
+
   public static void main(String[] args) {
     int arr[] = {10, 20, 30, 40, 50, 60};
     int sum = 50;

@@ -3,7 +3,11 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+// Logic: Looks for a pair of values whose sum matches the target, often by tracking seen numbers or using two pointers.
+
+
 public class TwoSum3 {
+
 	public static void main(String[] args) {
 		int[] arr = {12, 5, 8, 6, 4, 8, 2, 3, 7, 13,10, 25};
 		int[] result = twoSum(arr, 25);

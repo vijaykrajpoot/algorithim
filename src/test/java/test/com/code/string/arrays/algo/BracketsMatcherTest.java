@@ -2,8 +2,13 @@ package test.com.code.string.arrays.algo;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import com.algo.string.arrays.BracketsMatcher;
+// Logic: Uses a stack to match opening and closing symbols in the correct order and detect invalid nesting.
+
+
+
 public class BracketsMatcherTest {
 	@Test
+
 	public void testIsBracketsBalanced() {
 		String str = "{[]()}";
 		assertTrue(BracketsMatcher.isBracketsBalanced(str));

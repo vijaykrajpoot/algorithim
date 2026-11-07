@@ -1,5 +1,9 @@
 package com.algo;
+// Logic: Solves the recursion problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class Recursion {
+
   public static void main(String[] args) {
     new Recursion().myMethod(4);
   }

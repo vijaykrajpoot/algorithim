@@ -23,7 +23,11 @@ import java.util.Arrays;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Solves the find repeat and missing no problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class FindRepeatAndMissingNo {
+
   public static void main(String[] args) {
     int arr[] = {4, 3, 6, 2, 1, 1};
     int[] arrResult = findAndRepeat(arr);

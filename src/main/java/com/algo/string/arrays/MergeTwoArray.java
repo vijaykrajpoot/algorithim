@@ -7,7 +7,11 @@ package com.algo.string.arrays;
  * @author Vijay K Rajput
  *
  */
+// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
+
+
 public class MergeTwoArray {
+
   public static void main(String[] args) {
     int[] arr1 = {1, 90};
     int[] arr2 = {-1, 3, 5, 7, 9, 23, 56};

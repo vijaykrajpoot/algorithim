@@ -2,7 +2,11 @@ package com.algo.string.arrays;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+// Logic: Uses a stack to match opening and closing symbols in the correct order and detect invalid nesting.
+
+
 public class ValidParentheses {
+
 	public static void main(String[] args) {
 		System.out.println(ValidParentheses.isValidParentheses(" [ ( [ { ( ) } ] ) ]"));
 	}

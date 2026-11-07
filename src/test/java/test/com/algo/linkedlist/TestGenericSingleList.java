@@ -2,8 +2,13 @@ package test.com.algo.linkedlist;
 import java.util.stream.IntStream;
 import org.junit.Test;
 import com.algo.linkedlist.single.LinkedList;
+// Logic: Traverses node references to add, remove, or inspect items in the linked structure.
+
+
+
 public class TestGenericSingleList {
   @Test
+
   public void middleNode() {
     LinkedList<Integer> linkedList = new LinkedList<>();
     IntStream.range(1, 11).forEach(i -> linkedList.add(i));

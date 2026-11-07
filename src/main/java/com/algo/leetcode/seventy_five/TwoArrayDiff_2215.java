@@ -31,7 +31,11 @@ import java.util.stream.Collectors;
  * 1 <= nums1.length, nums2.length <= 1000
  * -1000 <= nums1[i], nums2[i] <= 1000
  */
+// Logic: Solves the two array diff_2215 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class TwoArrayDiff_2215 {
+
     public static void main(String[] args) {
         int arr1[] = new int[]{1, 2, 3};
         int arr2[] = new int[]{2, 4, 6};

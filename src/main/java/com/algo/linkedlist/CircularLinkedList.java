@@ -1,7 +1,11 @@
 package com.algo.linkedlist;
+// Logic: Traverses node references to add, remove, or inspect items in the linked structure.
+
+
 public class CircularLinkedList {
 	Node start;
 	Node current;
+
 	public void add(int data) {
 		if (start == null) {
 			Node node = new Node(data);

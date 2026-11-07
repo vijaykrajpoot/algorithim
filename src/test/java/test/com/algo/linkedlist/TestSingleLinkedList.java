@@ -3,9 +3,14 @@ import java.util.stream.IntStream;
 import org.junit.Assert;
 import org.junit.Test;
 import com.algo.linkedlist.LinkedList;
+// Logic: Traverses node references to add, remove, or inspect items in the linked structure.
+
+
+
 public class TestSingleLinkedList {
 	LinkedList ll = new LinkedList();
 	@Test
+
 	public void createLinkedList() {
 		IntStream.range(0, 10).forEach(i -> ll.add(++i));
 		Assert.assertTrue(ll.size() == 10);

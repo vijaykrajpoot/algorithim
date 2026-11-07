@@ -4,8 +4,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.TreeMap;
+// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
+
+
 public class BTreeTraversal {
     TreeNode root;
+
     public static void main(String[] args) {
         BTreeTraversal binaryTree = new BTreeTraversal();
         binaryTree.root = new TreeNode(3);

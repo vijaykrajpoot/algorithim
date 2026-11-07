@@ -11,7 +11,11 @@ package com.algo.string.arrays;
  * Example -3
  * ASDFGHJK=ASDFGHJK;
  */
+// Logic: Solves the compress problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class Compress {
+
     public static void main(String[] args) {
         System.out.println(compress("PPPPQQQMMPP"));
     }

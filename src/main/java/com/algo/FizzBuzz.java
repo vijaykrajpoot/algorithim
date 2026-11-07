@@ -12,7 +12,11 @@ import java.util.List;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Solves the fizz buzz problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class FizzBuzz {
+
   public static void main(String[] args) {
     List<String> list = FizzBuzz.fizzBuzz(15);
     System.out.println(Arrays.toString(list.toArray()));

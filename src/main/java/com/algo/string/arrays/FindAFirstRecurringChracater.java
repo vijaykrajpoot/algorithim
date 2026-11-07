@@ -2,7 +2,11 @@ package com.algo.string.arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+// Logic: Solves the find a first recurring chracater problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class FindAFirstRecurringChracater {
+
   public static void main(String[] args) {
     System.out.println("First Recurring Chracter (solutuon1) - LALALAND: " + FindAFirstRecurringChracater.solutuon1("LALALAND"));
     System.out.println("First Recurring Chracter (solutuon2) - VIJAYKRAJPOOT: " + FindAFirstRecurringChracater.solutuon2("VIJAYKRAJPOOT"));

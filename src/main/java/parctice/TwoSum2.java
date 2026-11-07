@@ -1,6 +1,10 @@
 package parctice;
 import java.util.Arrays;
+// Logic: Looks for a pair of values whose sum matches the target, often by tracking seen numbers or using two pointers.
+
+
 public class TwoSum2 {
+
     public static void main(String[] args) {
         int[] arr = new int[]{10,20,30,40,50,60,70,80,90,100};
         TwoSum2 twoSum2 = new TwoSum2();

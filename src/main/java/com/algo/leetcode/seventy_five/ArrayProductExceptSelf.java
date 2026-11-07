@@ -19,7 +19,11 @@ import java.util.stream.IntStream;
  * Input: nums = [-1,1,0,-3,3]
  * Output: [0,0,9,0,0]
  */
+// Logic: Builds left and right running products so each index gets the product of all other elements without division.
+
+
 public class ArrayProductExceptSelf {
+
     public static void main(String[] args) {
         int[] arr = IntStream.of(-1, 1, 0, -3, 3).toArray();
         ArrayProductExceptSelf a = new ArrayProductExceptSelf();

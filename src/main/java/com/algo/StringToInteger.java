@@ -1,4 +1,7 @@
 package com.algo;
+// Logic: Solves the string to integer problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class StringToInteger {
   /**
    * 
@@ -8,6 +11,7 @@ public class StringToInteger {
    * @param str
    * @return long
    */
+
   public static long convertToIntSol1(String str) {
     long finalNumber = 0;
     int len = str.length();

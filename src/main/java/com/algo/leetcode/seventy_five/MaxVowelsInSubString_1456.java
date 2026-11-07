@@ -31,9 +31,13 @@ package com.algo.leetcode.seventy_five;
  */
 
 import java.util.*;
+// Logic: Solves the max vowels in sub string_1456 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 class MaxVowelsInSubString_1456 {
     HashSet<Character> hashSet = new HashSet<>();
     List<Character> aa = Arrays.asList('a', 'e', 'i', 'o', 'u');
+
     public static void main(String[] args) {
         String st = "leetcode";
         int k = 2;

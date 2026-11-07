@@ -7,6 +7,9 @@ package com.algo.string.arrays;
  *
  * @author Vijay Kumar Rajput
  */
+// Logic: Solves the permutation logic2 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class PermutationLogic2 {
     private StringBuilder result = new StringBuilder();
     private String inputString;
@@ -42,6 +45,7 @@ public class PermutationLogic2 {
             result.setLength(result.length() - 1);
         }
     }
+
     private void print(char arr[]) {
         for (char ch : arr) {
             System.out.print(ch);

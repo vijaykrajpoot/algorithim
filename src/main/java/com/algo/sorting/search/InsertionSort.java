@@ -1,6 +1,10 @@
 package com.algo.sorting.search;
 import java.util.Arrays;
+// Logic: Reorders the collection so elements appear in the required priority or ascending order.
+
+
 public class InsertionSort {
+
 	public static void main(String[] args) {
 		int[] arr = {-2,9, 8,10, 7, 6, 5,0, 4,-1, 3, 2, 1};
 		InsertionSort insertionSort = new InsertionSort();

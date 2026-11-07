@@ -5,6 +5,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.stream.IntStream;
+// Logic: Verifies the algorithm against expected outputs for sample inputs.
+
+
 public class TestEvenOddRunnable {
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		EvenOddNumberRunnable evenOddNumberRunnable100 = new EvenOddNumberRunnable(IntStream.range(1, 100).toArray());

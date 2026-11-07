@@ -1,5 +1,9 @@
 package com.algo.sorting.search;
+// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
+
+
 public class MergeSortedArray {
+
 	public static int[] mergeArrays(int arr1[], int[] arr2) {
 		int arr[] = new int[arr1.length + arr2.length];
 		int idx = 0, idx1 = 0, idx2 = 0;

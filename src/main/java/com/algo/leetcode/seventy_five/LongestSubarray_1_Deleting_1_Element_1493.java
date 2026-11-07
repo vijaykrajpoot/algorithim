@@ -29,7 +29,11 @@ import org.junit.Assert;
  * 1 <= nums.length <= 105
  * nums[i] is either 0 or 1.
  */
+// Logic: Solves the longest subarray_1_ deleting_1_ element_1493 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class LongestSubarray_1_Deleting_1_Element_1493 {
+
     public static void main(String[] args) {
         LongestSubarray_1_Deleting_1_Element_1493 s = new LongestSubarray_1_Deleting_1_Element_1493();
         int result = 0;

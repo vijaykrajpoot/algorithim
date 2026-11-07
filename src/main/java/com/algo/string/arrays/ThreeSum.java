@@ -16,7 +16,11 @@ import java.util.*;
  * <p>
  * ["10,-4,-6", "3,-4,1"]
  */
+// Logic: Aggregates values across the collection to compute the required total or product.
+
+
 public class ThreeSum {
+
     public static void main(String[] args) {
         int[] arr = new int[]{10, 3, -4, 1, -6, 9};
         ThreeSum threeSum = new ThreeSum();

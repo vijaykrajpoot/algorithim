@@ -1,5 +1,9 @@
 package com.algo;
+// Logic: Solves the integer to string problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class IntegerToString {
+
   public static String convert(int number) {
     StringBuilder builder = new StringBuilder();
     boolean isNegative = false;

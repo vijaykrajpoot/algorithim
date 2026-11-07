@@ -8,8 +8,12 @@ import java.util.Set;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Compares character counts or sorted content to decide whether both strings contain the same letters.
+
+
 
 public class Anagram {
+
   public static void main(String[] args) {
     System.out.println("Anagram.isAnagram1(Dormito ry, Dirty room):" + Anagram.isAnagram("parliament", "partialmen"));
     System.out.println("Anagram.isAnagramSol2(ac, bb):" + Anagram.isAnagramSol2("ac", "bb"));

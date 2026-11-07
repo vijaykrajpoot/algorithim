@@ -3,7 +3,11 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
+
+
 public class BTreeZigZag {
+
 	public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
 		List<List<Integer>> result=new ArrayList();
 		Queue<TreeNode> q=new LinkedList<>();

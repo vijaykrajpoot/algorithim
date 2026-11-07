@@ -1,7 +1,11 @@
 package com.algo;
 import java.util.ArrayList;
 import java.util.List;
+// Logic: Solves the prefix matcher problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class PrefixMatcher {
+
      public static boolean isPrefix(String str, String prefix) {
         return str.startsWith(prefix);
     }

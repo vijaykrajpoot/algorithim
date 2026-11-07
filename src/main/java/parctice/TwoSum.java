@@ -1,6 +1,10 @@
 package parctice;
 import java.util.Arrays;
+// Logic: Looks for a pair of values whose sum matches the target, often by tracking seen numbers or using two pointers.
+
+
 public class TwoSum {
+
     public static void main(String[] args) {
         int[] arr = {12,5,8,6,4,8,2,3,7,10,25};
         int[] result = twoSum(arr, 8);

@@ -8,7 +8,11 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Solves the to lower problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class ToLower {
+
   public static void main(String[] args) {
     System.out.println(ToLower.toLower("Vijay$"));
     System.out.println(ToLower.toLower("al&phaBET"));

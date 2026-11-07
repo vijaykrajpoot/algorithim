@@ -1,8 +1,12 @@
 package com.algo.string.arrays;
 import java.util.Arrays;
 import java.util.Random;
+// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
+
+
 public class FindAMaxElementInArray {
   private static int LIMIT = 10;
+
   public static void main(String[] args) {
     System.out.println();
     long startTime = System.nanoTime();

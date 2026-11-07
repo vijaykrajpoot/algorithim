@@ -2,6 +2,9 @@ package com.algo.string.arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+// Logic: Solves the array intersection problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class ArrayIntersection {
 	static int[] findIntersection(int arr1[], int arr2[]) {
 		int[] result = null;
@@ -23,6 +26,7 @@ public class ArrayIntersection {
 		}
 		return result;
 	}
+
 	public static void main(String[] args) {
 		int arr1[] = {1};
 		int arr2[] = { 2, 2, 2, 1 };

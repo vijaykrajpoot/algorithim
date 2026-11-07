@@ -6,8 +6,12 @@ package com.algo.string.arrays;
  *
  * @author Vijay Kumar Rajput
  */
+// Logic: Solves the string rotation problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 
 public class StringRotation {
+
     public static void main(String[] args) {
         System.out.println("isRotation:" + isRotation("waterbottle", "erbottlewat"));
         System.out.println("isRotation:" + isRotation("apple", "pleap"));

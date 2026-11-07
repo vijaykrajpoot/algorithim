@@ -1,4 +1,7 @@
 package com.algo.tree.graph;
+// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
+
+
 public class BTree {
 	private int value;
 	private BTree left;
@@ -6,6 +9,7 @@ public class BTree {
 	public BTree(int value) {
 		this.value = value;
 	}
+
 	public int getValue() {
 		return value;
 	}

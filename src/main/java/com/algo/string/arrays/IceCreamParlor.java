@@ -38,7 +38,11 @@ import java.util.List;
  * , ∀
  * There will always be a unique solution.
  */
+// Logic: Solves the ice cream parlor problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class IceCreamParlor {
+
     public static void main(String[] args) {
         List<Integer> aa = Arrays.asList(1, 4, 5, 3, 2);
         List<Integer> out = icecreamParlor(4, aa);

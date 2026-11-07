@@ -1,6 +1,10 @@
 package com.algo;
+// Logic: Solves the pow problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class Pow {
 	static int i = 0;
+
 	public double myPow(double x, long l) {
 		if (l < 0) {
 			return 1 / pow(x, -l);

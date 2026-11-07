@@ -1,6 +1,9 @@
 package parctice;
 import java.util.HashMap;
 import java.util.Map;
+// Logic: Solves the base x problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class BaseX {
     public static Map<Integer, String> generateTable(int base) {
         Map<Integer, String> table = new HashMap<>();
@@ -11,6 +14,7 @@ public class BaseX {
         }
         return table;
     }
+
     public static void printTable(Map<Integer, String> table) {
         for (Map.Entry<Integer, String> entry : table.entrySet()) {
             int value = entry.getKey();

@@ -1,5 +1,8 @@
 package com.algo.tree.graph;
 import java.util.*;
+// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
+
+
 public class BTreePractice {
     TreeNode<Integer> root = null;
     void dfs(TreeNode<Integer> root) {
@@ -10,6 +13,7 @@ public class BTreePractice {
         System.out.print(root.val + " ");
         dfs(root.right);
     }
+
     public int getHeightBFS(TreeNode root) {
         if (root == null) {
             return -1;

@@ -1,5 +1,9 @@
 package com.algo.string.arrays;
+// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
+
+
 public class MergeSort2 {
+
   public static void main(String[] args) {
     int arr[] = {50, 30, 10, 80, 40,-1 , 90,-200};
     MergeSort mergeSort = new MergeSort();

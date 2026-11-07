@@ -3,6 +3,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
+
+
 class MyNode {
 	public int val;
 	public List<MyNode> children;
@@ -17,6 +20,7 @@ class MyNode {
 	}
 };
 public class NArray {
+
 	public List<List<Integer>> levelOrder(MyNode root) {
 		List<List<Integer>> result = new ArrayList<>();
 		Queue<MyNode> queue = new LinkedList<>();

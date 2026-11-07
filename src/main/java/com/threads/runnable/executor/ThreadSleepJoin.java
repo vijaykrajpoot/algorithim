@@ -1,9 +1,12 @@
 package com.threads.runnable.executor;
 import java.time.LocalTime;
 import java.util.stream.IntStream;
-public class ThreadSleepJoin implements Runnable {
+public class ThreadSleepJoin
+
+ implements Runnable {
 	Object lock = new Object();
 	@Override
+
 	public void run() {
 		System.out.println("Entered:" + Thread.currentThread().getName() + " : LocalTime.now():" + LocalTime.now());
 		try {

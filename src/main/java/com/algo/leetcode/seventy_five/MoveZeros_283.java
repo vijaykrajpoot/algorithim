@@ -23,7 +23,11 @@ import java.util.Arrays;
  * 1 <= nums.length <= 104
  * -231 <= nums[i] <= 231 - 1
  */
+// Logic: Solves the move zeros_283 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class MoveZeros_283 {
+
     public static void main(String[] args) {
         MoveZeros_283 moveZeros283 = new MoveZeros_283();
         int[] arr = new int[]{0, 0, 0, 1,0, 1,2,3,4,5,6,0};

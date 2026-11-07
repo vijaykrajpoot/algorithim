@@ -2,9 +2,14 @@ package test.com.code.sorting.search.algo;
 import org.junit.Assert;
 import org.junit.Test;
 import com.algo.sorting.search.MergeSort;
+// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
+
+
+
 public class MergeSortTest {
 	private MergeSort mergeSort = new MergeSort();
 	@Test
+
 	public void testMergesortWithValidArray() {
 		int unsortedArray[] = { 3, 8, 1, 44, -232, 6, 7, 9, 67, -89, 32, -1, 2 };
 		int sortedResultArray[] = mergeSort.mergeS(unsortedArray);

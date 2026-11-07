@@ -9,6 +9,9 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  *
  */
+// Logic: Solves the remove a given chracter problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class RemoveAGivenChracter {
   static String removeChractersFromString(String string, String removeStr) {
     StringBuilder builder = new StringBuilder();
@@ -23,6 +26,7 @@ public class RemoveAGivenChracter {
     }
     return builder.toString();
   }
+
   public static void main(String[] args) {
     System.out.println(removeChractersFromString("Battle of the Vowels: Hawaii vs. Grozny", "aeiou"));
   }

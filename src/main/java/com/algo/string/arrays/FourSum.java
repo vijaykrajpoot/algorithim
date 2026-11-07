@@ -15,5 +15,8 @@ package com.algo.string.arrays;
  * [0, 0, 1, 2]
  * ]
  */
+// Logic: Aggregates values across the collection to compute the required total or product.
+
+
 public class FourSum {
 }

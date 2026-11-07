@@ -6,7 +6,11 @@ package com.algo.string.arrays;
  * @author Vijay K Rajput
  *
  */
+// Logic: Solves the unique characater problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
+
+
 public class UniqueCharacater {
+
   public static void main(String[] args) {
 
     System.out.println("Contains Unique Chracters: " + new UniqueCharacater().isUniqueChars("QWERTYUIO"));
