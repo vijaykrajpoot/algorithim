@@ -9,7 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-// Logic: Creates a compact URL-like token by hashing the input with MD5, converting the digest to binary, then mapping chunks of bits into Base64 characters.
+// Logic: hashes the input, converts the digest to binary, and groups the bits into Base64 characters to produce a compact token.
 public class URLShortBase64MD5HashCounter {
 
     public static String generateBase64Hash(String input) {

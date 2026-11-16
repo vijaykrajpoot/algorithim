@@ -2,9 +2,9 @@ package parctice;
 /**
  * @author vkumar1 created on 4/26/21
  */
-// Logic: Solves the string to integer problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the string to integer problem by transforming the input according to the algorithm and returning the required result.
 public class StringToInteger {
 
     public static void main(String[] args) {

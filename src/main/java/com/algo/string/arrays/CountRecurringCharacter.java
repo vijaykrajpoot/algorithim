@@ -2,9 +2,9 @@ package com.algo.string.arrays;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-// Logic: Solves the count recurring character problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the count recurring character problem by transforming the input according to the algorithm and returning the required result.
 public class CountRecurringCharacter {
 
   public static void main(String[] args) {

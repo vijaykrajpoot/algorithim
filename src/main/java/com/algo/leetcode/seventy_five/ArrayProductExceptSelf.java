@@ -19,9 +19,9 @@ import java.util.stream.IntStream;
  * Input: nums = [-1,1,0,-3,3]
  * Output: [0,0,9,0,0]
  */
-// Logic: Builds left and right running products so each index gets the product of all other elements without division.
 
 
+// Logic: builds a prefix product array and a suffix product array, then multiplies the two sides for each index so each value is the product of all other elements without using division.
 public class ArrayProductExceptSelf {
 
     public static void main(String[] args) {

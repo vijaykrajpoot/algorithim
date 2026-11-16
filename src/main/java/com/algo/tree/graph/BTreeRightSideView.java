@@ -4,9 +4,9 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
 
 
+// Logic: visits nodes in a defined traversal order so each subtree is processed consistently and every node is checked.
 public class BTreeRightSideView {
 
 	public List<Integer> rightSideView(TreeNode root) {

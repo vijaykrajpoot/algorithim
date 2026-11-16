@@ -21,9 +21,9 @@ package com.algo.leetcode.seventy_five;
  * Output: 0
  * Explanation: The altitudes are [0,-4,-7,-9,-10,-6,-3,-1]. The highest is 0.
  */
-// Logic: Solves the highest altitude problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the highest altitude problem by transforming the input according to the algorithm and returning the required result.
 public class HighestAltitude {
 
     public static void main(String[] args) {

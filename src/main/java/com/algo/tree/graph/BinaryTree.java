@@ -1,5 +1,6 @@
 package com.algo.tree.graph;
 import java.util.Stack;
+// Logic: visits nodes in a defined traversal order so each subtree is processed consistently and every node is checked.
 public class BinaryTree
 
 <T extends Comparable<T>> {

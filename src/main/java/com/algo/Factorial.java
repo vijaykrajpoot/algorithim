@@ -1,7 +1,7 @@
 package com.algo;
-// Logic: Builds the result from smaller known values using recurrence or iterative accumulation.
 
 
+// Logic: builds the answer from smaller known values using recurrence or iterative accumulation.
 public class Factorial {
 
   public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package parctice;
-// Logic: Checks matching characters from both ends inward to determine whether the sequence reads the same forward and backward.
 
 
+// Logic: compares characters from both ends toward the middle and stops on the first mismatch, because a palindrome must read the same forward and backward.
 public class ValidPalindrome {
 
 	public static void main(String[] args) {

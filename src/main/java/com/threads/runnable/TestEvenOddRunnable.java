@@ -1,8 +1,8 @@
 package com.threads.runnable;
 import java.util.stream.IntStream;
-// Logic: Verifies the algorithm against expected outputs for sample inputs.
 
 
+// Logic: runs known sample inputs and compares the outputs with expected values to validate the algorithm.
 public class TestEvenOddRunnable {
 
 	public static void main(String[] args) {

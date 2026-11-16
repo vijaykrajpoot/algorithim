@@ -1,7 +1,7 @@
 package com.algo.string.arrays;
-// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
 
 
+// Logic: swaps values from the ends toward the center until the full sequence is inverted.
 public class ReverseAnArray {
 
 	public static int[] reverseArray(int arr[]) {

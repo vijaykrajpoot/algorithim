@@ -1,5 +1,7 @@
 package com.algo.string.arrays;
+
 import java.util.*;
+
 /**
  * 3 Sum
  * Given an integer array arr of size n, find all magic triplets in it.
@@ -16,68 +18,54 @@ import java.util.*;
  * <p>
  * ["10,-4,-6", "3,-4,1"]
  */
-// Logic: Aggregates values across the collection to compute the required total or product.
 
 
+// Logic: accumulates values across the collection to compute the total or product required by the problem.
 public class ThreeSum {
 
     public static void main(String[] args) {
-        int[] arr = new int[]{10, 3, -4, 1, -6, 9};
+        int[] arr = new int[]{10, 10, 10, 3, -4, 1, 1, 1, 1, 1, -6, 9, -9, -9, -9, -9, -9, -9};
         ThreeSum threeSum = new ThreeSum();
-        ArrayList<Integer> arrayList=new ArrayList<>(Arrays.asList(10, 3, -4, 1, -6, 9));
-        System.out.println(threeSum.threeSum(arrayList));
+
+        System.out.println(threeSum.threeSum(arr));
     }
-    static ArrayList<String> threeSum(ArrayList<Integer> arrList) {
-        int [] arr=arrList.stream().mapToInt(i->i).toArray();
+
+    List<List<Integer>> threeSum(int[] arr) {
+        List<List<Integer>> threeSumList = new ArrayList<>();
         Arrays.sort(arr);
-        Set<String> ll = new HashSet<>();
-        for (int i = 0; i < arr.length - 1; i++) {
-            int low = i + 1;
-            int high = arr.length - 1;
-            while (low < high) {
-                int sum = arr[i] + arr[low] + arr[high];
+        int len = arr.length - 1;
+
+        for (int i = 0; i < len; i++) {
+            if (i > 0 && arr[i] == arr[i - 1]) {
+                continue;
+            }
+
+            int left = i + 1;
+            int right = len;
+            while (left < right) {
+                int sum = arr[i] + arr[left] + arr[right];
                 if (sum == 0) {
-                    StringBuilder bb = new StringBuilder();
-                    bb
-                            .append(arr[i])
-                            .append(",")
-                            .append(arr[low])
-                            .append(",")
-                            .append(arr[high]);
-                    ll.add(bb.toString());
-                    low++;
-                    high--;
-                } else {
-                    if (sum > 0) {
-                        high--;
-                    } else {
-                        low++;
+                    threeSumList.add(Arrays.asList(arr[i], arr[left], arr[right]));
+                    left++;
+                    right--;
+
+                    while (left < right && arr[left] == arr[left - 1]) {
+                        left++;
                     }
-                }
-            }
-        }
-        return new ArrayList(ll);
-    }
-    List<List<Integer>> threeSum1(int[] arr) {
-        Arrays.sort(arr);
-        Set<List<Integer>> ll = new HashSet<>();
-        for (int i = 0; i < arr.length - 2; i++) {
-            int low = i + 1;
-            int high = arr.length - 1;
-            while (low < high) {
-                int sum = arr[low] + arr[high] + arr[i];
-                if (sum == 0) {
-                    ll.add(Arrays.asList(arr[i], arr[low], arr[high]));
-                    low++;
-                    high--;
-                }
-                if (sum > 0) {
-                    high--;
+                    while (left < right && arr[right] == arr[right + 1]) {
+                        right--;
+                    }
+
+                } else if (sum < 0) {
+                    left++;
                 } else {
-                    low++;
+                    right--;
                 }
             }
+
         }
-        return new ArrayList<>(ll);
+        return threeSumList;
     }
+
 }
+

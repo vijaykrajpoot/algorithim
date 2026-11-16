@@ -9,9 +9,9 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  *
  */
-// Logic: Solves the remove a given chracter problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the remove a given chracter problem by transforming the input according to the algorithm and returning the required result.
 public class RemoveAGivenChracter {
   static String removeChractersFromString(String string, String removeStr) {
     StringBuilder builder = new StringBuilder();

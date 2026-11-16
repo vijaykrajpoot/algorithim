@@ -33,9 +33,9 @@ package com.algo.string.arrays;
  *
  * There are 4 distinct elements in nums and the elements marked as _ can have any value.
  */
-// Logic: Reorders the collection so elements appear in the required priority or ascending order.
 
 
+// Logic: reorders the collection so elements appear in the required priority or ascending order.
 public class RemoveDuplicateSortedArray {
 
     public static void main(String[] args) {

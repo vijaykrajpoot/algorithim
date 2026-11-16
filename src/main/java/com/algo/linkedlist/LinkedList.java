@@ -5,9 +5,9 @@ package com.algo.linkedlist;
  * @author Vijay Kumar Rajput
  *
  */
-// Logic: Traverses node references to add, remove, or inspect items in the linked structure.
 
 
+// Logic: follows node references from one element to the next so items can be traversed, inserted, deleted, or inspected in sequence.
 public class LinkedList {
 	private Node start;
 	private Node current;

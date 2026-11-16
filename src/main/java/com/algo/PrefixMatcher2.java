@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-// Logic: Solves the prefix matcher2 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
 class TrieNode {
@@ -14,6 +13,7 @@ class TrieNode {
         isEndOfWord = false;
     }
 }
+// Logic: processes the prefix matcher2 problem by transforming the input according to the algorithm and returning the required result.
 public class PrefixMatcher2 {
     static TrieNode root;
 

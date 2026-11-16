@@ -18,8 +18,8 @@ package com.algo.string.arrays;
  *
  * 326 is not a colorful number as it generates 3 2 6 (3*2)=6 (2*6)=12.
  */
-// Logic: Solves the colorful numbers problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the colorful numbers problem by transforming the input according to the algorithm and returning the required result.
 public class ColorfulNumbers {
 }

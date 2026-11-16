@@ -1,9 +1,9 @@
 package com.algo.string.arrays;
 import java.util.Arrays;
 import java.util.Random;
-// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
 
 
+// Logic: processes the find a max element in array problem by transforming the input according to the algorithm and returning the required result.
 public class FindAMaxElementInArray {
   private static int LIMIT = 10;
 

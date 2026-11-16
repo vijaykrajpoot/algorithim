@@ -8,6 +8,7 @@ package com.algo.linkedlist.single;
  * @param <T>
  */
 
+// Logic: processes the node problem by transforming the input according to the algorithm and returning the required result.
 public class Node
 
 <T> {

@@ -2,9 +2,9 @@ package com.algo.leetcode.seventy_five;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
-// Logic: Solves the sample problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the sample problem by transforming the input according to the algorithm and returning the required result.
 public class Sample {
 
     public static void main(String[] args) {

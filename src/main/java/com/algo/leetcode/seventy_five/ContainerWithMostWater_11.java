@@ -31,9 +31,9 @@ import org.mockito.internal.matchers.Find;
  * <p>
  * https://leetcode.com/problems/container-with-most-water/description/?envType=study-plan-v2&envId=leetcode-75
  */
-// Logic: Solves the container with most water_11 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the container with most water_11 problem by transforming the input according to the algorithm and returning the required result.
 public class ContainerWithMostWater_11 {
 
     public static void main(String[] args) {

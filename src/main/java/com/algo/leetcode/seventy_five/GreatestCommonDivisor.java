@@ -29,9 +29,9 @@ package com.algo.leetcode.seventy_five;
  * 1 <= str1.length, str2.length <= 1000
  * str1 and str2 consist of English uppercase letters.
  */
-// Logic: Verifies the algorithm against expected outputs for sample inputs.
 
 
+// Logic: runs known sample inputs and compares the outputs with expected values to validate the algorithm.
 public class GreatestCommonDivisor {
 
 	public static void main(String[] args) {

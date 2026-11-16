@@ -6,9 +6,9 @@ package com.algo.string.arrays;
  * @author Vijay
  *
  */
-// Logic: Swaps elements from the ends toward the center until the sequence is fully reversed.
 
 
+// Logic: swaps values from the ends toward the center until the full sequence is inverted.
 public class ReverseAString {
 
 	public void reverseString(char[] s) {

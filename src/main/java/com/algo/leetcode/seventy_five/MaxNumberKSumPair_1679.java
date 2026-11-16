@@ -34,9 +34,9 @@ import java.util.Arrays;
  * 1 <= nums[i] <= 109
  * 1 <= k <= 109
  */
-// Logic: Aggregates values across the collection to compute the required total or product.
 
 
+// Logic: accumulates values across the collection to compute the total or product required by the problem.
 public class MaxNumberKSumPair_1679 {
 
     public static void main(String[] args) {

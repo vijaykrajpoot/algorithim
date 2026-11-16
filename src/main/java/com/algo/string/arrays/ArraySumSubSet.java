@@ -9,9 +9,9 @@ import java.util.HashMap;
  * @author Vijay Kumar Rajput
  *
  */
-// Logic: Aggregates values across the collection to compute the required total or product.
 
 
+// Logic: accumulates values across the collection to compute the total or product required by the problem.
 public class ArraySumSubSet {
 
   public static void main(String[] args) {

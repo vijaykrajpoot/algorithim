@@ -2,10 +2,10 @@ package test.com.code.sorting.search.algo;
 import static org.junit.Assert.assertArrayEquals;
 import org.junit.Test;
 import com.algo.sorting.search.MergeSortedArray;
-// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
 
 
 
+// Logic: splits the array into smaller halves, sorts each half recursively, and merges the sorted pieces back together in ascending order.
 public class MergeSortedArrayTest {
 	@Test
 

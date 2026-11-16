@@ -1,9 +1,9 @@
 package com.algo;
 import java.util.*;
 import java.util.stream.Collectors;
-// Logic: Solves the p d f viewer problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the p d f viewer problem by transforming the input according to the algorithm and returning the required result.
 public class PDFViewer {
     static Map<Character, Integer> chIdx = new HashMap<>();
 

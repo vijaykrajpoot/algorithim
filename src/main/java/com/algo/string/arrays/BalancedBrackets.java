@@ -1,16 +1,16 @@
 package com.algo.string.arrays;
 import java.util.Stack;
 import java.util.concurrent.ConcurrentNavigableMap;
-// Logic: Uses a stack to match opening and closing symbols in the correct order and detect invalid nesting.
 
 
+// Logic: processes the balanced brackets problem by transforming the input according to the algorithm and returning the required result.
 public class BalancedBrackets {
 
     public static void main(String[] args) {
-        String string = isBalanced("{{[[(())]]}}");
-        System.out.println(string);
+        boolean isBalanced = isBalanced("{{[[(())]]}}");
+        System.out.println(isBalanced);
     }
-    public static String isBalanced(String s) {
+    public static boolean isBalanced(String s) {
         java.util.Stack<Character> stack = new Stack<>();
         char poppedCh = ' ';
         for (int i = 0; i < s.length(); i++) {
@@ -19,24 +19,25 @@ public class BalancedBrackets {
                 stack.push(ch);
                 continue;
             } else if (stack.isEmpty()) {
-                return "NO";
+                return false;
             }
+
             if (ch == '}' || ch == ']' || ch == ')') {
                 poppedCh = stack.pop();
                 if (poppedCh != '{' && ch == '}') {
-                    return "NO";
+                    return false;
                 }
                 if (poppedCh != '[' && ch == ']') {
-                    return "NO";
+                    return false;
                 }
                 if (poppedCh != '(' && ch == ')') {
-                    return "NO";
+                    return false;
                 }
             }
         }
         if (stack.isEmpty()) {
-            return "YES";
+            return true;
         }
-        return "NO";
+        return false;
     }
 }

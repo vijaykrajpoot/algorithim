@@ -8,9 +8,9 @@ import java.time.Instant;
  * @author Vijay Kumar Rajput
  *
  */
-// Logic: Checks divisibility against possible factors to determine whether the number is prime.
 
 
+// Logic: checks divisibility against smaller numbers to determine whether the number has any factor other than 1 and itself.
 public class PrimeNumber {
 
   public static void main(String[] args) {

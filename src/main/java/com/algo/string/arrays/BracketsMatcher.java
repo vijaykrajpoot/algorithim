@@ -1,8 +1,9 @@
 package com.algo.string.arrays;
 import java.util.Stack;
-// Logic: Uses a stack to match opening and closing symbols in the correct order and detect invalid nesting.
 
 
+// Logic: pushes opening brackets onto a stack and matches each closing bracket against the most recent opening bracket;
+// a mismatch or leftover opener means the string is invalid.
 public class BracketsMatcher {
 
 	public static boolean isBracketsBalanced(String str) {
@@ -26,6 +27,6 @@ public class BracketsMatcher {
 		return stack.isEmpty();
 	}
 	public static void main(String[] args) {
-		System.out.println(BracketsMatcher.isBracketsBalanced("([])"));
+		System.out.println(BracketsMatcher.isBracketsBalanced("([{{((((([()])))))}}])"));
 	}
 }

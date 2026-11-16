@@ -45,9 +45,9 @@ package com.algo.leetcode.seventy_five;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.OptionalInt;
-// Logic: Finds the highest candy total, then checks whether each child can reach or exceed that total after receiving all extra candies.
 
 
+// Logic: finds the highest candy count in the group and checks each child individually to see whether giving all extra candies makes them reach or beat that leader.
 public class KidsWithMaxCandy {
 
 	public static void main(String[] args) {

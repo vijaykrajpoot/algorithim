@@ -3,9 +3,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-// Logic: Looks for a pair of values whose sum matches the target, often by tracking seen numbers or using two pointers.
 
 
+// Logic: searches for a pair whose sum equals the target, often by tracking seen values or using two pointers moving toward the middle.
 public class TwoSum3 {
 
 	public static void main(String[] args) {
@@ -21,8 +21,6 @@ public class TwoSum3 {
 				return new int[]{i, idx};
 			}
 		}
-		List<Long> aa=null;
-		aa.stream().mapToLong(Long::longValue).sum();
  		return new int[]{};
 	}
 	private static int findItem(int[] arr, int element) {

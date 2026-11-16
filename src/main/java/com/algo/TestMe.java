@@ -1,7 +1,7 @@
 package com.algo;
-// Logic: Verifies the algorithm against expected outputs for sample inputs.
 
 
+// Logic: runs known sample inputs and compares the outputs with expected values to validate the algorithm.
 public class TestMe {
   public static void main(String[] args) {
     int num=1234567;

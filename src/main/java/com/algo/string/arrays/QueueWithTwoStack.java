@@ -1,7 +1,6 @@
 package com.algo.string.arrays;
 import java.util.Scanner;
 import java.util.Stack;
-// Logic: Enforces a strict add/remove order so data is processed according to stack or queue rules.
 
 
 class StackQ {
@@ -34,6 +33,7 @@ class StackQ {
         return s2.peek();
     }
 }
+// Logic: enforces a strict insertion and removal rule so values are processed in stack or queue order.
 public class QueueWithTwoStack {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -3,10 +3,10 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import com.algo.string.arrays.BinarySearch;
-// Logic: Repeatedly narrows the search range around the middle value until the target is found or the range is empty.
 
 
 
+// Logic: compares the target with the middle element and discards the half that cannot contain the target until the value is found or the range is empty.
 public class BinarySearchTest {
 	@Test(expected=IllegalArgumentException.class)
 

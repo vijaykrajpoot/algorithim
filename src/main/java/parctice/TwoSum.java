@@ -1,8 +1,8 @@
 package parctice;
 import java.util.Arrays;
-// Logic: Looks for a pair of values whose sum matches the target, often by tracking seen numbers or using two pointers.
 
 
+// Logic: searches for a pair whose sum equals the target, often by tracking seen values or using two pointers moving toward the middle.
 public class TwoSum {
 
     public static void main(String[] args) {

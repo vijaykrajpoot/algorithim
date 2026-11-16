@@ -10,9 +10,9 @@ https:
 
 import java.util.LinkedList;
 import java.util.Queue;
-// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
 
 
+// Logic: visits nodes in a defined traversal order so each subtree is processed consistently and every node is checked.
 public class SymmetricTree {
     static Boolean check_if_symmetric(TreeNode root) {
         if (root == null) {

@@ -26,9 +26,9 @@ import java.util.Stack;
  * 0 <= t.length <= 104
  * s and t consist only of lowercase English letters.
  */
-// Logic: Solves the sub sequence_392 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the sub sequence_392 problem by transforming the input according to the algorithm and returning the required result.
 public class SubSequence_392 {
 
     public static void main(String[] args) {

@@ -7,9 +7,9 @@ package com.algo.string.arrays;
  * @author Vijay K Rajput
  *
  */
-// Logic: Recursively splits the array, sorts each half, and merges the sorted halves back together in order.
 
 
+// Logic: splits the array into smaller halves, sorts each half recursively, and merges the sorted pieces back together in ascending order.
 public class MergeTwoArray {
 
   public static void main(String[] args) {

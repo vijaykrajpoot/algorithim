@@ -3,9 +3,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Base64;
-// Logic: Solves the u r l unique key generator crypto problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: hashes the input, converts the digest to binary, and groups the bits into Base64 characters to produce a compact token.
 public class URLUniqueKeyGeneratorCrypto {
 
 	public static void main(String[] args) {

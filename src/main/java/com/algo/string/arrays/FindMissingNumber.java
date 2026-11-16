@@ -26,9 +26,9 @@ package com.algo.string.arrays;
  * Output:
  * 0
  */
-// Logic: Solves the find missing number problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: creates a boolean marker array the size of the expected range, marks every value that appears, and returns the first index that stays false because that index is the missing number.
 public class FindMissingNumber {
 
     public static void main(String[] args) {

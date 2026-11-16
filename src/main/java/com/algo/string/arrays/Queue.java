@@ -1,7 +1,7 @@
 package com.algo.string.arrays;
-// Logic: Enforces a strict add/remove order so data is processed according to stack or queue rules.
 
 
+// Logic: enforces a strict insertion and removal rule so values are processed in stack or queue order.
 public class Queue {
 	private int maxSize;
 	private int arr[];

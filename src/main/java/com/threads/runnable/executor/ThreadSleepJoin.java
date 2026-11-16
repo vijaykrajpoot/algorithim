@@ -1,6 +1,7 @@
 package com.threads.runnable.executor;
 import java.time.LocalTime;
 import java.util.stream.IntStream;
+// Logic: coordinates multiple threads by controlling waiting, signaling, and shared state so tasks run in a safe and ordered sequence.
 public class ThreadSleepJoin
 
  implements Runnable {

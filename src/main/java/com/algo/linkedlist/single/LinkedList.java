@@ -30,6 +30,7 @@ import java.util.stream.IntStream;
  *
  * @param <T>
  */
+// Logic: follows node references from one element to the next so items can be traversed, inserted, deleted, or inspected in sequence.
 public class LinkedList
 
 <T> {

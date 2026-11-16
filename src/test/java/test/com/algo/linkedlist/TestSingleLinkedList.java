@@ -3,10 +3,10 @@ import java.util.stream.IntStream;
 import org.junit.Assert;
 import org.junit.Test;
 import com.algo.linkedlist.LinkedList;
-// Logic: Traverses node references to add, remove, or inspect items in the linked structure.
 
 
 
+// Logic: follows node references from one element to the next so items can be traversed, inserted, deleted, or inspected in sequence.
 public class TestSingleLinkedList {
 	LinkedList ll = new LinkedList();
 	@Test

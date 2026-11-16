@@ -1,9 +1,9 @@
 package com.algo.sorting.search;
 import java.util.ArrayList;
 import java.util.Arrays;
-// Logic: Solves the even odd segregate problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the even odd segregate problem by transforming the input according to the algorithm and returning the required result.
 public class EvenOddSegregate {
 
     public static void main(String[] args) {

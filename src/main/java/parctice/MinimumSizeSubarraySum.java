@@ -1,7 +1,7 @@
 package parctice;
-// Logic: Aggregates values across the collection to compute the required total or product.
 
 
+// Logic: accumulates values across the collection to compute the total or product required by the problem.
 public class MinimumSizeSubarraySum {
 
 	public static int minSubArrayLen(int target, int[] nums) {

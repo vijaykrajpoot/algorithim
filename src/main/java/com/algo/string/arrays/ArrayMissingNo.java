@@ -2,9 +2,9 @@ package com.algo.string.arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-// Logic: Solves the array missing no problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the array missing no problem by transforming the input according to the algorithm and returning the required result.
 public class ArrayMissingNo {
 
   public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package com.algo.string.arrays;
-// Logic: Reorders the collection so elements appear in the required priority or ascending order.
 
 
+// Logic: reorders the collection so elements appear in the required priority or ascending order.
 public class FindPairInSortedArray {
 
   public static void main(String[] args) {

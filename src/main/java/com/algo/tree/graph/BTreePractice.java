@@ -1,8 +1,8 @@
 package com.algo.tree.graph;
 import java.util.*;
-// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
 
 
+// Logic: visits nodes in a defined traversal order so each subtree is processed consistently and every node is checked.
 public class BTreePractice {
     TreeNode<Integer> root = null;
     void dfs(TreeNode<Integer> root) {

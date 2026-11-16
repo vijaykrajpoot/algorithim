@@ -1,9 +1,9 @@
 package com.algo.string.arrays;
 import java.util.HashMap;
 import java.util.Map;
-// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
 
 
+// Logic: processes the count paint in array problem by transforming the input according to the algorithm and returning the required result.
 public class CountPaintInArray {
 
   public static void main(String[] args) {

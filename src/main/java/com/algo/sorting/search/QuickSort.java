@@ -1,8 +1,8 @@
 package com.algo.sorting.search;
 import java.util.Arrays;
-// Logic: Chooses a pivot, partitions values around it, and recursively sorts the smaller partitions.
 
 
+// Logic: picks a pivot, places smaller values on the left and larger values on the right, and recursively sorts both partitions until the whole array is ordered.
 public class QuickSort {
 
     public static void main(String[] args) {

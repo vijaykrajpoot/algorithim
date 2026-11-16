@@ -9,9 +9,9 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  *
  */
-// Logic: Solves the remove duplcate chracters problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the remove duplcate chracters problem by transforming the input according to the algorithm and returning the required result.
 public class RemoveDuplcateChracters {
 
   public static void main(String[] args) {

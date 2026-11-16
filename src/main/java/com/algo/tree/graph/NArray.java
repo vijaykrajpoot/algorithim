@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-// Logic: Walks the tree using a defined traversal order so every node is visited and processed correctly.
 
 
 class MyNode {
@@ -19,6 +18,7 @@ class MyNode {
 		children = _children;
 	}
 };
+// Logic: processes the n array problem by transforming the input according to the algorithm and returning the required result.
 public class NArray {
 
 	public List<List<Integer>> levelOrder(MyNode root) {

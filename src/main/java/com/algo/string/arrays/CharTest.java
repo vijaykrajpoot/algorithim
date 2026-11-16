@@ -1,8 +1,8 @@
 package com.algo.string.arrays;
 import java.util.Random;
-// Logic: Verifies the algorithm against expected outputs for sample inputs.
 
 
+// Logic: runs known sample inputs and compares the outputs with expected values to validate the algorithm.
 public class CharTest {
 	private static Random rand = new Random();
 

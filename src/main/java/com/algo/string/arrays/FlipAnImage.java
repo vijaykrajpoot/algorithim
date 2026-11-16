@@ -13,9 +13,9 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  *
  */
-// Logic: Solves the flip an image problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the flip an image problem by transforming the input according to the algorithm and returning the required result.
 public class FlipAnImage {
   int arr[][] = new int[20][20];
 

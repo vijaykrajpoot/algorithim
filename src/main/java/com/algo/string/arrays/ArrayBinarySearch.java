@@ -1,7 +1,7 @@
 package com.algo.string.arrays;
-// Logic: Repeatedly narrows the search range around the middle value until the target is found or the range is empty.
 
 
+// Logic: keeps low and high bounds, computes the midpoint, and moves the search window left or right depending on whether the target is smaller or larger than the middle value.
 public class ArrayBinarySearch {
 
     public static int search(int arr[], int num) {

@@ -1,4 +1,5 @@
 package com.threads.runnable;
+// Logic: processes the even odd number problem by transforming the input according to the algorithm and returning the required result.
 public class EvenOddNumber
 
  implements Runnable {

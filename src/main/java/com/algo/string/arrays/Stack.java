@@ -1,5 +1,6 @@
 package com.algo.string.arrays;
 import java.util.EmptyStackException;
+// Logic: enforces a strict insertion and removal rule so values are processed in stack or queue order.
 public class Stack
 
 <T> {

@@ -1,8 +1,8 @@
 package com.algo.sorting.search;
 import java.util.Arrays;
-// Logic: Reorders the collection so elements appear in the required priority or ascending order.
 
 
+// Logic: reorders the collection so elements appear in the required priority or ascending order.
 public class InsertionSort {
 
 	public static void main(String[] args) {

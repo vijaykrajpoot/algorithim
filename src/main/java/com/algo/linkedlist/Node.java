@@ -1,7 +1,7 @@
 package com.algo.linkedlist;
-// Logic: Solves the node problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the node problem by transforming the input according to the algorithm and returning the required result.
 public class Node {
 	public int data;
 	Node next;

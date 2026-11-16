@@ -12,9 +12,9 @@ import java.util.List;
  * @author Vijay Kumar Rajput
  *
  */
-// Logic: Solves the fizz buzz problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the fizz buzz problem by transforming the input according to the algorithm and returning the required result.
 public class FizzBuzz {
 
   public static void main(String[] args) {

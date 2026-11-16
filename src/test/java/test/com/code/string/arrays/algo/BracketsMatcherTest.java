@@ -2,10 +2,10 @@ package test.com.code.string.arrays.algo;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import com.algo.string.arrays.BracketsMatcher;
-// Logic: Uses a stack to match opening and closing symbols in the correct order and detect invalid nesting.
 
 
 
+// Logic: pushes opening brackets onto a stack and matches each closing bracket against the most recent opening bracket; a mismatch or leftover opener means the string is invalid.
 public class BracketsMatcherTest {
 	@Test
 

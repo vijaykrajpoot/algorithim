@@ -42,9 +42,9 @@ package com.algo.leetcode.seventy_five;
  * 1 <= nums.length <= 104
  * -1000 <= nums[i] <= 1000
  */
-// Logic: Solves the pivot index_724 problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the pivot index_724 problem by transforming the input according to the algorithm and returning the required result.
 public class PivotIndex_724 {
 
     public static void main(String[] args) {

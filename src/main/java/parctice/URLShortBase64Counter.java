@@ -1,8 +1,8 @@
 package parctice;
 import java.util.Random;
-// Logic: Solves the u r l short base64 counter problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: hashes the input, converts the digest to binary, and groups the bits into Base64 characters to produce a compact token.
 public class URLShortBase64Counter {
 
 	public static void main(String[] args) {

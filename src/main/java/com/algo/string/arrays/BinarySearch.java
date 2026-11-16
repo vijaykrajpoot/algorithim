@@ -1,7 +1,7 @@
 package com.algo.string.arrays;
-// Logic: Repeatedly narrows the search range around the middle value until the target is found or the range is empty.
 
 
+// Logic: compares the target with the middle element and discards the half that cannot contain the target until the value is found or the range is empty.
 public class BinarySearch {
 
   public static boolean search(int arr[], int num) {

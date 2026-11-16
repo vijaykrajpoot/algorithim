@@ -9,10 +9,10 @@ import java.util.List;
  * @author Vijay Kumar Rajput
  *
  */
-// Logic: Solves the factors of a number problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
 
+// Logic: processes the factors of a number problem by transforming the input according to the algorithm and returning the required result.
 public class FactorsOfANumber {
 
   public static void main(String[] args) {

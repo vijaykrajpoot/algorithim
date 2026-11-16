@@ -8,9 +8,9 @@ package com.algo.string.arrays;
  * @author Vijay Kumar Rajput
  *
  */
-// Logic: Swaps elements from the ends toward the center until the sequence is fully reversed.
 
 
+// Logic: swaps values from the ends toward the center until the full sequence is inverted.
 public class ReverseWordsInAString {
 
   public static void main(String[] args) {

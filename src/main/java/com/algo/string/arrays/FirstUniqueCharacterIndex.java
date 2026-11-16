@@ -1,8 +1,8 @@
 package com.algo.string.arrays;
 import java.util.HashMap;
-// Logic: Solves the first unique character index problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the first unique character index problem by transforming the input according to the algorithm and returning the required result.
 public class FirstUniqueCharacterIndex {
 
 	public static void main(String[] args) {

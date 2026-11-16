@@ -1,9 +1,9 @@
 package com.threads.waitnotify;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-// Logic: Solves the main app problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the main app problem by transforming the input according to the algorithm and returning the required result.
 public class MainApp {
 
 	public static void main(String[] args) {

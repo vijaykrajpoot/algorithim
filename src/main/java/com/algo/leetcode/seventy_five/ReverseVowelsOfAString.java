@@ -23,9 +23,9 @@ import java.util.HashSet;
  * 1 <= s.length <= 3 * 105
  * s consist of printable ASCII characters.
  */
-// Logic: Swaps elements from the ends toward the center until the sequence is fully reversed.
 
 
+// Logic: swaps values from the ends toward the center until the full sequence is inverted.
 public class ReverseVowelsOfAString {
     HashSet<Character> hashSet = new HashSet<>();
 

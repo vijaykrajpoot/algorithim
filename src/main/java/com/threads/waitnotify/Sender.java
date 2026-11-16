@@ -1,5 +1,6 @@
 package com.threads.waitnotify;
 import java.util.concurrent.ThreadLocalRandom;
+// Logic: processes the sender problem by transforming the input according to the algorithm and returning the required result.
 public class Sender
 
  implements Runnable {

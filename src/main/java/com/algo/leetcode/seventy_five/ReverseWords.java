@@ -26,9 +26,9 @@ import java.util.Arrays;
  * Output: "example good a"
  * Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
  */
-// Logic: Swaps elements from the ends toward the center until the sequence is fully reversed.
 
 
+// Logic: swaps values from the ends toward the center until the full sequence is inverted.
 public class ReverseWords {
 
     public static void main(String[] args) {

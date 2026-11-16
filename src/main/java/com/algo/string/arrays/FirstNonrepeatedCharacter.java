@@ -11,9 +11,9 @@ import java.util.Map;
  * @author Vijay Kumar Rajput
  *
  */
-// Logic: Solves the first nonrepeated character problem by processing the input data, applying the required algorithmic rule, and returning the expected result.
 
 
+// Logic: processes the first nonrepeated character problem by transforming the input according to the algorithm and returning the required result.
 public class FirstNonrepeatedCharacter {
 
   public static void main(String str[]) {
